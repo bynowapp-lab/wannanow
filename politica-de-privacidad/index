@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad - WannaNow</title>
+<style>
+    body {
+        font-family: system-ui, -apple-system, sans-serif;
+        line-height: 1.6;
+        color: #2d2d2d;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px 80px;
+        background: #fdfdfd;
+    }
+    h1 {
+        font-size: 2rem;
+        border-bottom: 3px solid #7c3aed;
+        padding-bottom: 12px;
+        margin-bottom: 4px;
+    }
+    .updated {
+        color: #777;
+        font-style: italic;
+        margin-bottom: 30px;
+    }
+    h2 {
+        margin-top: 40px;
+        color: #5b21b6;
+        border-left: 4px solid #7c3aed;
+        padding-left: 12px;
+    }
+    h3 {
+        margin-top: 25px;
+        color: #333;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0 25px;
+        font-size: 0.92rem;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+        vertical-align: top;
+    }
+    th {
+        background: #7c3aed;
+        color: white;
+    }
+    tr:nth-child(even) {
+        background: #f7f5fc;
+    }
+    ul {
+        padding-left: 20px;
+    }
+    li {
+        margin-bottom: 6px;
+    }
+    a {
+        color: #7c3aed;
+    }
+    .back-link {
+        display: inline-block;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: #7c3aed;
+        font-weight: 600;
+    }
+</style>
+</head>
+<body>
+
+<a href="/" class="back-link">← Volver a WannaNow</a>
+
+<h1>Política de Privacidad</h1>
+<p class="updated">Última actualización: 14 de mayo de 2026</p>
+
+<h2>1. Identificación del Responsable del Tratamiento</h2>
+<table>
+    <tr><th>Campo</th><th>Dato</th></tr>
+    <tr><td>Responsable</td><td>ByNow Valencia S.L.</td></tr>
+    <tr><td>NIF/CIF</td><td>B88705660</td></tr>
+    <tr><td>Domicilio</td><td>46.689 - Benicull del Xúquer, 8 (Valencia)</td></tr>
+    <tr><td>Correo de privacidad</td><td>privacidad@wannanow.app</td></tr>
+    <tr><td>Delegado de Protección de Datos (DPD)</td><td>No designado en fase MVP</td></tr>
+</table>
+
+<h2>2. Tipos de usuarios y datos tratados</h2>
+<p>WannaNow opera con tres tipos distintos de usuarios, cada uno con un perfil de datos diferente:</p>
+
+<h3>2.1 Usuarios Particulares</h3>
+<p>Son las personas que utilizan la app para descubrir eventos y actividades cercanas. Pueden publicar eventos que se celebren tanto en espacios públicos como privados, tales como conciertos, mercadillos, exposiciones, etc., incluyendo o no fotos de dichos eventos.</p>
+<table>
+    <tr><th>Dato tratado</th><th>Finalidad</th><th>Base legal</th><th>Plazo conservación</th></tr>
+    <tr><td>Geolocalización en tiempo real</td><td>Mostrar eventos cercanos</td><td>Consentimiento explícito (art. 6.1.a RGPD)</td><td>No se almacena — solo se usa en tiempo real</td></tr>
+    <tr><td>Email (si se registra)</td><td>Gestión de cuenta y comunicaciones</td><td>Consentimiento (art. 6.1.a)</td><td>Hasta baja de cuenta + 30 días</td></tr>
+    <tr><td>Nombre de usuario / alias</td><td>Identificación pública en la plataforma</td><td>Ejecución del contrato (art. 6.1.b)</td><td>Vigencia de la cuenta</td></tr>
+    <tr><td>Fotos y vídeos subidos</td><td>Publicación del evento en el mapa</td><td>Consentimiento (art. 6.1.a)</td><td>Hasta eliminación del evento o cuenta</td></tr>
+    <tr><td>Datos del dispositivo (OS, versión app) en caso de implementarse versión app</td><td>Seguridad y funcionalidad</td><td>Interés legítimo (art. 6.1.f)</td><td>12 meses desde la sesión</td></tr>
+    <tr><td>Datos de uso y navegación en app cuando se implemente</td><td>Mejora del producto y analítica</td><td>Interés legítimo (art. 6.1.f)</td><td>13 meses (estándar analítica)</td></tr>
+    <tr><td>IP y logs de acceso</td><td>Seguridad y prevención de fraude</td><td>Interés legítimo (art. 6.1.f)</td><td>6 meses</td></tr>
+</table>
+
+<h3>2.2 Artistas</h3>
+<p>Personas físicas o colectivos artísticos que utilizan WannaNow para dar visibilidad a sus actuaciones y proyectos. Pueden publicar eventos propios y gestionar un perfil artístico público.</p>
+<table>
+    <tr><th>Dato tratado</th><th>Finalidad</th><th>Base legal</th><th>Plazo conservación</th></tr>
+    <tr><td>Nombre artístico / nombre real</td><td>Perfil público e identificación</td><td>Ejecución del contrato (art. 6.1.b)</td><td>Vigencia de la cuenta</td></tr>
+    <tr><td>Email profesional</td><td>Gestión de cuenta, comunicaciones</td><td>Consentimiento (art. 6.1.a)</td><td>Hasta baja + 30 días</td></tr>
+    <tr><td>Teléfono</td><td>Contacto para organizadores</td><td>Consentimiento (art. 6.1.a)</td><td>Vigencia de la cuenta</td></tr>
+    <tr><td>Fotografías de perfil y portafolio</td><td>Perfil público artístico</td><td>Consentimiento (art. 6.1.a)</td><td>Hasta eliminación por el usuario</td></tr>
+    <tr><td>Redes sociales vinculadas (URLs)</td><td>Enriquecer perfil público</td><td>Consentimiento (art. 6.1.a)</td><td>Vigencia de la cuenta</td></tr>
+    <tr><td>Datos bancarios (cuando aplique pago)</td><td>Gestión de cobros futuros</td><td>Ejecución del contrato (art. 6.1.b)</td><td>5 años por obligaciones fiscales</td></tr>
+    <tr><td>Datos de eventos publicados</td><td>Visibilidad en la plataforma</td><td>Ejecución del contrato (art. 6.1.b)</td><td>Hasta eliminación del evento o cuenta</td></tr>
+    <tr><td>Estadísticas de perfil (vistas, interacciones)</td><td>Análisis de rendimiento</td><td>Interés legítimo (art. 6.1.f)</td><td>24 meses</td></tr>
+</table>
+
+<h3>2.3 Organizadores</h3>
+<p>Empresas, autónomos o entidades que utilizan WannaNow para publicar y promocionar sus eventos. Pueden acceder a planes de pago y estadísticas avanzadas.</p>
+<table>
+    <tr><th>Dato tratado</th><th>Finalidad</th><th>Base legal</th><th>Plazo conservación</th></tr>
+    <tr><td>Razón social / nombre comercial</td><td>Identificación en plataforma</td><td>Ejecución del contrato (art. 6.1.b)</td><td>Vigencia de la cuenta + 5 años</td></tr>
+    <tr><td>NIF/CIF</td><td>Facturación y cumplimiento fiscal</td><td>Obligación legal (art. 6.1.c)</td><td>5 años (Ley General Tributaria)</td></tr>
+    <tr><td>Nombre y apellidos del responsable</td><td>Interlocución y verificación</td><td>Ejecución del contrato (art. 6.1.b)</td><td>Vigencia de la cuenta + 5 años</td></tr>
+    <tr><td>Email de contacto</td><td>Gestión de cuenta y comunicaciones</td><td>Ejecución del contrato (art. 6.1.b)</td><td>Vigencia de la cuenta</td></tr>
+    <tr><td>Teléfono</td><td>Soporte prioritario (Plan Pro)</td><td>Ejecución del contrato (art. 6.1.b)</td><td>Vigencia de la cuenta</td></tr>
+    <tr><td>Datos de pago (gestionados por pasarela), cuando se procesen cobros</td><td>Cobro de suscripciones</td><td>Ejecución del contrato (art. 6.1.b)</td><td>Gestionados por proveedor (ej: Stripe)</td></tr>
+    <tr><td>Logo e imágenes corporativas</td><td>Perfil público del organizador</td><td>Ejecución del contrato (art. 6.1.b)</td><td>Hasta baja de cuenta</td></tr>
+    <tr><td>Eventos publicados e historial</td><td>Visibilidad y estadísticas</td><td>Ejecución del contrato (art. 6.1.b)</td><td>Vigencia + 2 años para analítica</td></tr>
+    <tr><td>Estadísticas (vistas, clics, conversiones)</td><td>Reporting al organizador (Plan Pro)</td><td>Ejecución del contrato (art. 6.1.b)</td><td>24 meses</td></tr>
+</table>
+
+<h2>3. Contenido Generado por Usuarios (UGC) — Fotos y Vídeos</h2>
+
+<h3>3.1 Reglas de publicación de imágenes y vídeos</h3>
+<p>Al subir fotos o vídeos a WannaNow, el usuario (de cualquier tipo) declara y garantiza:</p>
+<ul>
+    <li>Ser el autor del contenido o tener los derechos necesarios para publicarlo</li>
+    <li>Que el contenido no vulnera el derecho a la propia imagen de terceras personas (art. 18 CE, LO 1/1982)</li>
+    <li>Que el contenido no reproduce material protegido por derechos de autor sin autorización</li>
+    <li>Que el contenido es veraz y se corresponde con el evento descrito</li>
+    <li>Que no contiene material ilícito, ofensivo o que incite al odio</li>
+</ul>
+
+<h3>3.2 Captación de imágenes en espacios públicos</h3>
+<p>Las fotos y vídeos de eventos en la vía pública están sujetas a restricciones importantes:</p>
+<ul>
+    <li>La toma de imágenes en espacios públicos es generalmente lícita cuando las personas aparecen de forma accesoria al evento principal</li>
+    <li>No está permitido publicar imágenes donde personas identificables sean el sujeto principal sin su consentimiento</li>
+    <li>En eventos con menores presentes, se requiere especial cautela — WannaNow recomienda no incluir imágenes identificables de menores</li>
+    <li>El usuario es el único responsable del contenido que publica — WannaNow actúa como intermediario (art. 16 LSSI)</li>
+</ul>
+
+<h3>3.3 Licencia de uso otorgada a WannaNow</h3>
+<p>Al publicar contenido, el usuario otorga a WannaNow una licencia no exclusiva, mundial, gratuita, sublicenciable y transferible para:</p>
+<ul>
+    <li>Mostrar el contenido en la plataforma (app, web)</li>
+    <li>Redimensionar, comprimir o adaptar técnicamente el contenido para su correcta visualización</li>
+    <li>Utilizar el contenido en comunicaciones de marketing de WannaNow relacionadas con el evento (ej: captura de pantalla de la app para redes sociales), siempre mencionando al autor</li>
+</ul>
+<p>Esta licencia se revoca automáticamente cuando el usuario elimina el contenido de la plataforma, salvo que ya haya sido incluido en comunicaciones publicadas anteriormente.</p>
+
+<h2>4. Geolocalización — Régimen especial</h2>
+<ul>
+    <li>El permiso de geolocalización se solicita en dos niveles: sistema operativo (iOS/Android) y consentimiento explícito dentro de la app</li>
+    <li>WannaNow no almacena el historial de ubicaciones del usuario — solo utiliza la posición en tiempo real para mostrar eventos cercanos</li>
+    <li>La app debe funcionar con funcionalidad reducida si el usuario deniega el permiso de geolocalización (búsqueda por ciudad/barrio)</li>
+    <li>El usuario puede retirar el permiso en cualquier momento desde los ajustes del dispositivo</li>
+    <li>WannaNow no comparte la ubicación del usuario con terceros ni con organizadores</li>
+</ul>
+
+<h2>5. Comunicaciones y decisiones automatizadas</h2>
+
+<h3>5.1 Notificaciones y comunicaciones comerciales</h3>
+<table>
+    <tr><th>Tipo de comunicación</th><th>Requiere consentimiento previo</th><th>Cómo cancelar</th></tr>
+    <tr><td>Notificaciones push sobre eventos cercanos</td><td>Sí — permiso en el dispositivo</td><td>Ajustes del dispositivo o de la app</td></tr>
+    <tr><td>Email de bienvenida y funcionalidad</td><td>No — ejecución del contrato</td><td>Baja de la cuenta</td></tr>
+    <tr><td>Newsletter y novedades de WannaNow</td><td>Sí — casilla de opt-in separada</td><td>Enlace de baja en cada email</td></tr>
+    <tr><td>Comunicaciones comerciales de organizadores</td><td>WannaNow Valencia no cede datos a organizadores, pero puede notificar comunicaciones de éstos</td><td>N/A</td></tr>
+    <tr><td>Alertas de nuevos eventos (si activa el usuario)</td><td>Sí — selección explícita por el usuario</td><td>Ajustes de la app</td></tr>
+</table>
+
+<h3>5.2 Toma de decisiones automatizadas</h3>
+<p>En la fase MVP, ByNow Valencia no aplica decisiones automatizadas ni perfilado que produzca efectos jurídicos sobre los usuarios. En futuras versiones que incluyan personalización por IA, se actualizará esta política e informará a los usuarios antes de su implementación.</p>
+
+<h2>6. Cesión de datos y subencargados del tratamiento</h2>
+<p>WannaNow no vende ni cede datos personales a terceros con fines comerciales. Los datos se comparten únicamente con los siguientes proveedores de servicios (subencargados), con quienes se firma el correspondiente Acuerdo de Encargo de Tratamiento (DPA):</p>
+<table>
+    <tr><th>Proveedor</th><th>Función</th><th>Localización</th><th>Garantías RGPD</th></tr>
+    <tr><td>Proveedor Cloud (AWS / GCP / Azure)</td><td>Infraestructura y almacenamiento</td><td>UE (región seleccionada)</td><td>DPA estándar + cláusulas contractuales tipo</td></tr>
+    <tr><td>Google Maps Platform</td><td>Mapas y geolocalización</td><td>EE.UU. / UE</td><td>Privacy Shield + DPA Google</td></tr>
+    <tr><td>Herramienta de analítica (ej: Firebase, Mixpanel)</td><td>Analítica de uso de la app</td><td>EE.UU. / UE</td><td>DPA + Cláusulas tipo UE</td></tr>
+    <tr><td>Proveedor de email (ej: Brevo, Mailchimp)</td><td>Envío de comunicaciones</td><td>UE / EE.UU.</td><td>DPA + cláusulas contractuales tipo</td></tr>
+    <tr><td>Proveedor de moderación de contenido</td><td>Revisión de UGC inapropiado (futuro)</td><td>Por definir</td><td>DPA a firmar antes de implementar</td></tr>
+</table>
+<p><em>Importante: Cuando se usen proveedores con sede en EE.UU., es necesario verificar que cuentan con el certificado EU-US Data Privacy Framework (sucesor del Privacy Shield) o que se han firmado Cláusulas Contractuales Tipo (SCCs) aprobadas por la Comisión Europea.</em></p>
+
+<h2>7. Derechos de los usuarios</h2>
+<p>Todos los usuarios pueden ejercer los siguientes derechos enviando un email a <a href="mailto:privacidad@wannanow.app">privacidad@wannanow.app</a> con asunto "EJERCICIO DE DERECHOS RGPD", verificando su identidad mediante su propia cuenta autenticada.</p>
+<table>
+    <tr><th>Derecho</th><th>En qué consiste</th><th>Plazo de respuesta</th></tr>
+    <tr><td>Acceso (art. 15 RGPD)</td><td>Obtener confirmación de si se tratan sus datos y una copia de los mismos</td><td>1 mes</td></tr>
+    <tr><td>Rectificación (art. 16 RGPD)</td><td>Corregir datos inexactos o incompletos</td><td>1 mes</td></tr>
+    <tr><td>Supresión / "derecho al olvido" (art. 17 RGPD)</td><td>Solicitar la eliminación de sus datos cuando ya no sean necesarios</td><td>1 mes</td></tr>
+    <tr><td>Portabilidad (art. 20 RGPD)</td><td>Recibir sus datos en formato estructurado y de uso común</td><td>1 mes</td></tr>
+    <tr><td>Oposición (art. 21 RGPD)</td><td>Oponerse al tratamiento basado en interés legítimo</td><td>1 mes</td></tr>
+    <tr><td>Limitación del tratamiento (art. 18 RGPD)</td><td>Solicitar que se limite el uso de sus datos en determinadas circunstancias</td><td>1 mes</td></tr>
+    <tr><td>Retirada del consentimiento</td><td>Retirar el consentimiento prestado sin efecto retroactivo</td><td>Inmediato</td></tr>
+</table>
+<p>Si el usuario no obtiene respuesta o considera que sus derechos no han sido atendidos, puede presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD) en <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a>.</p>
+
+<h2>8. Menores de edad</h2>
+<ul>
+    <li>WannaNow no está dirigida a menores de 14 años (edad mínima de consentimiento digital en España, art. 7 LOPDGDD)</li>
+    <li>Los usuarios deben confirmar tener 14 años o más en el proceso de registro</li>
+    <li>Si WannaNow detecta o recibe comunicación de que un usuario es menor de 14 años, eliminará sus datos inmediatamente</li>
+    <li>Para usuarios de entre 14 y 18 años: se recomienda que los padres o tutores revisen esta política y los contenidos de la plataforma</li>
+</ul>
+
+<h2>9. Seguridad de los datos</h2>
+<p>WannaNow implementa las siguientes medidas técnicas y organizativas para proteger los datos personales:</p>
+<ul>
+    <li>Cifrado en tránsito: HTTPS/TLS 1.2+ en todas las comunicaciones</li>
+    <li>Cifrado en reposo: datos sensibles almacenados con cifrado AES-256</li>
+    <li>Control de acceso: acceso a datos restringido por rol y con autenticación multifactor para el equipo interno</li>
+    <li>Copias de seguridad: backups automáticos con almacenamiento en ubicación separada</li>
+    <li>Registro de actividad: logs de acceso y modificación de datos con retención de 6 meses</li>
+    <li>Procedimiento de brecha de seguridad: notificación a la AEPD en 72 horas si se produce una brecha con riesgo para los derechos y libertades de los usuarios</li>
+</ul>
+
+<h2>10. Actualizaciones de esta política</h2>
+<p>WannaNow se reserva el derecho a modificar esta Política de Privacidad. Los cambios sustanciales serán notificados mediante:</p>
+<ul>
+    <li>Notificación en la app con un mínimo de 30 días de antelación</li>
+    <li>Email a los usuarios registrados</li>
+    <li>El uso continuado de la app tras la entrada en vigor de los cambios implica la aceptación de la nueva política</li>
+</ul>
+
+</body>
+</html>
