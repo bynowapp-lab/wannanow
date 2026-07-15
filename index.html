@@ -1072,6 +1072,130 @@
             opacity: 0.6;
         }
 
+        /* ─────────────────────────────────────────
+           TABLA DE COOKIES (dentro del modal)
+        ───────────────────────────────────────── */
+        .cookie-table-wrap {
+            overflow-x: auto;
+            margin-bottom: 16px;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+        }
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 640px;
+            font-size: 0.78rem;
+        }
+        .cookie-table th,
+        .cookie-table td {
+            padding: 10px 14px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            color: var(--muted);
+            line-height: 1.5;
+            vertical-align: top;
+        }
+        .cookie-table th {
+            background: rgba(255,255,255,0.05);
+            color: var(--text);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .cookie-table tr:last-child td {
+            border-bottom: none;
+        }
+        .cookie-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+
+        /* ─────────────────────────────────────────
+           BANNER DE COOKIES
+        ───────────────────────────────────────── */
+        .cookie-banner {
+            position: fixed;
+            left: 16px;
+            right: 16px;
+            bottom: 16px;
+            z-index: 9500;
+            display: none;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 20px 24px;
+            background: var(--dark-3);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 18px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.55);
+            transform: translateY(24px);
+            opacity: 0;
+            transition: transform 0.4s cubic-bezier(.23,1,.32,1), opacity 0.4s ease;
+        }
+        .cookie-banner.is-visible {
+            display: flex;
+        }
+        .cookie-banner.is-open {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .cookie-banner-text {
+            flex: 1 1 420px;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: var(--muted);
+            margin: 0;
+        }
+        .cookie-banner-text a {
+            color: var(--text);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+        .cookie-banner-actions {
+            display: flex;
+            gap: 10px;
+            flex-shrink: 0;
+            flex-wrap: wrap;
+        }
+        .cookie-btn {
+            padding: 11px 20px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid rgba(255,255,255,0.14);
+            cursor: none;
+            white-space: nowrap;
+            transition: background 0.2s, border-color 0.2s, opacity 0.2s;
+        }
+        .cookie-btn--ghost {
+            background: transparent;
+            color: var(--muted);
+        }
+        .cookie-btn--ghost:hover {
+            color: var(--text);
+            border-color: rgba(255,255,255,0.3);
+        }
+        .cookie-btn--solid {
+            background: var(--grad);
+            border-color: transparent;
+            color: #fff;
+        }
+        .cookie-btn--solid:hover {
+            opacity: 0.9;
+        }
+        @media (max-width: 640px) {
+            .cookie-banner {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .cookie-banner-actions {
+                justify-content: stretch;
+            }
+            .cookie-banner-actions .cookie-btn {
+                flex: 1;
+            }
+        }
+
 /* ── HAMBURGER DROPDOWN ── */
 .hamburger-dropdown {
     display: none;
@@ -1104,6 +1228,115 @@
 .hamburger-dropdown .nav-link:hover {
     background: rgba(255,255,255,0.08);
     color: white;
+}
+
+/* ── COOKIE TABLE (dentro del modal) ── */
+.cookie-table-wrap {
+    overflow-x: auto;
+    margin: 16px 0 28px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+.cookie-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    min-width: 640px;
+}
+.cookie-table th {
+    background: rgba(255,255,255,0.06);
+    color: var(--text);
+    text-align: left;
+    padding: 10px 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.cookie-table td {
+    padding: 10px 12px;
+    color: var(--muted);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    vertical-align: top;
+}
+.cookie-table tr:nth-child(even) td {
+    background: rgba(255,255,255,0.02);
+}
+
+/* ── COOKIE BANNER ── */
+.cookie-banner {
+    position: fixed;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    z-index: 1200;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+    background: rgba(15, 15, 26, 0.97);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 14px;
+    padding: 18px 22px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+.cookie-banner.is-visible {
+    display: flex;
+}
+.cookie-banner-text {
+    flex: 1 1 320px;
+    margin: 0;
+    color: rgba(255,255,255,0.85);
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+.cookie-banner-text a {
+    color: var(--cyan);
+    text-decoration: underline;
+}
+.cookie-banner-actions {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+.cookie-btn {
+    border: none;
+    border-radius: 999px;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: inherit;
+}
+.cookie-btn--solid {
+    background: var(--grad);
+    color: white;
+}
+.cookie-btn--ghost {
+    background: transparent;
+    color: rgba(255,255,255,0.85);
+    border: 1px solid rgba(255,255,255,0.25);
+}
+.cookie-btn--ghost:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+@media (max-width: 560px) {
+    .cookie-banner {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        padding: 16px;
+    }
+    .cookie-banner-actions {
+        width: 100%;
+    }
+    .cookie-btn {
+        flex: 1;
+        text-align: center;
+    }
 }
 </style>
 
@@ -1236,6 +1469,137 @@
         </div>
     </div>
 
+    <!-- Política de Cookies -->
+    <div class="legal-overlay" id="modalCookies" role="dialog" aria-modal="true" aria-labelledby="titleCookies">
+        <div class="legal-backdrop" id="backdropCookies"></div>
+        <div class="legal-panel">
+            <div class="legal-panel-header">
+                <span class="legal-panel-title" id="titleCookies">Política de Cookies</span>
+                <button class="legal-close-btn" id="closeCookies" aria-label="Cerrar">✕</button>
+            </div>
+            <div class="legal-panel-body">
+                <h2>1. ¿Qué son las cookies?</h2>
+                <p>Las cookies son pequeños archivos de texto que se almacenan en el dispositivo del usuario cuando accede a una aplicación o sitio web. Permiten reconocer al usuario en visitas sucesivas, recordar sus preferencias y analizar el uso de la plataforma.</p>
+
+                <h2>2. Clasificación de cookies utilizadas</h2>
+                <div class="cookie-table-wrap">
+                    <table class="cookie-table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Tipo</th>
+                                <th>Finalidad</th>
+                                <th>Duración</th>
+                                <th>Proveedor</th>
+                                <th>Desactivable</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>session_token</td>
+                                <td>Técnica esencial</td>
+                                <td>Mantener la sesión iniciada del usuario</td>
+                                <td>Sesión</td>
+                                <td>ByNow</td>
+                                <td>No (esencial)</td>
+                            </tr>
+                            <tr>
+                                <td>user_preferences</td>
+                                <td>Técnica esencial</td>
+                                <td>Recordar filtros y preferencias de búsqueda</td>
+                                <td>12 meses</td>
+                                <td>ByNow</td>
+                                <td>No (esencial)</td>
+                            </tr>
+                            <tr>
+                                <td>app_language</td>
+                                <td>Técnica esencial</td>
+                                <td>Idioma seleccionado por el usuario</td>
+                                <td>12 meses</td>
+                                <td>ByNow</td>
+                                <td>No (esencial)</td>
+                            </tr>
+                            <tr>
+                                <td>_ga, _gid (Firebase/GA)</td>
+                                <td>Analítica</td>
+                                <td>Análisis de uso: pantallas visitadas, tiempo en app, flujo de usuario</td>
+                                <td>13 meses</td>
+                                <td>Google Analytics / Firebase</td>
+                                <td>Sí</td>
+                            </tr>
+                            <tr>
+                                <td>mp_* (Mixpanel)</td>
+                                <td>Analítica</td>
+                                <td>Analítica de producto: embudos de conversión, retención</td>
+                                <td>13 meses</td>
+                                <td>Mixpanel</td>
+                                <td>Sí</td>
+                            </tr>
+                            <tr>
+                                <td>adjust_* o appsflyer_*</td>
+                                <td>Analítica de atribución</td>
+                                <td>Medir origen de instalaciones de la app</td>
+                                <td>6 meses</td>
+                                <td>Adjust / AppsFlyer</td>
+                                <td>Sí</td>
+                            </tr>
+                            <tr>
+                                <td>push_token</td>
+                                <td>Funcional</td>
+                                <td>Envío de notificaciones push al dispositivo</td>
+                                <td>Indefinido hasta revocación</td>
+                                <td>ByNow + proveedor push</td>
+                                <td>Sí (desde ajustes del dispositivo)</td>
+                            </tr>
+                            <tr>
+                                <td>Ads SDK (futuro — Fase 3)</td>
+                                <td>Publicidad</td>
+                                <td>Segmentación de publicidad nativa en la app</td>
+                                <td>Por implementar</td>
+                                <td>Por definir</td>
+                                <td>Sí</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2>3. Gestión del consentimiento</h2>
+                <p>Conforme a las directrices de la AEPD:</p>
+                <ul>
+                    <li>Las cookies técnicas o esenciales no requieren consentimiento previo — son necesarias para el funcionamiento básico.</li>
+                    <li>Las cookies analíticas, funcionales y publicitarias requieren consentimiento previo e informado.</li>
+                    <li>El usuario debe poder aceptar o rechazar cada categoría de forma independiente («consentimiento granular»).</li>
+                    <li>No se permite el «bloqueo de servicio» por no aceptar cookies no esenciales — la app debe funcionar si el usuario solo acepta las esenciales.</li>
+                    <li>El consentimiento debe ser tan fácil de retirar como de otorgar.</li>
+                </ul>
+
+                <h2>4. Cómo desactivar o eliminar cookies</h2>
+                <ul>
+                    <li><strong>Desde la propia app:</strong> Ajustes &gt; Privacidad &gt; Gestión de cookies</li>
+                    <li><strong>Desde el dispositivo iOS:</strong> Ajustes &gt; Privacidad y seguridad &gt; Rastreo</li>
+                    <li><strong>Desde el dispositivo Android:</strong> Ajustes &gt; Privacidad &gt; Anuncios &gt; Restablecer ID de publicidad</li>
+                    <li><strong>Para la versión web:</strong> desde el navegador (ver instrucciones del navegador específico)</li>
+                    <li><strong>Para retirar el consentimiento prestado anteriormente:</strong> acceder al panel de gestión de cookies en Ajustes de la app</li>
+                </ul>
+
+                <div class="legal-meta">Última actualización: 14 de julio de 2.026 · WannaNow, Valencia, España.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner de Cookies -->
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+        <p class="cookie-banner-text">
+            Utilizamos cookies propias y de terceros para el funcionamiento de la app y, si lo aceptas, para analítica y personalización.
+            Si continúas navegando, entendemos que aceptas nuestra
+            <a href="#" id="cookieBannerLink">Política de Cookies</a>.
+        </p>
+        <div class="cookie-banner-actions">
+            <button class="cookie-btn cookie-btn--ghost" id="cookieRejectBtn">Rechazar no esenciales</button>
+            <button class="cookie-btn cookie-btn--solid" id="cookieAcceptBtn">Aceptar</button>
+        </div>
+    </div>
+
 <nav>
     <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menú">
         &#9776;
@@ -1246,6 +1610,7 @@
     <div class="hamburger-dropdown" id="hamDropdown">
         <a href="https://wannanow.app/politica-de-privacidad" target="_blank" rel="noopener noreferrer" class="nav-link">Política de Privacidad</a>
         <a href="https://wannanow.app/terminos-y-condiciones" target="_blank" rel="noopener noreferrer" class="nav-link">Términos y Condiciones</a>
+        <a href="#" id="openCookies" class="nav-link">Política de Cookies</a>
     </div>
 
     <a href="#s1" class="nav-brand">
@@ -1728,12 +2093,18 @@
         const hamDropdown   = document.getElementById('hamDropdown');
         const openPrivacidad = document.getElementById('openPrivacidad');
         const openTerminos   = document.getElementById('openTerminos');
+        const openCookies    = document.getElementById('openCookies');
         const modalPrivacidad = document.getElementById('modalPrivacidad');
         const modalTerminos   = document.getElementById('modalTerminos');
+        const modalCookies    = document.getElementById('modalCookies');
         const closePrivacidad = document.getElementById('closePrivacidad');
         const closeTerminos   = document.getElementById('closeTerminos');
+        const closeCookies    = document.getElementById('closeCookies');
         const backdropPrivacidad = document.getElementById('backdropPrivacidad');
         const backdropTerminos   = document.getElementById('backdropTerminos');
+        const backdropCookies    = document.getElementById('backdropCookies');
+
+        const allModals = [modalPrivacidad, modalTerminos, modalCookies].filter(Boolean);
 
         // Toggle dropdown
         hamburgerBtn.addEventListener('click', (e) => {
@@ -1754,6 +2125,7 @@
 
         // Open modals
         function openModal(modal) {
+            if (!modal) return;
             modal.classList.add('is-open');
             document.body.style.overflow = 'hidden';
             hamDropdown.classList.remove('is-open');
@@ -1762,31 +2134,86 @@
         }
 
         function closeModal(modal) {
+            if (!modal) return;
             modal.classList.remove('is-open');
             document.body.style.overflow = '';
         }
 
-        openPrivacidad.addEventListener('click', () => openModal(modalPrivacidad));
-        openTerminos.addEventListener('click',   () => openModal(modalTerminos));
+        openPrivacidad?.addEventListener('click', (e) => { e.preventDefault(); openModal(modalPrivacidad); });
+        openTerminos?.addEventListener('click',   (e) => { e.preventDefault(); openModal(modalTerminos); });
+        openCookies?.addEventListener('click',    (e) => { e.preventDefault(); openModal(modalCookies); });
 
-        closePrivacidad.addEventListener('click', () => closeModal(modalPrivacidad));
-        closeTerminos.addEventListener('click',   () => closeModal(modalTerminos));
+        closePrivacidad?.addEventListener('click', () => closeModal(modalPrivacidad));
+        closeTerminos?.addEventListener('click',   () => closeModal(modalTerminos));
+        closeCookies?.addEventListener('click',    () => closeModal(modalCookies));
 
-        backdropPrivacidad.addEventListener('click', () => closeModal(modalPrivacidad));
-        backdropTerminos.addEventListener('click',   () => closeModal(modalTerminos));
+        backdropPrivacidad?.addEventListener('click', () => closeModal(modalPrivacidad));
+        backdropTerminos?.addEventListener('click',   () => closeModal(modalTerminos));
+        backdropCookies?.addEventListener('click',    () => closeModal(modalCookies));
 
         // Close on Escape key
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
-                closeModal(modalPrivacidad);
-                closeModal(modalTerminos);
+                allModals.forEach(closeModal);
             }
         });
+
+        /* ── Cookie Consent Banner ─────────── */
+        const CONSENT_KEY = 'wannanow_cookie_consent';
+        const cookieBanner = document.getElementById('cookieBanner');
+        const cookieAcceptBtn = document.getElementById('cookieAcceptBtn');
+        const cookieRejectBtn = document.getElementById('cookieRejectBtn');
+        const cookieBannerLink = document.getElementById('cookieBannerLink');
+
+        function getConsent() {
+            try {
+                const raw = localStorage.getItem(CONSENT_KEY);
+                return raw ? JSON.parse(raw) : null;
+            } catch (err) {
+                return null;
+            }
+        }
+
+        function saveConsent(status) {
+            try {
+                localStorage.setItem(CONSENT_KEY, JSON.stringify({
+                    status: status, // 'accepted' | 'essential-only'
+                    date: new Date().toISOString()
+                }));
+            } catch (err) {
+                // localStorage no disponible: el banner podrá reaparecer, no es crítico
+            }
+        }
+
+        function hideBanner() {
+            cookieBanner?.classList.remove('is-visible');
+        }
+
+        function showBannerIfNeeded() {
+            if (!cookieBanner) return;
+            if (!getConsent()) {
+                cookieBanner.classList.add('is-visible');
+            }
+        }
+
+        cookieAcceptBtn?.addEventListener('click', () => {
+            saveConsent('accepted');
+            hideBanner();
+        });
+
+        cookieRejectBtn?.addEventListener('click', () => {
+            saveConsent('essential-only');
+            hideBanner();
+        });
+
+        cookieBannerLink?.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal(modalCookies);
+        });
+
+        showBannerIfNeeded();
     })();
     </script>
-
-</body>
-</html>
 
 </body>
 </html>
