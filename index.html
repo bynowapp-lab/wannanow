@@ -2062,4 +2062,265 @@ src="https://www.facebook.com/tr?id=1104255735332840&ev=PageView&noscript=1"
                 stagger: 0.15,
                 duration: 0.9,
                 ease: 'power3.out',
-                scrollT
+                scrollTrigger: {
+                    trigger: '.pillar-grid',
+                    start: 'top 80%',
+                }
+            }
+        );
+
+        /* ── S2 parallax image ─────────────────── */
+        gsap.to('#s2Img', {
+            yPercent: 14,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '#s2',
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: true,
+            }
+        });
+
+        /* ── S5 background subtle parallax ──────── */
+        gsap.to('#s5 .s5-bg img', {
+            yPercent: 8,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '#s5',
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: true,
+            }
+        });
+
+        /* ── S7 background parallax ─────────────── */
+        gsap.to('#s7 .s7-bg img', {
+            yPercent: 10,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '#s7',
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: true,
+            }
+        });
+
+        /* ── Progress Dots & Section Observer ────── */
+        const sections = Array.from(document.querySelectorAll('section'));
+        const dots     = Array.from(document.querySelectorAll('.nav-dot'));
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                document.getElementById(dot.dataset.target)
+                    ?.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (!e.isIntersecting) return;
+                const idx = sections.indexOf(e.target);
+                dots.forEach((d, i) => d.classList.toggle('is-active', i === idx));
+            });
+        }, { threshold: 0.45 });
+
+        sections.forEach(s => io.observe(s));
+
+        /* ── Nav bg on scroll ───────────────────── */
+        ScrollTrigger.create({
+            start: '80px top',
+            onEnter:     () => { document.querySelector('nav').style.background = 'rgba(7,7,15,0.88)'; },
+            onLeaveBack: () => { document.querySelector('nav').style.background = 'rgba(7,7,15,0.5)'; },
+        });
+
+    })();
+
+    /* ── Hamburger Menu & Legal Modals ─────────── */
+    (() => {
+        const hamburgerBtn  = document.getElementById('hamburgerBtn');
+        const hamDropdown   = document.getElementById('hamDropdown');
+        const openPrivacidad = document.getElementById('openPrivacidad');
+        const openTerminos   = document.getElementById('openTerminos');
+        const modalPrivacidad = document.getElementById('modalPrivacidad');
+        const modalTerminos   = document.getElementById('modalTerminos');
+        const closePrivacidad = document.getElementById('closePrivacidad');
+        const closeTerminos   = document.getElementById('closeTerminos');
+        const backdropPrivacidad = document.getElementById('backdropPrivacidad');
+        const backdropTerminos   = document.getElementById('backdropTerminos');
+
+        const allModals = [modalPrivacidad, modalTerminos].filter(Boolean);
+
+        // Toggle dropdown
+        hamburgerBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = hamDropdown.classList.toggle('is-open');
+            hamburgerBtn.classList.toggle('is-open', isOpen);
+            hamburgerBtn.setAttribute('aria-expanded', isOpen);
+        });
+
+        // Close dropdown on outside click
+        document.addEventListener('click', (e) => {
+            if (!hamDropdown.contains(e.target) && e.target !== hamburgerBtn) {
+                hamDropdown.classList.remove('is-open');
+                hamburgerBtn.classList.remove('is-open');
+                hamburgerBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Open modals
+        function openModal(modal) {
+            if (!modal) return;
+            modal.classList.add('is-open');
+            document.body.style.overflow = 'hidden';
+            hamDropdown.classList.remove('is-open');
+            hamburgerBtn.classList.remove('is-open');
+            hamburgerBtn.setAttribute('aria-expanded', 'false');
+        }
+
+        function closeModal(modal) {
+            if (!modal) return;
+            modal.classList.remove('is-open');
+            document.body.style.overflow = '';
+        }
+
+        openPrivacidad?.addEventListener('click', (e) => { e.preventDefault(); openModal(modalPrivacidad); });
+        openTerminos?.addEventListener('click',   (e) => { e.preventDefault(); openModal(modalTerminos); });
+
+        closePrivacidad?.addEventListener('click', () => closeModal(modalPrivacidad));
+        closeTerminos?.addEventListener('click',   () => closeModal(modalTerminos));
+
+        backdropPrivacidad?.addEventListener('click', () => closeModal(modalPrivacidad));
+        backdropTerminos?.addEventListener('click',   () => closeModal(modalTerminos));
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                allModals.forEach(closeModal);
+            }
+        });
+
+        /* ── Cookie Consent Banner (no bloqueante) ─────────── */
+        const CONSENT_KEY = 'wannanow_cookie_consent';
+        const cookieBanner = document.getElementById('cookieBanner');
+        const cookieAcceptBtn = document.getElementById('cookieAcceptBtn');
+        const cookieRejectBtn = document.getElementById('cookieRejectBtn');
+        const cookieConfigureBtn = document.getElementById('cookieConfigureBtn');
+
+        const cookiePrefsOverlay = document.getElementById('cookiePrefsOverlay');
+        const prefAnalytics = document.getElementById('prefAnalytics');
+        const prefPersonalization = document.getElementById('prefPersonalization');
+        const cookiePrefsSave = document.getElementById('cookiePrefsSave');
+        const cookiePrefsRejectAll = document.getElementById('cookiePrefsRejectAll');
+
+        function getConsent() {
+            try {
+                const raw = localStorage.getItem(CONSENT_KEY);
+                return raw ? JSON.parse(raw) : null;
+            } catch (err) {
+                return null;
+            }
+        }
+
+        // categories: { analytics: bool, personalization: bool }. Las necesarias
+        // no requieren consentimiento porque son imprescindibles para el servicio.
+        function saveConsent(categories) {
+            try {
+                localStorage.setItem(CONSENT_KEY, JSON.stringify({
+                    categories: categories,
+                    date: new Date().toISOString()
+                }));
+            } catch (err) {
+                // localStorage no disponible: el aviso podrá reaparecer, no es crítico
+            }
+            applyConsent(categories);
+        }
+
+        // Punto único donde activar/desactivar scripts de terceros según lo aceptado.
+        // Ejemplo: if (categories.analytics) { /* cargar analítica */ }
+        function applyConsent(categories) {
+            window.wannanowConsent = categories;
+        }
+
+        function hideBanner() {
+            if (!cookieBanner) return;
+            cookieBanner.classList.remove('is-open');
+            setTimeout(() => cookieBanner.classList.remove('is-visible'), 400);
+        }
+
+        function showBannerIfNeeded() {
+            if (!cookieBanner) return;
+            const consent = getConsent();
+            if (consent) {
+                applyConsent(consent.categories);
+                return;
+            }
+            cookieBanner.classList.add('is-visible');
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => cookieBanner.classList.add('is-open'));
+            });
+        }
+
+        function openPrefs() {
+            if (!cookiePrefsOverlay) return;
+            const consent = getConsent();
+            if (prefAnalytics) prefAnalytics.checked = !!consent?.categories?.analytics;
+            if (prefPersonalization) prefPersonalization.checked = !!consent?.categories?.personalization;
+            cookiePrefsOverlay.classList.add('is-visible');
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => cookiePrefsOverlay.classList.add('is-open'));
+            });
+        }
+
+        function closePrefs() {
+            if (!cookiePrefsOverlay) return;
+            cookiePrefsOverlay.classList.remove('is-open');
+            setTimeout(() => cookiePrefsOverlay.classList.remove('is-visible'), 350);
+        }
+
+        // "Aceptar todas": consentimiento a todas las categorías opcionales.
+        cookieAcceptBtn?.addEventListener('click', () => {
+            saveConsent({ analytics: true, personalization: true });
+            hideBanner();
+        });
+
+        // "Rechazar": solo cookies necesarias. La navegación continúa con normalidad,
+        // simplemente no se cargan analítica/personalización.
+        cookieRejectBtn?.addEventListener('click', () => {
+            saveConsent({ analytics: false, personalization: false });
+            hideBanner();
+        });
+
+        // "Configurar": abre el panel para elegir categoría por categoría.
+        cookieConfigureBtn?.addEventListener('click', () => {
+            openPrefs();
+        });
+
+        cookiePrefsSave?.addEventListener('click', () => {
+            saveConsent({
+                analytics: !!prefAnalytics?.checked,
+                personalization: !!prefPersonalization?.checked
+            });
+            closePrefs();
+            hideBanner();
+        });
+
+        cookiePrefsRejectAll?.addEventListener('click', () => {
+            saveConsent({ analytics: false, personalization: false });
+            closePrefs();
+            hideBanner();
+        });
+
+        cookiePrefsOverlay?.addEventListener('click', (e) => {
+            if (e.target === cookiePrefsOverlay) closePrefs();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closePrefs();
+        });
+
+        showBannerIfNeeded();
+    })();
+    </script>
+
+</body>
+</html>
