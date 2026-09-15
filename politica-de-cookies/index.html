@@ -1,1 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Política de Cookies</title>
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #222;
+    background: #fdfdfd;
+  }
+  h1 {
+    border-bottom: 3px solid #2c3e50;
+    padding-bottom: 10px;
+    color: #2c3e50;
+  }
+  h2 {
+    margin-top: 40px;
+    color: #2c3e50;
+    border-left: 5px solid #2c3e50;
+    padding-left: 10px;
+  }
+  .fecha {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.92em;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background-color: #2c3e50;
+    color: #fff;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  ul {
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  .nota {
+    background: #eef4fb;
+    border-left: 4px solid #2c3e50;
+    padding: 12px 16px;
+    margin: 20px 0;
+  }
+</style>
+</head>
+<body>
 
+<h1>Política de Cookies</h1>
+<p class="fecha">Última actualización: 14 de julio de 2.026</p>
+
+<h2>1. ¿Qué son las cookies?</h2>
+<p>Las cookies son pequeños archivos de texto que se almacenan en el dispositivo del usuario cuando accede a una aplicación o sitio web. Permiten reconocer al usuario en visitas sucesivas, recordar sus preferencias y analizar el uso de la plataforma.</p>
+
+<h2>2. Clasificación de cookies utilizadas</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Nombre / Identificador</th>
+      <th>Tipo</th>
+      <th>Finalidad</th>
+      <th>Duración</th>
+      <th>Proveedor</th>
+      <th>Puede desactivarse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>session_token</td>
+      <td>Técnica esencial</td>
+      <td>Mantener la sesión iniciada del usuario</td>
+      <td>Sesión</td>
+      <td>ByNow</td>
+      <td>No (esencial)</td>
+    </tr>
+    <tr>
+      <td>user_preferences</td>
+      <td>Técnica esencial</td>
+      <td>Recordar filtros y preferencias de búsqueda</td>
+      <td>12 meses</td>
+      <td>ByNow</td>
+      <td>No (esencial)</td>
+    </tr>
+    <tr>
+      <td>app_language</td>
+      <td>Técnica esencial</td>
+      <td>Idioma seleccionado por el usuario</td>
+      <td>12 meses</td>
+      <td>ByNow</td>
+      <td>No (esencial)</td>
+    </tr>
+    <tr>
+      <td>_ga, _gid (Firebase/GA)</td>
+      <td>Analítica</td>
+      <td>Análisis de uso: pantallas visitadas, tiempo en app, flujo de usuario</td>
+      <td>13 meses</td>
+      <td>Google Analytics / Firebase</td>
+      <td>Sí</td>
+    </tr>
+    <tr>
+      <td>mp_* (Mixpanel)</td>
+      <td>Analítica</td>
+      <td>Analítica de producto: embudos de conversión, retención</td>
+      <td>13 meses</td>
+      <td>Mixpanel</td>
+      <td>Sí</td>
+    </tr>
+    <tr>
+      <td>adjust_* o appsflyer_*</td>
+      <td>Analítica de atribución</td>
+      <td>Medir origen de instalaciones de la app</td>
+      <td>6 meses</td>
+      <td>Adjust / AppsFlyer</td>
+      <td>Sí</td>
+    </tr>
+    <tr>
+      <td>push_token</td>
+      <td>Funcional</td>
+      <td>Envío de notificaciones push al dispositivo</td>
+      <td>Indefinido hasta revocación</td>
+      <td>ByNow + proveedor push</td>
+      <td>Sí (desde ajustes del dispositivo)</td>
+    </tr>
+    <tr>
+      <td>Ads SDK (futuro — Fase 3)</td>
+      <td>Publicidad</td>
+      <td>Segmentación de publicidad nativa en la app</td>
+      <td>Por implementar</td>
+      <td>Por definir</td>
+      <td>Sí</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>3. Gestión del consentimiento</h2>
+<p>Conforme a las directrices de la AEPD:</p>
+<ul>
+  <li>Las cookies técnicas o esenciales no requieren consentimiento previo — son necesarias para el funcionamiento básico.</li>
+  <li>Las cookies analíticas, funcionales y publicitarias requieren consentimiento previo e informado.</li>
+  <li>El usuario debe poder aceptar o rechazar cada categoría de forma independiente ("consentimiento granular").</li>
+  <li>No se permite el "bloqueo de servicio" por no aceptar cookies no esenciales — la app debe funcionar si el usuario solo acepta las esenciales.</li>
+  <li>El consentimiento debe ser tan fácil de retirar como de otorgar.</li>
+</ul>
+<div class="nota">
+  Para implementar el banner de cookies conforme a la AEPD, se recomienda el uso de una CMP (Consent Management Platform) como Cookiebot, OneTrust o Axeptio, que disponen de planes gratuitos o de bajo coste para startups. El banner debe aparecer en el primer acceso a la app/web y no puede tener un botón de "Rechazar" menos visible que el de "Aceptar".
+</div>
+
+<h2>4. Cómo desactivar o eliminar cookies</h2>
+<ul>
+  <li><strong>Desde la propia app:</strong> Ajustes &gt; Privacidad &gt; Gestión de cookies</li>
+  <li><strong>Desde el dispositivo iOS:</strong> Ajustes &gt; Privacidad y seguridad &gt; Rastreo</li>
+  <li><strong>Desde el dispositivo Android:</strong> Ajustes &gt; Privacidad &gt; Anuncios &gt; Restablecer ID de publicidad</li>
+  <li><strong>Para la versión web:</strong> desde el navegador (ver instrucciones del navegador específico)</li>
+  <li><strong>Para retirar el consentimiento prestado anteriormente:</strong> acceder al panel de gestión de cookies en Ajustes de la app</li>
+</ul>
+
+</body>
+</html>
