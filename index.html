@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="es-ES">
 <head>
     <meta charset="UTF-8">
@@ -226,12 +226,12 @@
             transition: transform 0.4s ease;
         }
         body:has(a:hover) .cursor { transform: scale(2.5); }
-        body:has(.pcard:hover, .pillar:hover, #phoneMock:hover) .cursor {
+        body:has(.pcard:hover, .pillar:hover, .howto-card:hover) .cursor {
             transform: scale(3.2);
             background: var(--pink);
             border-radius: 4px;
         }
-        body:has(.pcard:hover, .pillar:hover, #phoneMock:hover) .cursor-ring {
+        body:has(.pcard:hover, .pillar:hover, .howto-card:hover) .cursor-ring {
             transform: scale(1.3) rotate(45deg);
         }
 
@@ -1720,6 +1720,92 @@
             .faq-item p { padding: 0 18px 18px; }
         }
 
+        /* ─────────────────────────────────────────
+           S4 · CÓMO FUNCIONA (3 tarjetas animadas)
+        ───────────────────────────────────────── */
+        .howto {
+            display: flex; align-items: center; justify-content: center;
+            width: 100%; max-width: 640px; padding: 40px 0;
+        }
+        .howto-card {
+            flex: 0 0 34%;
+            margin: 0 -2%;
+            position: relative;
+            transform: translateY(var(--lift)) rotate(var(--rot));
+            transition: transform .45s cubic-bezier(.34,1.56,.64,1), z-index 0s;
+            z-index: 1;
+        }
+        .howto-card[data-step="2"] { z-index: 2; flex-basis: 38%; }
+        .howto-inner {
+            background: #FAF8F6;
+            border: 3px solid var(--ink);
+            border-radius: 18px;
+            padding: 10px;
+            box-shadow: 8px 8px 0 var(--shadow);
+            animation: howtoFloat 4.5s ease-in-out infinite;
+            position: relative;
+        }
+        .howto-card[data-step="2"] .howto-inner { animation-delay: -1.5s; }
+        .howto-card[data-step="3"] .howto-inner { animation-delay: -3s; }
+        .howto-inner img { display: block; width: 100%; height: auto; border-radius: 10px; }
+        .howto-badge {
+            position: absolute; top: -16px; left: -14px; z-index: 3;
+            width: 40px; height: 40px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            background: var(--shadow); color: var(--ink);
+            border: 3px solid var(--ink);
+            font-family: 'Space Mono', monospace; font-weight: 700; font-size: 1rem;
+            transform: rotate(-12deg);
+            transition: transform .5s cubic-bezier(.34,1.56,.64,1);
+        }
+        .howto-card[data-step="2"] .howto-badge { color: #fff; }
+        .howto-card[data-step="3"] .howto-badge { left: auto; right: -14px; }
+        /* las pegatinas 1-2-3 "saltan" cuando termina el reparto de tarjetas */
+        .howto.pre .howto-badge { transform: scale(0) rotate(-180deg); }
+        .howto-card[data-step="2"] .howto-badge { transition-delay: .15s; }
+        .howto-card[data-step="3"] .howto-badge { transition-delay: .3s; }
+        .howto-card:hover .howto-badge { transition-delay: 0s; }
+        .howto-card:hover, .howto-card.is-hot {
+            transform: translateY(calc(var(--lift) - 22px)) rotate(0deg) scale(1.08);
+            z-index: 5;
+        }
+        .howto-card:hover .howto-inner, .howto-card.is-hot .howto-inner { box-shadow: 12px 12px 0 var(--ink); }
+        .howto-card:hover .howto-badge, .howto-card.is-hot .howto-badge { transform: rotate(348deg) scale(1.15); }
+        .step { cursor: default; transition: transform .3s; }
+        .step.is-hot { transform: translateX(8px); }
+        .howto-hint { display: none; }
+        @keyframes howtoFloat {
+            0%, 100% { transform: translateY(0); }
+            50%      { transform: translateY(-10px); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .howto-inner { animation: none; }
+            .howto-card, .howto-badge { transition: none; }
+        }
+        @media (max-width: 860px) {
+            .s4-right { flex-direction: column; padding: 0 0 56px; }
+            .howto {
+                max-width: none; justify-content: flex-start;
+                overflow-x: auto; scroll-snap-type: x mandatory;
+                padding: 36px 28px 44px; gap: 22px;
+                scrollbar-width: none; -webkit-overflow-scrolling: touch;
+            }
+            .howto::-webkit-scrollbar { display: none; }
+            .howto-card, .howto-card[data-step="2"] {
+                flex: 0 0 62vw; max-width: 260px; margin: 0;
+                scroll-snap-align: center;
+                transform: rotate(calc(var(--rot) / 2));
+            }
+            .howto-card:hover, .howto-card.is-hot { transform: rotate(0deg) scale(1.03); }
+            .howto-hint {
+                display: block; margin-top: -18px;
+                font-family: 'Space Mono', monospace; font-size: .72rem; font-weight: 700;
+                letter-spacing: .14em; text-transform: uppercase; color: var(--muted);
+                animation: howtoNudge 1.6s ease-in-out infinite;
+            }
+            @keyframes howtoNudge { 50% { transform: translateX(8px); } }
+        }
+
     </style>
 	
 	<!-- Meta Pixel Code (se carga SOLO tras consentimiento de "Publicidad" en el banner de cookies) -->
@@ -2007,7 +2093,7 @@ try {
             <h1 class="hero-eyebrow will-fade" id="hEye">Qué hacer en Valencia · Ahora mismo</h1>
             <img class="hero-title-img will-fade" id="hTitle" src="/img/wannanow-titulo.webp" alt="WannaNow" width="592" height="112" decoding="async" fetchpriority="high">
 	    <p  class="hero-sub will-fade" id="hSub"> DESCUBRE. PUBLICA. DISFRUTA. </p>
-            <p  class="hero-sub will-fade" id="hSub2"> Descubre planes y eventos cerca de ti, AHORA.</p>
+            <p  class="hero-sub will-fade" id="hSub2">Descubre planes y eventos cerca de ti, HOY</p>
         </div>
 
         <div class="scroll-cue">
@@ -2133,11 +2219,28 @@ try {
                 </div>
             </div>
             <div class="s4-right">
-                <div class="phone-wrap will-fade" id="phoneMock">
-                    <div class="phone-glow"></div>
-                    <!-- img/app-screen.jpg → ByNow app map screenshot -->
-                    <img src="/img/app-wannanow-como-funciona.webp" alt="Mapa de la app WannaNow con planes y eventos en Valencia en tiempo real" width="1254" height="816" decoding="async" loading="lazy">
+                <!-- Cómo funciona: 3 tarjetas animadas (antes: una sola imagen) -->
+                <div class="howto" id="howto">
+                    <figure class="howto-card" data-step="1" style="--rot:-7deg; --lift:28px; --shadow:var(--pink)">
+                        <div class="howto-deal"><div class="howto-inner">
+                            <span class="howto-badge">1</span>
+                            <img src="/img/abre-wannanow-app-planes-valencia.webp" alt="Abre WannaNow, la app para encontrar planes en Valencia" width="357" height="487" decoding="async" loading="lazy">
+                        </div></div>
+                    </figure>
+                    <figure class="howto-card" data-step="2" style="--rot:2deg; --lift:-18px; --shadow:var(--purple)">
+                        <div class="howto-deal"><div class="howto-inner">
+                            <span class="howto-badge">2</span>
+                            <img src="/img/mira-que-pasa-mapa-eventos-tiempo-real.webp" alt="Mira qué pasa: mapa de la app WannaNow con eventos y planes cerca de ti en tiempo real" width="451" height="755" decoding="async" loading="lazy">
+                        </div></div>
+                    </figure>
+                    <figure class="howto-card" data-step="3" style="--rot:8deg; --lift:36px; --shadow:var(--cyan)">
+                        <div class="howto-deal"><div class="howto-inner">
+                            <span class="howto-badge">3</span>
+                            <img src="/img/sal-y-vivelo-musica-en-directo-calle.webp" alt="Sal y vívelo: violinista tocando música en directo en la calle" width="377" height="616" decoding="async" loading="lazy">
+                        </div></div>
+                    </figure>
                 </div>
+                <p class="howto-hint" aria-hidden="true">Desliza →</p>
             </div>
         </div>
     </section>
@@ -2428,18 +2531,28 @@ try {
         );
 
         /* ── Phone mockup ──────────────────────── */
-        gsap.fromTo('#phoneMock',
-            { opacity: 0, scale: 0.82, y: 30 },
-            {
-                opacity: 1, scale: 1, y: 0,
-                duration: 1.1,
-                ease: 'back.out(1.4)',
-                scrollTrigger: {
-                    trigger: '#phoneMock',
-                    start: 'top 85%',
-                }
-            }
-        );
+        // Las tarjetas se "reparten" como cartas desde abajo, una tras otra
+        const howto = document.getElementById('howto');
+        howto?.classList.add('pre');
+        gsap.from('.howto-deal', {
+            opacity: 0, y: 160, rotation: (i) => [-25, 0, 25][i], scale: 0.6,
+            duration: 0.9, ease: 'back.out(1.6)', stagger: 0.18,
+            clearProps: 'all',
+            onComplete: () => howto?.classList.remove('pre'),
+            scrollTrigger: { trigger: '#howto', start: 'top 80%' }
+        });
+
+        // Pasar el ratón (o tocar) un paso de la izquierda resalta su tarjeta, y viceversa
+        const howSteps = document.querySelectorAll('#s4 .step');
+        const howCards = document.querySelectorAll('.howto-card');
+        const setHot = (i, on) => {
+            howSteps[i]?.classList.toggle('is-hot', on);
+            howCards[i]?.classList.toggle('is-hot', on);
+        };
+        [howSteps, howCards].forEach(list => list.forEach((el, i) => {
+            el.addEventListener('mouseenter', () => setHot(i, true));
+            el.addEventListener('mouseleave', () => setHot(i, false));
+        }));
 
         /* ── Emocion items ─────────────────────── */
         gsap.fromTo('.emo-item',
@@ -2509,7 +2622,7 @@ try {
         });
 
         /* ── Tilt magnético (tarjetas + mockup) ──── */
-        const tiltEls = document.querySelectorAll('.pcard, .pillar, #phoneMock');
+        const tiltEls = document.querySelectorAll('.pcard, .pillar');
         const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
         if (!prefersReducedMotion) {
