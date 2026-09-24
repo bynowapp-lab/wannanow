@@ -122,31 +122,8 @@
 }
     </script>
 
-    <!-- Meta Pixel Code (se carga SOLO tras consentimiento de "Publicidad" en el banner de cookies) -->
-<script>
-window.loadMetaPixel = function () {
-    if (window.fbq) { fbq('consent', 'grant'); return; }
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1104255735332840');
-    fbq('track', 'PageView');
-};
-window.revokeMetaPixel = function () {
-    if (window.fbq) fbq('consent', 'revoke');
-};
-// Si el usuario ya aceptó publicidad en una visita anterior, se carga al instante
-try {
-    var c = JSON.parse(localStorage.getItem('wannanow_cookie_consent') || 'null');
-    if (c && c.categories && c.categories.marketing) window.loadMetaPixel();
-} catch (e) {}
-</script>
-<!-- End Meta Pixel Code -->
+    <!-- Meta Pixel: configuración y carga (solo con consentimiento) en /js/meta-pixel.js -->
+<script src="/js/meta-pixel.js"></script>
 
     <link rel="icon" type="image/png" href="/FAVICON.png">
 </head>
