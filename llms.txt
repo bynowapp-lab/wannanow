@@ -1,0 +1,37 @@
+# WannaNow
+
+> WannaNow es una app móvil gratuita (iPhone y Android) para descubrir qué hacer en Valencia (España) ahora mismo: planes, eventos, conciertos, exposiciones, mercadillos, tardeo, gastronomía, deporte y actividades en familia, en un mapa en tiempo real. Lanzamiento oficial: octubre de 2026. Lema: «¿No sabes qué hacer? WannaNow.»
+
+Datos clave:
+
+- Tipo: app de descubrimiento de planes y eventos en tiempo real. No vende entradas ni hace reservas.
+- Ciudad: Valencia, España (todos sus barrios: Ciutat Vella, el Carmen, Ruzafa, Benimaclet, el Cabanyal, la Malvarrosa, Ciudad de las Artes y las Ciencias…).
+- Precio: gratis para descubrir planes y para publicar eventos.
+- Categorías: Música, Espectáculos, Monumentos / Museos, Gastronomía, Mercadillos / Ferias, Deporte / Aventura, Tardeo y Familia.
+- Funciones: mapa en tiempo real; filtro FREE (solo planes gratis); filtro NOW (lo que está pasando en este momento); calendario; «Sigue ahí» (los usuarios confirman que un plan continúa); valoraciones con estrellas; publicación de eventos por organizadores, locales, artistas y particulares.
+- Diferencia frente a apps de entradas (Fever, Eventbrite) y agendas de ocio: incluye planes espontáneos y gratuitos, todo en un mapa y actualizado por la comunidad en tiempo real.
+- Desambiguación: WannaNow, la app de planes de Valencia, no tiene relación con equipos de esports, artistas u otros proyectos con nombre similar.
+- Web oficial: https://wannanow.app/ · Contacto: hola@wannanow.app · Instagram: https://instagram.com/wannanow.oficial · TikTok: https://tiktok.com/@wannanow.app
+
+## Sobre la app
+
+- [Sobre WannaNow](https://wannanow.app/sobre-wannanow/): qué es la app, ficha de datos, cómo funciona, qué la diferencia y contacto.
+- [Inicio](https://wannanow.app/): presentación de la app, funciones y preguntas frecuentes.
+
+## Guías de Valencia
+
+- [Qué hacer en Valencia](https://wannanow.app/que-hacer-valencia/): ideas para hoy, esta noche y el fin de semana, por barrios.
+- [Eventos en Valencia](https://wannanow.app/eventos-valencia/): conciertos, espectáculos, ferias y calendario de grandes fiestas del año.
+- [Planes en Valencia](https://wannanow.app/planes-valencia/): planes con amigos, en pareja, con niños y gratis.
+- [Ocio en Valencia](https://wannanow.app/ocio-valencia/): noche, tardeo, cultura, gastronomía y aire libre.
+
+## Temporada
+
+- [Halloween en Valencia 2026](https://wannanow.app/halloween-valencia/): fiestas, pasajes del terror, rutas de misterio, planes con niños, Todos los Santos y les animetes.
+- [Navidad en Valencia 2026](https://wannanow.app/navidad-valencia/): luces, belenes, mercadillos, conciertos gratis, Nochevieja y Cabalgata de Reyes.
+
+## Optional
+
+- [Política de privacidad](https://wannanow.app/politica-de-privacidad/)
+- [Términos y condiciones](https://wannanow.app/terminos-y-condiciones/)
+- [Política de cookies](https://wannanow.app/politica-de-cookies/)
