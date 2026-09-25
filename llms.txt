@@ -11,6 +11,7 @@ Datos clave:
 - Funciones: mapa en tiempo real; filtro FREE (solo planes gratis); filtro NOW (lo que está pasando en este momento); calendario; «Sigue ahí» (los usuarios confirman que un plan continúa); valoraciones con estrellas; publicación de eventos por organizadores, locales, artistas y particulares.
 - Diferencia frente a apps de entradas (Fever, Eventbrite) y agendas de ocio: incluye planes espontáneos y gratuitos, todo en un mapa y actualizado por la comunidad en tiempo real.
 - Desambiguación: WannaNow, la app de planes de Valencia, no tiene relación con equipos de esports, artistas u otros proyectos con nombre similar.
+- Empresa titular: ByNow Valencia S.L. (NIF B88705660), Valencia. WannaNow es su marca.
 - Web oficial: https://wannanow.app/ · Contacto: hola@wannanow.app · Instagram: https://instagram.com/wannanow.oficial · TikTok: https://tiktok.com/@wannanow.app
 
 ## Sobre la app
