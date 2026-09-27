@@ -1,0 +1,32 @@
+name: Planes en Valencia hoy
+
+# Regenera /planes-valencia-hoy/ cada mañana con la agenda de la ciudad.
+on:
+  schedule:
+    - cron: '30 4 * * *'   # 06:30 en verano / 05:30 en invierno (hora de Valencia)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generar la página del día
+        run: python planes-hoy/generar.py
+      - name: Guardar cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add planes-valencia-hoy/index.html planes-hoy/ultimo.json sitemap.xml
+          if git diff --staged --quiet; then
+            echo "Sin cambios"
+          else
+            git commit -m "Planes en Valencia hoy: $(TZ=Europe/Madrid date +%F)"
+            git push
+          fi
