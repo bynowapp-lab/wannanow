@@ -37,7 +37,12 @@
       "description": "WannaNow es una app móvil gratuita para descubrir planes, eventos y ocio en Valencia en tiempo real, en un mapa.",
       "disambiguatingDescription": "App de planes y eventos en Valencia (España). Sin relación con equipos de esports, artistas u otros proyectos con nombre similar.",
       "url": "https://wannanow.app/",
-      "logo": "https://wannanow.app/FAVICON.png",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://wannanow.app/FAVICON.png",
+        "width": 381,
+        "height": 465
+      },
       "email": "hola@wannanow.app",
       "legalName": "ByNow Valencia S.L.",
       "taxID": "B88705660",
@@ -49,7 +54,12 @@
       "sameAs": [
         "https://instagram.com/wannanow.oficial",
         "https://tiktok.com/@wannanow.app"
-      ]
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "WannaNow",
+        "logo": "https://wannanow.app/FAVICON.png"
+      }
     },
     {
       "@type": "WebSite",
@@ -63,19 +73,52 @@
     },
     {
       "@type": "MobileApplication",
+      "@id": "https://wannanow.app/#app",
       "name": "WannaNow",
-      "operatingSystem": "iOS, Android",
+      "description": "App gratuita para descubrir qué hacer en Valencia ahora mismo: eventos y lugares (conciertos, mercadillos, museos, bares, restaurantes) en un mapa de Google Maps en tiempo real. Con el filtro NOW solo ves lo que está pasando o abierto en este momento.",
+      "url": "https://wannanow.app/",
       "applicationCategory": "LifestyleApplication",
+      "applicationSubCategory": "Ocio, planes y eventos",
+      "operatingSystem": "iOS, Android",
+      "availableOnDevice": "Smartphone",
+      "inLanguage": "es",
+      "countriesSupported": "ES",
+      "areaServed": {
+        "@type": "City",
+        "name": "Valencia"
+      },
+      "image": "https://wannanow.app/FAVICON.png",
+      "screenshot": [
+        "https://wannanow.app/img/mapa-planes-valencia-centro-wannanow.webp",
+        "https://wannanow.app/img/categorias-planes-ocio-wannanow.webp",
+        "https://wannanow.app/img/ficha-evento-espectaculo-valencia.webp",
+        "https://wannanow.app/img/publicar-evento-gratis-wannanow.webp"
+      ],
+      "featureList": [
+        "Mapa de Google Maps con eventos y lugares cerca de ti",
+        "Filtro NOW: solo lo que está pasando o abierto ahora (tiene en cuenta el horario de los lugares)",
+        "Filtro FREE: solo planes gratis",
+        "8 categorías: Música, Espectáculos, Monumentos / Museos, Gastronomía, Mercadillos / Ferias, Deporte / Aventura, Tardeo y Familia",
+        "Buscador que filtra el mapa en directo",
+        "Planes espontáneos de usuarios que se comparten en segundos y caducan a las 2 horas",
+        "«Sigue ahí» y valoraciones de la comunidad",
+        "Perfil de profesional para publicar eventos con fecha y lugar",
+        "Solo dos pantallas: Mapa y Publicar"
+      ],
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "EUR"
       },
-      "url": "https://app.wannanow.app",
-      "description": "App para descubrir qué hacer en Valencia ahora mismo: planes, eventos y ocio en tiempo real cerca de ti.",
+      "author": {
+        "@id": "https://wannanow.app/#org"
+      },
       "publisher": {
         "@id": "https://wannanow.app/#org"
-      }
+      },
+      "sameAs": [
+        "https://app.wannanow.app"
+      ]
     }
   ]
 }
