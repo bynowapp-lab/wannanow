@@ -1,0 +1,18 @@
+{
+ "_nota": "Textos propios de WannaNow para actividades de la agenda municipal (no copiar textos del Ayuntamiento). Clave = slug de valencia.es. '_excluir' = actividades con días sueltos que no deben salir como 'vigentes hoy'.",
+ "_excluir": [
+  "exhibiciones-de-vela-latina-lago-de-la-albufera-2026",
+  "mercafestes-en-los-mercados-municipales",
+  "centros-culturales-municipales"
+ ],
+ "semana-europea-del-deporte-2026": "Una semana para moverse: puertas abiertas en instalaciones deportivas municipales y sesiones de iniciación para probar deportes nuevos, en espacios públicos, la playa y centros deportivos.",
+ "palau-de-la-musica-programacion-2026": "El auditorio de la Alameda cierra su programación de septiembre: conciertos de la Orquesta de València, de la Banda Sinfónica Municipal y otras propuestas musicales.",
+ "valencia-design-fest-2026": "El festival del diseño reparte por la ciudad exposiciones, charlas, espacios pop-up y rutas temáticas. Esta semana coincide con Feria Hábitat València (28 sep – 1 oct).",
+ "cultura-als-barris-2026": "Cultura cerca de casa en 24 barrios: humor, teatro, conciertos, danza, cine y talleres. Hasta el 4 de octubre, además, zarzuela gratis al aire libre sobre un camión escenario.",
+ "jornadas-xats-salud-mental-y-cultura": "Tres días de encuentros que cruzan cultura y salud mental, con actividades abiertas al público.",
+ "_titulos": {
+  "valencia-design-fest-2026": "València Design Fest 2026",
+  "semana-europea-del-deporte-2026": "Semana Europea del Deporte",
+  "cultura-als-barris-2026": "Cultura als Barris 2026"
+ }
+}
