@@ -33,6 +33,15 @@ Datos clave:
 - [Halloween en Valencia 2026](https://wannanow.app/halloween-valencia/): fiestas, pasajes del terror, rutas de misterio, planes con niños, Todos los Santos y les animetes.
 - [Navidad en Valencia 2026](https://wannanow.app/navidad-valencia/): luces, belenes, mercadillos, conciertos gratis, Nochevieja y Cabalgata de Reyes.
 
+## English
+
+WannaNow is a free mobile app, created in Valencia (Spain), that shows on a live map what is happening right now near you: events in progress, open places and spontaneous plans shared by users. The app is in Spanish for now (more languages planned). Official launch: October 2026, iPhone and Android. Brand of ByNow Valencia S.L.
+
+- [WannaNow in English](https://wannanow.app/en/): what the app does, who it's for and FAQ.
+- [What is WannaNow?](https://wannanow.app/en/what-is-wannanow/): reference page with key facts, how it works, what "now" means and how it differs from agendas, Google Maps and Instagram.
+- [Things to do in Valencia](https://wannanow.app/en/things-to-do-valencia/): ideas by time of day and neighbourhood, free things to do, weekend and rainy-day plans.
+- [Things to do in Valencia today](https://wannanow.app/en/things-to-do-valencia-today/): updated every morning with picks from the city agenda and what's open that day of the week.
+
 ## Optional
 
 - [Política de privacidad](https://wannanow.app/politica-de-privacidad/)
