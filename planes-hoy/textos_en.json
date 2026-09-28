@@ -1,0 +1,15 @@
+{
+ "_nota": "English versions of WannaNow's own texts (textos.json) for /en/things-to-do-valencia-today/. Same keys (valencia.es slugs). If a slug has no English text, a generic English sentence per category is used.",
+ "semana-europea-del-deporte-2026": "A week to get moving: open days at municipal sports centres and taster sessions to try new sports, in public spaces, on the beach and at sports facilities.",
+ "palau-de-la-musica-programacion-2026": "The concert hall on the Alameda wraps up its September season: concerts by the Orquesta de València, the Municipal Symphonic Band and other music.",
+ "valencia-design-fest-2026": "The design festival spreads exhibitions, talks, pop-up spaces and themed routes across the city. This week it overlaps with the Feria Hábitat València trade fair (28 Sep – 1 Oct).",
+ "cultura-als-barris-2026": "Culture close to home in 24 neighbourhoods: comedy, theatre, concerts, dance, cinema and workshops. Until 4 October there is also free open-air zarzuela (Spanish operetta) on a stage truck.",
+ "jornadas-xats-salud-mental-y-cultura": "Three days of meetings bringing together culture and mental health, with activities open to the public.",
+ "_titulos": {
+  "valencia-design-fest-2026": "València Design Fest 2026",
+  "semana-europea-del-deporte-2026": "European Week of Sport",
+  "cultura-als-barris-2026": "Cultura als Barris 2026 (culture in the neighbourhoods)",
+  "palau-de-la-musica-programacion-2026": "Palau de la Música – September concerts",
+  "jornadas-xats-salud-mental-y-cultura": "XATS – Mental Health and Culture days"
+ }
+}

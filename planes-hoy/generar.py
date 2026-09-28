@@ -191,10 +191,125 @@ def main():
     sm = os.path.join(RAIZ, 'sitemap.xml')
     if os.path.exists(sm):
         t = open(sm, encoding='utf-8').read()
-        t2 = re.sub(r'(<loc>https://wannanow.app/planes-valencia-hoy/</loc><lastmod>)[0-9-]+', r'\g<1>' + hoy.isoformat(), t)
+        t2 = re.sub(r'(<loc>https://wannanow.app/planes-valencia-hoy/</loc>\s*(?:<xhtml:link[^>]*/>\s*)*<lastmod>)[0-9-]+', r'\g<1>' + hoy.isoformat(), t)
         if t2 != t:
             open(sm, 'w', encoding='utf-8').write(t2)
     print(hoy, '|', len(evs), 'actividades leídas |', [e['titulo'] for e in elegidos])
+    try:
+        generar_en(elegidos, hoy, leido, textos)
+    except Exception as ex:
+        print('Aviso: no se pudo generar la versión en inglés:', ex)
+
+
+# ─────────────────────────── ENGLISH (/en/things-to-do-valencia-today/) ───────────────────────────
+DAYS_EN = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+MONTHS_EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September',
+             'October', 'November', 'December']
+MONTHS_EN_C = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+CAT_EN = {'MÚSICA': 'Music', 'DEPORTES': 'Sport', 'EXPOSICIONES': 'Exhibitions', 'TEATRO': 'Theatre', 'CINE': 'Cinema',
+          'AGENDA INFANTIL': 'Kids', 'FESTIVALES': 'Festivals', 'FIESTAS': 'Festivities', 'OCIO ALTERNATIVO': 'Something different',
+          'VISITAS GUIADAS': 'Guided tours', 'RUTAS CULTURALES': 'Cultural routes', 'MERCADOS': 'Markets', 'TALLERES': 'Workshops',
+          'JORNADAS': 'Talks & meetups', 'CONFERENCIAS': 'Talks', 'ESPECTÁCULOS': 'Shows', 'DANZA': 'Dance', 'CIRCO': 'Circus',
+          'FERIAS': 'Fairs', 'ENCUENTROS': 'Meetups', 'MUSEOS MUNICIPALES': 'Museums'}
+FRASE_CAT_EN = {
+    'MÚSICA': 'Live music as part of the city programme.',
+    'DEPORTES': 'Sports activity open to everyone.',
+    'EXPOSICIONES': 'An exhibition you can visit these days.',
+    'TEATRO': 'Performing arts on stage these days.',
+    'CINE': 'Film screenings and cultural activities.',
+    'AGENDA INFANTIL': 'A plan to enjoy with kids.',
+    'FESTIVALES': 'A festival running in the city these days.',
+    'FIESTAS': 'A local festivity in the city.',
+    'OCIO ALTERNATIVO': 'Something different to do these days.',
+    'VISITAS GUIADAS': 'A guided tour to get to know the city better.',
+    'RUTAS CULTURALES': 'A cultural route around the city.',
+    'MERCADOS': 'A market in the city.',
+    'TALLERES': 'Workshops and hands-on activities.',
+    'JORNADAS': 'A programme of activities open to the public.',
+    'CONFERENCIAS': 'Talks open to the public.',
+}
+BLOQUES_EN = {
+    0: ['<strong>Mercado Central</strong> (Central Market): open 7:30 am – 3 pm (Monday to Saturday).',
+        'Heads-up: many museums <strong>close on Mondays</strong> (the Museo de Bellas Artes, Centre del Carme and L’ETNO open Tuesday to Sunday).',
+        'A good day for a walk in the <strong>Turia Gardens</strong> or on the beach — and for finding spontaneous plans nearby in the app.'],
+    1: ['<strong>Mercado Central</strong>: 7:30 am – 3 pm.',
+        '<strong>Free museums</strong> every day they open: <strong>Museo de Bellas Artes</strong> (10 am – 8 pm), <strong>Centre del Carme</strong> (11 am – 9 pm) and <strong>L’ETNO</strong> (10 am – 8 pm).',
+        'In the afternoon: exhibitions, workshops and activities at cultural centres.'],
+    4: ['<strong>Mercado Central</strong>: 7:30 am – 3 pm.',
+        'Free museums: <strong>Museo de Bellas Artes</strong>, <strong>Centre del Carme</strong> and <strong>L’ETNO</strong>.',
+        'At night the weekend kicks off: concerts, theatre and nightlife in Ruzafa, El Carmen and by the beach.'],
+    5: ['<strong>Mercado Central</strong>: open until 3 pm (closed on Sundays).',
+        '<strong>IVAM</strong>: free entry on Saturday afternoon (3 – 7 pm). <strong>National Ceramics Museum</strong>: free from 4 pm.',
+        'Afternoon drinks and nightlife: the liveliest day to go out.'],
+    6: ['<strong>Rastro de València</strong> flea market: Sundays and public holidays, 9 am – 2 pm, at Parque Amelia Chiner (Av. dels Tarongers).',
+        '<strong>Free municipal museums</strong> on Sundays and public holidays: L’Almoina, the City Museum, the Rice Museum, the Fallas Museum…',
+        '<strong>IVAM</strong> free all day and the <strong>National Ceramics Museum</strong> free from 10 am to 2 pm. The Mercado Central is closed.'],
+}
+BLOQUES_EN[2] = BLOQUES_EN[1]
+BLOQUES_EN[3] = BLOQUES_EN[1][:2] + ['Thursday evening: a good day for afternoon drinks and live music.']
+
+
+def fecha_c_en(d):
+    return f'{d.day} {MONTHS_EN_C[d.month - 1]}'
+
+
+def tarjeta_en(e, hoy, t_en, t_es):
+    ini, fin = date.fromisoformat(e['ini']), date.fromisoformat(e['fin'])
+    tag = ''
+    if fin == hoy:
+        tag = '<span class="tag">Last day</span>'
+    elif (fin - hoy).days <= 3:
+        tag = '<span class="tag">Last few days</span>'
+    elif ini == hoy:
+        tag = '<span class="tag">Starts today</span>'
+    rango = f'{fecha_c_en(ini)} – {fecha_c_en(fin)}' if ini != fin else fecha_c_en(ini)
+    texto = t_en.get(e['slug']) or FRASE_CAT_EN.get(e['cat'], 'An activity from the city agenda.')
+    cat = H.escape(CAT_EN.get(e['cat'], e['cat'].capitalize() if e['cat'] else 'Agenda'))
+    titulo = t_en.get('_titulos', {}).get(e['slug']) or t_es.get('_titulos', {}).get(e['slug']) or e['titulo']
+    if titulo.isupper():
+        titulo = titulo.capitalize()
+    return (f'                <article class="reveal"><span class="cat">{cat}</span>'
+            f'<h3>{H.escape(titulo)}</h3><p class="fechas">{rango}{tag}</p>'
+            f'<p>{texto}</p><a href="{BASE_EVENTO}{e["slug"]}" target="_blank" rel="noopener" hreflang="es">Times and details on valencia.es (in Spanish) →</a></article>')
+
+
+def generar_en(elegidos, hoy, leido, textos):
+    tpl_path = os.path.join(AQUI, 'plantilla_en.html')
+    if not os.path.exists(tpl_path):
+        return
+    try:
+        t_en = json.load(open(os.path.join(AQUI, 'textos_en.json'), encoding='utf-8'))
+    except Exception:
+        t_en = {}
+    day = DAYS_EN[hoy.weekday()]
+    larga = f'{day} {hoy.day} {MONTHS_EN[hoy.month - 1]}'
+    bloque = '                    <ul>\n' + '\n'.join(f'                        <li>{x}</li>' for x in BLOQUES_EN[hoy.weekday()]) + '\n                    </ul>'
+    tpl = open(tpl_path, encoding='utf-8').read()
+    rep = {
+        '{{TITLE}}': f'Things to do in Valencia today, {larga} | WannaNow',
+        '{{DESC}}': f'What to do in Valencia today, {larga}: picks from the city agenda, free museums and markets open today, and what\'s on right now in the WannaNow app.',
+        '{{LABEL}}': f'Today · {larga}',
+        '{{DIA}}': day,
+        '{{FECHA_LARGA}}': larga,
+        '{{FECHA_CORTA}}': f'Today · {day[:3]} {hoy.day} {MONTHS_EN_C[hoy.month - 1]}',
+        '{{FECHA_CORTA_MIN}}': f'{leido.day} {MONTHS_EN[leido.month - 1]} {leido.year}',
+        '{{FECHA_ACT}}': f'{larga} {hoy.year}',
+        '{{ISO}}': hoy.isoformat(),
+        '{{EVENTOS}}': '\n'.join(tarjeta_en(e, hoy, t_en, textos) for e in elegidos) or '                <article><p>No highlights in the city agenda today. See what\'s happening right now in the app.</p></article>',
+        '{{BLOQUE_DIA}}': bloque,
+    }
+    for k, v in rep.items():
+        tpl = tpl.replace(k, v)
+    out = os.path.join(RAIZ, 'en', 'things-to-do-valencia-today')
+    os.makedirs(out, exist_ok=True)
+    open(os.path.join(out, 'index.html'), 'w', encoding='utf-8').write(tpl)
+    sm = os.path.join(RAIZ, 'sitemap.xml')
+    if os.path.exists(sm):
+        t = open(sm, encoding='utf-8').read()
+        t2 = re.sub(r'(<loc>https://wannanow.app/en/things-to-do-valencia-today/</loc>\s*(?:<xhtml:link[^>]*/>\s*)*<lastmod>)[0-9-]+', r'\g<1>' + hoy.isoformat(), t)
+        if t2 != t:
+            open(sm, 'w', encoding='utf-8').write(t2)
+    print('EN ok')
 
 
 if __name__ == '__main__':
