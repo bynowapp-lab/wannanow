@@ -1,0 +1,60 @@
+name: Fuentes locales
+
+# Descarga las tipografías de Google Fonts y las guarda en /fonts/ para servirlas
+# desde wannanow.app (sin enviar la IP de los visitantes a Google).
+# Se lanza a mano (Run workflow) solo si cambian las fuentes.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fuentes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Descargar fuentes y crear css/fonts.css
+        run: |
+          python3 - <<'EOF'
+          import re, os, urllib.request
+          URL = ('https://fonts.googleapis.com/css2?family=Archivo+Black'
+                 '&family=DM+Serif+Display:ital@0;1'
+                 '&family=Plus+Jakarta+Sans:wght@400;500;600;700;800'
+                 '&family=Space+Mono:wght@400;700&display=swap')
+          UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+                '(KHTML, like Gecko) Chrome/124.0 Safari/537.36')
+          get = lambda u: urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': UA})).read()
+          css = get(URL).decode()
+          os.makedirs('fonts', exist_ok=True)
+          names = {}
+          out = ['/* WannaNow · tipografías alojadas en wannanow.app (antes Google Fonts).',
+                 '   Archivo Black, DM Serif Display, Plus Jakarta Sans y Space Mono: SIL Open Font License 1.1.',
+                 '   Generado por .github/workflows/fuentes.yml */']
+          for subset, block in re.findall(r'/\* ([a-z-]+) \*/\s*(@font-face \{.*?\})', css, re.S):
+              if subset not in ('latin', 'latin-ext'):
+                  continue
+              fam = re.search(r"font-family: '([^']+)'", block).group(1)
+              style = re.search(r'font-style: (\w+)', block).group(1)
+              weight = re.search(r'font-weight: (\d+)', block).group(1)
+              url = re.search(r'url\((https://[^)]+)\)', block).group(1)
+              if url not in names:
+                  name = f"{fam.lower().replace(' ', '-')}-{style}-{weight}-{subset}.woff2"
+                  names[url] = name
+                  open('fonts/' + name, 'wb').write(get(url))
+              out.append(f'/* {subset} */\n' + block.replace(url, '/fonts/' + names[url]))
+          open('css/fonts.css', 'w').write('\n'.join(out) + '\n')
+          for n in sorted(names.values()):
+              print(n, os.path.getsize('fonts/' + n))
+          EOF
+      - name: Guardar cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fonts css/fonts.css
+          if git diff --staged --quiet; then
+            echo "Sin cambios"
+          else
+            git commit -m "Tipografías alojadas en la propia web (sin Google Fonts)"
+            git push
+          fi
