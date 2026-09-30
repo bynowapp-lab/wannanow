@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de Cookies - WannaNow</title>
 <style>
   body {
@@ -24,10 +25,17 @@
     border-left: 5px solid #2c3e50;
     padding-left: 10px;
   }
+  h3 {
+    margin-top: 28px;
+    color: #2c3e50;
+  }
   .fecha {
     color: #666;
     font-style: italic;
     margin-bottom: 30px;
+  }
+  .tabla {
+    overflow-x: auto;
   }
   table {
     width: 100%;
@@ -60,19 +68,113 @@
     padding: 12px 16px;
     margin: 20px 0;
   }
+  a { color: #2c3e50; }
+  .volver { display: inline-block; margin-bottom: 10px; }
+  .btn {
+    font: inherit;
+    background: #2c3e50;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    padding: 10px 18px;
+    cursor: pointer;
+  }
+  .btn:hover { background: #1f2d3a; }
 </style>
     <meta name="description" content="Política de cookies de wannanow.app: qué cookies utilizamos, para qué sirven y cómo puedes aceptarlas, rechazarlas o configurarlas.">
     <link rel="canonical" href="https://wannanow.app/politica-de-cookies/">
 </head>
 <body>
 
+<a href="/" class="volver">← Volver a WannaNow</a>
+
 <h1>Política de Cookies</h1>
-<p class="fecha">Última actualización: 14 de julio de 2.026</p>
+<p class="fecha">Última actualización: 30 de septiembre de 2026</p>
 
 <h2>1. ¿Qué son las cookies?</h2>
 <p>Las cookies son pequeños archivos de texto que se almacenan en el dispositivo del usuario cuando accede a una aplicación o sitio web. Permiten reconocer al usuario en visitas sucesivas, recordar sus preferencias y analizar el uso de la plataforma.</p>
+<p>Esta política también cubre tecnologías similares, como el almacenamiento local del navegador (<em>localStorage</em>), que funcionan de forma parecida.</p>
 
-<h2>2. Clasificación de cookies utilizadas</h2>
+<h2>2. Responsable</h2>
+<p>El responsable de las cookies propias es <strong>ByNow Valencia S.L.</strong> (NIF B88705660), titular de la marca WannaNow. Contacto: <a href="mailto:privacidad@wannanow.app">privacidad@wannanow.app</a>. En las tablas, «ByNow» se refiere a esta empresa.</p>
+
+<h2>3. Cookies y almacenamiento de la web wannanow.app</h2>
+<p>La web wannanow.app no usa cookies de analítica (no usamos Google Analytics ni herramientas similares en la web). Solo utiliza lo siguiente:</p>
+<div class="tabla">
+<table>
+  <thead>
+    <tr>
+      <th>Nombre / Identificador</th>
+      <th>Tipo</th>
+      <th>Finalidad</th>
+      <th>Duración</th>
+      <th>Proveedor</th>
+      <th>Puede desactivarse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>wannanow_cookie_consent (almacenamiento local)</td>
+      <td>Técnica esencial</td>
+      <td>Recordar qué categorías de cookies has aceptado o rechazado en el aviso de cookies</td>
+      <td>Hasta que cambies tu elección o borres los datos del navegador</td>
+      <td>ByNow (propia)</td>
+      <td>No (esencial)</td>
+    </tr>
+    <tr>
+      <td>_fbp (Meta Pixel)</td>
+      <td>Publicidad</td>
+      <td>Medir nuestras campañas y mostrarte anuncios relevantes en Facebook e Instagram</td>
+      <td>90 días</td>
+      <td>Meta Platforms Ireland Ltd. (tercero)</td>
+      <td>Sí. Solo se instala si aceptas la categoría «Publicidad». Actualmente el Pixel está desactivado.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3>Servicios externos que se usan al visitar la web</h3>
+<p>Para mostrar la web, tu navegador se conecta a los siguientes proveedores, que reciben técnicamente tu dirección IP. No instalan cookies en tu dispositivo, salvo el Meta Pixel indicado arriba:</p>
+<div class="tabla">
+<table>
+  <thead>
+    <tr>
+      <th>Proveedor</th>
+      <th>Función</th>
+      <th>Cuándo</th>
+      <th>Ubicación</th>
+      <th>Garantías</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GitHub, Inc. (GitHub Pages, grupo Microsoft), con la red de distribución de Fastly, Inc.</td>
+      <td>Alojamiento y entrega de la web</td>
+      <td>En todas las visitas</td>
+      <td>EE. UU. (con servidores de caché en Europa)</td>
+      <td>EU-US Data Privacy Framework</td>
+    </tr>
+    <tr>
+      <td>Cloudflare, Inc. (cdnjs)</td>
+      <td>Librería de animaciones de la página de inicio</td>
+      <td>Al visitar la página de inicio</td>
+      <td>EE. UU. (red global)</td>
+      <td>EU-US Data Privacy Framework y cláusulas contractuales tipo</td>
+    </tr>
+    <tr>
+      <td>Meta Platforms Ireland Ltd. / Meta Platforms, Inc.</td>
+      <td>Meta Pixel (publicidad)</td>
+      <td>Solo si aceptas «Publicidad» y el Pixel está activo</td>
+      <td>UE / EE. UU.</td>
+      <td>EU-US Data Privacy Framework y cláusulas contractuales tipo</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>Las tipografías de la web se sirven desde nuestro propio dominio, por lo que tu navegador no se conecta a Google Fonts.</p>
+
+<h2>4. Cookies de la app WannaNow</h2>
+<div class="tabla">
 <table>
   <thead>
     <tr>
@@ -142,7 +244,7 @@
       <td>Sí (desde ajustes del dispositivo)</td>
     </tr>
     <tr>
-      <td>Ads SDK (futuro — Fase 3)</td>
+      <td>SDK de publicidad (aún no implementado)</td>
       <td>Publicidad</td>
       <td>Segmentación de publicidad nativa en la app</td>
       <td>Por implementar</td>
@@ -151,8 +253,9 @@
     </tr>
   </tbody>
 </table>
+</div>
 
-<h2>3. Gestión del consentimiento</h2>
+<h2>5. Gestión del consentimiento</h2>
 <p>Conforme a las directrices de la AEPD:</p>
 <ul>
   <li>Las cookies técnicas o esenciales no requieren consentimiento previo — son necesarias para el funcionamiento básico.</li>
@@ -161,18 +264,28 @@
   <li>No se permite el "bloqueo de servicio" por no aceptar cookies no esenciales — la app debe funcionar si el usuario solo acepta las esenciales.</li>
   <li>El consentimiento debe ser tan fácil de retirar como de otorgar.</li>
 </ul>
-<div class="nota">
-  Para implementar el banner de cookies conforme a la AEPD, se recomienda el uso de una CMP (Consent Management Platform) como Cookiebot, OneTrust o Axeptio, que disponen de planes gratuitos o de bajo coste para startups. El banner debe aparecer en el primer acceso a la app/web y no puede tener un botón de "Rechazar" menos visible que el de "Aceptar".
-</div>
+<p>En la web, el aviso de cookies aparece en tu primera visita con tres opciones igual de visibles: «Rechazar», «Configurar» y «Aceptar todas». Si rechazas, la web funciona igual.</p>
 
-<h2>4. Cómo desactivar o eliminar cookies</h2>
+<h2>6. Cómo desactivar o eliminar cookies</h2>
 <ul>
   <li><strong>Desde la propia app:</strong> Ajustes &gt; Privacidad &gt; Gestión de cookies</li>
   <li><strong>Desde el dispositivo iOS:</strong> Ajustes &gt; Privacidad y seguridad &gt; Rastreo</li>
   <li><strong>Desde el dispositivo Android:</strong> Ajustes &gt; Privacidad &gt; Anuncios &gt; Restablecer ID de publicidad</li>
-  <li><strong>Para la versión web:</strong> desde el navegador (ver instrucciones del navegador específico)</li>
-  <li><strong>Para retirar el consentimiento prestado anteriormente:</strong> acceder al panel de gestión de cookies en Ajustes de la app</li>
+  <li><strong>Para la versión web:</strong> con el botón de abajo, que borra tu elección y vuelve a mostrar el aviso de cookies, o desde el navegador (ver instrucciones del navegador específico)</li>
+  <li><strong>Para retirar el consentimiento prestado anteriormente:</strong> en la app, desde el panel de gestión de cookies en Ajustes; en la web, con este botón:</li>
 </ul>
+<p><button type="button" class="btn" id="cambiarCookies">Cambiar mi elección de cookies</button></p>
+<script>
+document.getElementById('cambiarCookies').addEventListener('click', function () {
+    try { localStorage.removeItem('wannanow_cookie_consent'); } catch (e) {}
+    document.cookie = '_fbp=; Max-Age=0; path=/; domain=.wannanow.app';
+    document.cookie = '_fbp=; Max-Age=0; path=/';
+    location.href = '/';
+});
+</script>
+
+<h2>7. Cambios en esta política</h2>
+<p>Si cambiamos las cookies o los proveedores que usamos, actualizaremos esta página y la fecha de «Última actualización».</p>
 
 </body>
 </html>
