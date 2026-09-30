@@ -2,6 +2,7 @@ name: Fuentes locales
 
 # Descarga las tipografías de Google Fonts y las guarda en /fonts/ para servirlas
 # desde wannanow.app (sin enviar la IP de los visitantes a Google).
+# Además cambia el enlace a Google Fonts de los HTML por /css/fonts.css.
 # Se lanza a mano (Run workflow) solo si cambian las fuentes.
 on:
   workflow_dispatch:
@@ -47,11 +48,28 @@ jobs:
           for n in sorted(names.values()):
               print(n, os.path.getsize('fonts/' + n))
           EOF
+      - name: Usar las fuentes locales en los HTML
+        run: |
+          python3 - <<'EOF'
+          import re, glob
+          NEW = ('    <!-- Tipografías alojadas en wannanow.app (sin Google Fonts) -->\n'
+                 '    <link rel="preload" href="/fonts/plus-jakarta-sans-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>\n'
+                 '    <link rel="stylesheet" href="/css/fonts.css">\n')
+          pat = re.compile(r'    <!-- Google Fonts -->\n(?:[^\n]*\n)*?[^\n]*fonts\.googleapis\.com/css2[^\n]*\n')
+          for f in sorted(glob.glob('**/*.html', recursive=True)):
+              s = open(f, encoding='utf-8').read()
+              t, n = pat.subn(NEW, s)
+              if n:
+                  open(f, 'w', encoding='utf-8').write(t)
+                  print('cambiado:', f)
+              elif 'fonts.googleapis' in s:
+                  print('AVISO, sigue con Google Fonts:', f)
+          EOF
       - name: Guardar cambios
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add fonts css/fonts.css
+          git add -A
           if git diff --staged --quiet; then
             echo "Sin cambios"
           else
