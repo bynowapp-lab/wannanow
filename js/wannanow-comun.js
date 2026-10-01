@@ -103,13 +103,38 @@
         // Punto único donde activar/desactivar scripts de terceros según lo aceptado.
         // Ejemplo: if (categories.analytics) { /* cargar analítica */ }
         function applyConsent(categories) {
-            window.wannanowConsent = categories;
-            if (categories && categories.marketing) {
-                window.loadMetaPixel && window.loadMetaPixel();
-            } else {
-                window.revokeMetaPixel && window.revokeMetaPixel();
-            }
-        }
+    window.wannanowConsent = categories || {};
+
+    // Comunicar las preferencias al Google Consent Mode v2
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        window.dataLayer.push(arguments);
+    }
+
+    gtag('consent', 'update', {
+        'analytics_storage': categories?.analytics ? 'granted' : 'denied',
+        'ad_storage': categories?.marketing ? 'granted' : 'denied',
+        'ad_user_data': categories?.marketing ? 'granted' : 'denied',
+        'ad_personalization': categories?.marketing ? 'granted' : 'denied',
+        'personalization_storage': categories?.personalization ? 'granted' : 'denied'
+    });
+
+    // Evento disponible para Google Tag Manager
+    window.dataLayer.push({
+        event: 'wannanow_consent_update',
+        consent_analytics: !!categories?.analytics,
+        consent_marketing: !!categories?.marketing,
+        consent_personalization: !!categories?.personalization
+    });
+
+    // Sistema actual de Meta Pixel
+    if (categories?.marketing) {
+        window.loadMetaPixel && window.loadMetaPixel();
+    } else {
+        window.revokeMetaPixel && window.revokeMetaPixel();
+    }
+}
 
         function hideBanner() {
             if (!cookieBanner) return;
