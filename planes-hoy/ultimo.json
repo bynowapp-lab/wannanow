@@ -1,48 +1,6 @@
 {
- "leido": "2026-10-03",
+ "leido": "2026-10-04",
  "eventos": [
-  {
-   "titulo": "Museo de Prehistoria de València - Actividades",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "museu-de-prehistoria-de-valencia"
-  },
-  {
-   "titulo": "Bioparc - Agenda de actividades",
-   "cat": "OCIO ALTERNATIVO",
-   "ini": "2026-01-03",
-   "fin": "2026-12-31",
-   "slug": "bioparc-valencia"
-  },
-  {
-   "titulo": "Exposición permanente en La Alquería de Félix",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "exposicio-permanent-a-l-alqueria-de-felix"
-  },
-  {
-   "titulo": "Murales 'Dones de Ciència'",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-03",
-   "fin": "2026-12-31",
-   "slug": "ruta-dones-de-ciencia"
-  },
-  {
-   "titulo": "CULTURA ALS BARRIS 2026",
-   "cat": "CINE",
-   "ini": "2026-09-25",
-   "fin": "2026-11-22",
-   "slug": "cultura-als-barris-2026"
-  },
-  {
-   "titulo": "FESTIVIDAD DEL 9 D'OCTUBRE 2026",
-   "cat": "FIESTAS",
-   "ini": "2026-10-02",
-   "fin": "2026-10-09",
-   "slug": "festividad-del-9-d-octubre-2026"
-  },
   {
    "titulo": "Museo de las Ciencias - Programación",
    "cat": "AGENDA INFANTIL",
@@ -105,6 +63,48 @@
    "ini": "2026-09-28",
    "fin": "2026-10-04",
    "slug": "cc-aben-al-abbar-programacion"
+  },
+  {
+   "titulo": "Museo de Prehistoria de València - Actividades",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "museu-de-prehistoria-de-valencia"
+  },
+  {
+   "titulo": "Bioparc - Agenda de actividades",
+   "cat": "OCIO ALTERNATIVO",
+   "ini": "2026-01-03",
+   "fin": "2026-12-31",
+   "slug": "bioparc-valencia"
+  },
+  {
+   "titulo": "Exposición permanente en La Alquería de Félix",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "exposicio-permanent-a-l-alqueria-de-felix"
+  },
+  {
+   "titulo": "Murales 'Dones de Ciència'",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-03",
+   "fin": "2026-12-31",
+   "slug": "ruta-dones-de-ciencia"
+  },
+  {
+   "titulo": "FESTIVIDAD DEL 9 D'OCTUBRE 2026",
+   "cat": "FIESTAS",
+   "ini": "2026-10-02",
+   "fin": "2026-10-09",
+   "slug": "festividad-del-9-d-octubre-2026"
+  },
+  {
+   "titulo": "CULTURA ALS BARRIS 2026",
+   "cat": "CINE",
+   "ini": "2026-09-25",
+   "fin": "2026-11-22",
+   "slug": "cultura-als-barris-2026"
   },
   {
    "titulo": "Fundación Cañada Blanch – Programación cultural",
@@ -434,13 +434,6 @@
    "ini": "2026-09-01",
    "fin": "2026-12-31",
    "slug": "alqueria-dels-moros-visitas-gratuitas"
-  },
-  {
-   "titulo": "EXHIBICIONES DE VELA LATINA - L'ALBUFERA",
-   "cat": "OCIO ALTERNATIVO",
-   "ini": "2026-05-30",
-   "fin": "2026-10-03",
-   "slug": "exhibiciones-de-vela-latina-lago-de-la-albufera-2026"
   },
   {
    "titulo": "Oficina de l'Energia: actividades gratuitas",
