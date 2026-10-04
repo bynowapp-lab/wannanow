@@ -1,6 +1,6 @@
 # WannaNow
 
-> WannaNow es una app móvil gratuita (iPhone y Android) para descubrir qué hacer en Valencia (España) ahora mismo: planes, eventos, conciertos, exposiciones, mercadillos, tardeo, gastronomía, deporte y actividades en familia, en un mapa en tiempo real. Lanzamiento oficial: octubre de 2026. Lema: «¿No sabes qué hacer? WannaNow.»
+> WannaNow es una app móvil gratuita (disponible en Android; iPhone próximamente) para descubrir qué hacer en Valencia (España) ahora mismo: planes, eventos, conciertos, exposiciones, mercadillos, tardeo, gastronomía, deporte y actividades en familia, en un mapa en tiempo real. Disponible en Google Play desde octubre de 2026. Lema: «¿No sabes qué hacer? WannaNow.»
 
 Datos clave:
 
@@ -12,6 +12,7 @@ Datos clave:
 - Diferencia frente a apps de entradas (Fever, Eventbrite) y agendas de ocio: incluye planes espontáneos y gratuitos, todo en un mapa y actualizado por la comunidad en tiempo real.
 - Desambiguación: WannaNow, la app de planes de Valencia, no tiene relación con equipos de esports, artistas u otros proyectos con nombre similar.
 - Empresa titular: ByNow Valencia S.L. (NIF B88705660), Valencia. WannaNow es su marca.
+- Descarga Android (Google Play): https://play.google.com/store/apps/details?id=app.wannanow
 - Web oficial: https://wannanow.app/ · Contacto: hola@wannanow.app · Instagram: https://instagram.com/wannanow.oficial · TikTok: https://tiktok.com/@wannanow.app
 
 ## Sobre la app
@@ -35,7 +36,7 @@ Datos clave:
 
 ## English
 
-WannaNow is a free mobile app, created in Valencia (Spain), that shows on a live map what is happening right now near you: events in progress, open places and spontaneous plans shared by users. The app is in Spanish for now (more languages planned). Official launch: October 2026, iPhone and Android. Brand of ByNow Valencia S.L.
+WannaNow is a free mobile app, created in Valencia (Spain), that shows on a live map what is happening right now near you: events in progress, open places and spontaneous plans shared by users. The app is in Spanish for now (more languages planned). Available on Android (Google Play) since October 2026: https://play.google.com/store/apps/details?id=app.wannanow . iPhone version coming soon. Brand of ByNow Valencia S.L.
 
 - [WannaNow in English](https://wannanow.app/en/): what the app does, who it's for and FAQ.
 - [What is WannaNow?](https://wannanow.app/en/what-is-wannanow/): reference page with key facts, how it works, what "now" means and how it differs from agendas, Google Maps and Instagram.
