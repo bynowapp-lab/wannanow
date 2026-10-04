@@ -1758,3 +1758,12 @@
     .l-sec { padding: 68px 0; }
     .l-hero::before { width: 70px; height: 70px; top: 90px; }
 }
+
+/* Insignias oficiales de Google Play (oct. 2026) */
+.nav-pill.nav-pill--play { padding: 0; background: none; border: 0; box-shadow: none; line-height: 0; }
+.nav-pill.nav-pill--play:hover { transform: translateY(-1px); box-shadow: none; }
+.nav-pill--play img { height: 43px; width: auto; display: block; }
+.btn-play { display: inline-flex; align-items: center; line-height: 0; transition: transform .2s ease; }
+.btn-play:hover { transform: translateY(-2px); }
+.btn-play img { height: 60px; width: auto; display: block; }
+.gp-legal { display: inline-block; margin-top: 4px; font-size: .75em; opacity: .75; }
