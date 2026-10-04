@@ -1767,3 +1767,4 @@
 .btn-play:hover { transform: translateY(-2px); }
 .btn-play img { height: 60px; width: auto; display: block; }
 .gp-legal { display: inline-block; margin-top: 4px; font-size: .75em; opacity: .75; }
+@media (max-width: 420px) { .nav-pill--play img { height: 36px; } }
