@@ -1,6 +1,34 @@
 {
- "leido": "2026-10-04",
+ "leido": "2026-10-05",
  "eventos": [
+  {
+   "titulo": "Museo de Prehistoria de València - Actividades",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "museu-de-prehistoria-de-valencia"
+  },
+  {
+   "titulo": "Bioparc - Agenda de actividades",
+   "cat": "OCIO ALTERNATIVO",
+   "ini": "2026-01-03",
+   "fin": "2026-12-31",
+   "slug": "bioparc-valencia"
+  },
+  {
+   "titulo": "Exposición permanente en La Alquería de Félix",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "exposicio-permanent-a-l-alqueria-de-felix"
+  },
+  {
+   "titulo": "Murales 'Dones de Ciència'",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-03",
+   "fin": "2026-12-31",
+   "slug": "ruta-dones-de-ciencia"
+  },
   {
    "titulo": "Museo de las Ciencias - Programación",
    "cat": "AGENDA INFANTIL",
@@ -58,53 +86,11 @@
    "slug": "exposicion-altres"
   },
   {
-   "titulo": "CC Aben Al-Abbar: programación semanal",
-   "cat": "CINE",
-   "ini": "2026-09-28",
-   "fin": "2026-10-04",
-   "slug": "cc-aben-al-abbar-programacion"
-  },
-  {
-   "titulo": "Museo de Prehistoria de València - Actividades",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
+   "titulo": "Oficina de l'Energia: actividades gratuitas",
+   "cat": "TALLERES",
+   "ini": "2026-09-08",
    "fin": "2026-12-31",
-   "slug": "museu-de-prehistoria-de-valencia"
-  },
-  {
-   "titulo": "Bioparc - Agenda de actividades",
-   "cat": "OCIO ALTERNATIVO",
-   "ini": "2026-01-03",
-   "fin": "2026-12-31",
-   "slug": "bioparc-valencia"
-  },
-  {
-   "titulo": "Exposición permanente en La Alquería de Félix",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "exposicio-permanent-a-l-alqueria-de-felix"
-  },
-  {
-   "titulo": "Murales 'Dones de Ciència'",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-03",
-   "fin": "2026-12-31",
-   "slug": "ruta-dones-de-ciencia"
-  },
-  {
-   "titulo": "FESTIVIDAD DEL 9 D'OCTUBRE 2026",
-   "cat": "FIESTAS",
-   "ini": "2026-10-02",
-   "fin": "2026-10-09",
-   "slug": "festividad-del-9-d-octubre-2026"
-  },
-  {
-   "titulo": "CULTURA ALS BARRIS 2026",
-   "cat": "CINE",
-   "ini": "2026-09-25",
-   "fin": "2026-11-22",
-   "slug": "cultura-als-barris-2026"
+   "slug": "oficina-de-l-energia-actividades-gratuitas"
   },
   {
    "titulo": "Fundación Cañada Blanch – Programación cultural",
@@ -163,25 +149,25 @@
    "slug": "teatre-el-musical-programacio"
   },
   {
+   "titulo": "FESTIVIDAD DEL 9 D'OCTUBRE 2026",
+   "cat": "FIESTAS",
+   "ini": "2026-10-02",
+   "fin": "2026-10-09",
+   "slug": "festividad-del-9-d-octubre-2026"
+  },
+  {
+   "titulo": "CC Aben Al-Abbar: programación semanal",
+   "cat": "CINE",
+   "ini": "2026-10-05",
+   "fin": "2026-10-11",
+   "slug": "cc-aben-al-abbar-programacion"
+  },
+  {
    "titulo": "CC Escorxador - Programación de otoño",
    "cat": "ENCUENTROS",
    "ini": "2026-10-01",
    "fin": "2026-12-20",
    "slug": "cc-escorxador-programacion-2025-26"
-  },
-  {
-   "titulo": "Presentación de libro inclusivo y exposición de cerámica",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-10-07",
-   "fin": "2026-10-30",
-   "slug": "presentacion-de-libro-inclusivo-y-exposicion-de-ceramica"
-  },
-  {
-   "titulo": "CENTROS CULTURALES MUNICIPALES",
-   "cat": "AGENDA INFANTIL",
-   "ini": "2026-09-01",
-   "fin": "2026-12-31",
-   "slug": "centros-culturales-municipales"
   },
   {
    "titulo": "Carme Teatre - Programación",
@@ -268,6 +254,55 @@
    "slug": "mercafestes-en-los-mercados-municipales"
   },
   {
+   "titulo": "Museu de la Mar - Casa dels Bous: visitas guiadas gratuitas",
+   "cat": "MUSEOS MUNICIPALES",
+   "ini": "2026-10-03",
+   "fin": "2026-10-31",
+   "slug": "museu-de-la-mar-casa-dels-bous-visitas-guiadas-gratuitas"
+  },
+  {
+   "titulo": "CULTURA ALS BARRIS 2026",
+   "cat": "CINE",
+   "ini": "2026-09-25",
+   "fin": "2026-11-22",
+   "slug": "cultura-als-barris-2026"
+  },
+  {
+   "titulo": "Bibliotecas Municipales: programación de octubre",
+   "cat": "AGENDA INFANTIL",
+   "ini": "2026-10-01",
+   "fin": "2026-10-31",
+   "slug": "biblioteques-municipals-programacio-mensual"
+  },
+  {
+   "titulo": "Ruta Santo Cáliz: visitas guiadas gratuitas",
+   "cat": "VISITAS GUIADAS",
+   "ini": "2026-05-09",
+   "fin": "2026-10-25",
+   "slug": "ruta-santo-caliz-visitas-guiadas"
+  },
+  {
+   "titulo": "CC Reina 121 - Programación de septiembre a diciembre",
+   "cat": "ENCUENTROS",
+   "ini": "2026-10-01",
+   "fin": "2026-12-19",
+   "slug": "cc-reina-121-programacion"
+  },
+  {
+   "titulo": "9 de octubre: Mercado medieval de València 2026",
+   "cat": "FIESTAS",
+   "ini": "2026-10-02",
+   "fin": "2026-10-13",
+   "slug": "9-d-octubre-mercat-medieval-2026"
+  },
+  {
+   "titulo": "Rutes Literàries València - Rutas guiadas gratuitas",
+   "cat": "VISITAS GUIADAS",
+   "ini": "2026-10-10",
+   "fin": "2026-10-31",
+   "slug": "rutes-literaries-valencia-rutas-guiadas-gratuitas"
+  },
+  {
    "titulo": "Exposición 'La València de Blasco Ibáñez'",
    "cat": "EXPOSICIONES",
    "ini": "2026-02-12",
@@ -331,13 +366,6 @@
    "slug": "programacio-cultural-octubre-centre-de-cultura-contemporania"
   },
   {
-   "titulo": "VALÈNCIA DESIGN FEST 2026",
-   "cat": "FESTIVALES",
-   "ini": "2026-09-10",
-   "fin": "2026-10-31",
-   "slug": "valencia-design-fest-2026"
-  },
-  {
    "titulo": "Almudín - Exposición por el III Año Jubilar del Santo Cáliz",
    "cat": "EXPOSICIONES",
    "ini": "2025-10-30",
@@ -345,18 +373,25 @@
    "slug": "almudin-exposicion-iii-ano-jubilar-santo-caliz"
   },
   {
-   "titulo": "CC Reina 121 - Programación de septiembre a diciembre",
-   "cat": "ENCUENTROS",
-   "ini": "2026-10-01",
-   "fin": "2026-12-19",
-   "slug": "cc-reina-121-programacion"
+   "titulo": "VALÈNCIA DESIGN FEST 2026",
+   "cat": "FESTIVALES",
+   "ini": "2026-09-10",
+   "fin": "2026-10-31",
+   "slug": "valencia-design-fest-2026"
   },
   {
-   "titulo": "Ruta Santo Cáliz: visitas guiadas gratuitas",
-   "cat": "VISITAS GUIADAS",
-   "ini": "2026-05-09",
-   "fin": "2026-10-25",
-   "slug": "ruta-santo-caliz-visitas-guiadas"
+   "titulo": "CC Nave 3 Ribes - Programación de octubre",
+   "cat": "CINE",
+   "ini": "2026-10-01",
+   "fin": "2026-10-31",
+   "slug": "cc-nave-3-ribes-cas"
+  },
+  {
+   "titulo": "Presentación de libro inclusivo y exposición de cerámica",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-10-07",
+   "fin": "2026-10-30",
+   "slug": "presentacion-de-libro-inclusivo-y-exposicion-de-ceramica"
   },
   {
    "titulo": "Sala de exposiciones 'Edificio del Reloj' - Programación",
@@ -436,25 +471,11 @@
    "slug": "alqueria-dels-moros-visitas-gratuitas"
   },
   {
-   "titulo": "Oficina de l'Energia: actividades gratuitas",
-   "cat": "TALLERES",
-   "ini": "2026-09-08",
+   "titulo": "CENTROS CULTURALES MUNICIPALES",
+   "cat": "AGENDA INFANTIL",
+   "ini": "2026-09-01",
    "fin": "2026-12-31",
-   "slug": "oficina-de-l-energia-actividades-gratuitas"
-  },
-  {
-   "titulo": "Museu de la Mar - Casa dels Bous: visitas guiadas gratuitas",
-   "cat": "MUSEOS MUNICIPALES",
-   "ini": "2026-10-03",
-   "fin": "2026-10-31",
-   "slug": "museu-de-la-mar-casa-dels-bous-visitas-guiadas-gratuitas"
-  },
-  {
-   "titulo": "9 de octubre: Mercado medieval de València 2026",
-   "cat": "FIESTAS",
-   "ini": "2026-10-02",
-   "fin": "2026-10-13",
-   "slug": "9-d-octubre-mercat-medieval-2026"
+   "slug": "centros-culturales-municipales"
   }
  ]
 }
