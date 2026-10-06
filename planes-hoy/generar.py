@@ -151,6 +151,86 @@ def tarjeta(e, hoy, textos):
             f'<p>{texto}</p><a href="{BASE_EVENTO}{e["slug"]}" target="_blank" rel="noopener">Horarios y detalles en valencia.es →</a></article>')
 
 
+# ─────────── Destacados: planes elegidos por WannaNow (planes-hoy/destacados.json) ───────────
+def cargar_destacados(hoy):
+    """Planes destacados a mano (p. ej., artistas que publican en WannaNow).
+    Cada entrada: id, titulo, titulo_en, cat, cat_en, ini, fin, mostrar_desde (opcional),
+    lugar, lugar_en, texto, texto_en, url, url_texto, url_texto_en, excluir_si_titulo (lista).
+    Solo salen si hoy está entre mostrar_desde (o ini) y fin."""
+    try:
+        ds = json.load(open(os.path.join(AQUI, 'destacados.json'), encoding='utf-8'))
+    except Exception:
+        return []
+    out = []
+    for d in ds if isinstance(ds, list) else ds.get('destacados', []):
+        try:
+            ini, fin = date.fromisoformat(d['ini']), date.fromisoformat(d['fin'])
+            desde = date.fromisoformat(d.get('mostrar_desde') or d['ini'])
+            if desde <= hoy <= fin:
+                out.append(d)
+        except Exception:
+            continue
+    return out[:2]
+
+
+def _tag_dest(d, hoy, en=False):
+    ini, fin = date.fromisoformat(d['ini']), date.fromisoformat(d['fin'])
+    if hoy < ini:
+        return '<span class="tag">' + (('Starts tomorrow' if en else 'Empieza mañana') if (ini - hoy).days == 1 else ('Coming soon' if en else 'Próximamente')) + '</span>'
+    if fin == hoy:
+        return '<span class="tag">' + ('Last day' if en else 'Último día') + '</span>'
+    if ini == hoy:
+        return '<span class="tag">' + ('Starts today' if en else 'Empieza hoy') + '</span>'
+    return ''
+
+
+def tarjeta_destacado(d, hoy, en=False):
+    ini, fin = date.fromisoformat(d['ini']), date.fromisoformat(d['fin'])
+    if en:
+        rango = f'{fecha_c_en(ini)} – {fecha_c_en(fin)}' if ini != fin else fecha_c_en(ini)
+        titulo, cat, lugar = d.get('titulo_en') or d['titulo'], d.get('cat_en') or d.get('cat', ''), d.get('lugar_en') or d.get('lugar', '')
+        texto, enlace = d.get('texto_en') or d['texto'], d.get('url_texto_en') or 'More info and tickets →'
+        sello = 'Also on WannaNow'
+    else:
+        rango = f'Del {fecha_c(ini)} al {fecha_c(fin)}' if ini != fin else fecha_c(ini)
+        titulo, cat, lugar = d['titulo'], d.get('cat', ''), d.get('lugar', '')
+        texto, enlace = d['texto'], d.get('url_texto') or 'Más información y entradas →'
+        sello = 'También en WannaNow'
+    lugar_html = f'<p class="fechas">{H.escape(lugar)}</p>' if lugar else ''
+    return (f'                <article class="reveal"><span class="cat">{H.escape(cat)} · {sello}</span>'
+            f'<h3>{H.escape(titulo)}</h3><p class="fechas">{rango}{_tag_dest(d, hoy, en)}</p>{lugar_html}'
+            f'<p>{texto}</p><a href="{H.escape(d["url"])}" target="_blank" rel="noopener">{enlace}</a></article>')
+
+
+def schema_destacados(ds, en=False):
+    """JSON-LD Event para los destacados (datos estructurados de eventos)."""
+    if not ds:
+        return ''
+    items = []
+    for d in ds:
+        ev = {'@type': 'Event', 'name': (d.get('titulo_en') if en else None) or d['titulo'],
+              'startDate': d.get('inicio_iso') or d['ini'], 'endDate': d.get('fin_iso') or d['fin'],
+              'eventStatus': 'https://schema.org/EventScheduled',
+              'eventAttendanceMode': 'https://schema.org/OfflineEventAttendanceMode',
+              'description': re.sub(r'<[^>]+>', '', (d.get('texto_en') if en else None) or d['texto']),
+              'url': d['url']}
+        if d.get('recinto'):
+            ev['location'] = {'@type': 'Place', 'name': d['recinto'], 'address': {'@type': 'PostalAddress',
+                              'streetAddress': d.get('direccion', ''), 'addressLocality': 'València',
+                              'postalCode': d.get('cp', ''), 'addressCountry': 'ES'}}
+        if d.get('artista'):
+            ev['performer'] = {'@type': 'Person', 'name': d['artista']}
+            ev['organizer'] = {'@type': 'Person', 'name': d['artista'], 'url': d.get('artista_url', d['url'])}
+        items.append(ev)
+    data = items[0] if len(items) == 1 else items
+    return ('\n                <script type="application/ld+json">' + json.dumps(dict({'@context': 'https://schema.org'}, **data) if isinstance(data, dict) else {'@context': 'https://schema.org', '@graph': data}, ensure_ascii=False) + '</script>')
+
+
+def quitar_duplicados(elegidos, ds):
+    claves = [k.lower() for d in ds for k in d.get('excluir_si_titulo', [])]
+    return [e for e in elegidos if not any(k in e['titulo'].lower() for k in claves)]
+
+
 def main():
     hoy = datetime.now(TZ).date()
     if len(sys.argv) > 1:
@@ -166,6 +246,9 @@ def main():
         c = json.load(open(cache, encoding='utf-8'))
         evs, leido = c['eventos'], date.fromisoformat(c['leido'])
     elegidos = elegir(evs, hoy, textos)
+    destacados = cargar_destacados(hoy)
+    if destacados:
+        elegidos = quitar_duplicados(elegidos, destacados)[:max(0, 4 - len(destacados))]
     dia = DIAS[hoy.weekday()]
     larga = f'{dia} {hoy.day} de {MESES[hoy.month - 1]}'
     bloque = '                    <ul>\n' + '\n'.join(f'                        <li>{x}</li>' for x in BLOQUES[hoy.weekday()]) + '\n                    </ul>'
@@ -180,7 +263,7 @@ def main():
         '{{FECHA_CORTA_MIN}}': f'{leido.day} de {MESES[leido.month - 1]} de {leido.year}',
         '{{FECHA_ACT}}': f'{larga} de {hoy.year}',
         '{{ISO}}': hoy.isoformat(),
-        '{{EVENTOS}}': '\n'.join(tarjeta(e, hoy, textos) for e in elegidos) or '                <article><p>Hoy no hay actividades destacadas en la agenda municipal. Mira lo que está pasando ahora en la app.</p></article>',
+        '{{EVENTOS}}': '\n'.join([tarjeta_destacado(d, hoy) for d in destacados] + [tarjeta(e, hoy, textos) for e in elegidos]) + schema_destacados(destacados) or '                <article><p>Hoy no hay actividades destacadas en la agenda municipal. Mira lo que está pasando ahora en la app.</p></article>',
         '{{BLOQUE_DIA}}': bloque,
     }
     for k, v in rep.items():
@@ -196,7 +279,7 @@ def main():
             open(sm, 'w', encoding='utf-8').write(t2)
     print(hoy, '|', len(evs), 'actividades leídas |', [e['titulo'] for e in elegidos])
     try:
-        generar_en(elegidos, hoy, leido, textos)
+        generar_en(elegidos, hoy, leido, textos, destacados)
     except Exception as ex:
         print('Aviso: no se pudo generar la versión en inglés:', ex)
 
@@ -273,7 +356,7 @@ def tarjeta_en(e, hoy, t_en, t_es):
             f'<p>{texto}</p><a href="{BASE_EVENTO}{e["slug"]}" target="_blank" rel="noopener" hreflang="es">Times and details on valencia.es (in Spanish) →</a></article>')
 
 
-def generar_en(elegidos, hoy, leido, textos):
+def generar_en(elegidos, hoy, leido, textos, destacados=()):
     tpl_path = os.path.join(AQUI, 'plantilla_en.html')
     if not os.path.exists(tpl_path):
         return
@@ -295,7 +378,7 @@ def generar_en(elegidos, hoy, leido, textos):
         '{{FECHA_CORTA_MIN}}': f'{leido.day} {MONTHS_EN[leido.month - 1]} {leido.year}',
         '{{FECHA_ACT}}': f'{larga} {hoy.year}',
         '{{ISO}}': hoy.isoformat(),
-        '{{EVENTOS}}': '\n'.join(tarjeta_en(e, hoy, t_en, textos) for e in elegidos) or '                <article><p>No highlights in the city agenda today. See what\'s happening right now in the app.</p></article>',
+        '{{EVENTOS}}': '\n'.join([tarjeta_destacado(d, hoy, en=True) for d in destacados] + [tarjeta_en(e, hoy, t_en, textos) for e in elegidos]) + schema_destacados(destacados, en=True) or '                <article><p>No highlights in the city agenda today. See what\'s happening right now in the app.</p></article>',
         '{{BLOQUE_DIA}}': bloque,
     }
     for k, v in rep.items():
