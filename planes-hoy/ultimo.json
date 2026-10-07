@@ -1,5 +1,5 @@
 {
- "leido": "2026-10-06",
+ "leido": "2026-10-07",
  "eventos": [
   {
    "titulo": "Museo de Prehistoria de València - Actividades",
@@ -100,81 +100,18 @@
    "slug": "oficina-de-l-energia-actividades-gratuitas"
   },
   {
-   "titulo": "Fundación Cañada Blanch – Programación cultural",
-   "cat": "CONFERENCIAS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "fundacion-canada-blanch-programacion-cultural"
-  },
-  {
-   "titulo": "Sala Russafa - Programación cultural",
-   "cat": "DANZA",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "sala-russafa-programacio-cultural"
-  },
-  {
-   "titulo": "El Centro Museístico 'La Beneficencia' - Actividades",
-   "cat": "AGENDA INFANTIL",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "el-centre-museistic-la-beneficencia"
-  },
-  {
-   "titulo": "Escalante - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "teatre-escalante-programacio"
-  },
-  {
-   "titulo": "Teatro Principal - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "teatre-principal-programacio"
-  },
-  {
-   "titulo": "Colegio Mayor Rector Peset - Programación cultural",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "collegi-major-rector-peset-programacio"
-  },
-  {
-   "titulo": "Museo Fallero de València",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "museu-faller-de-valencia"
-  },
-  {
-   "titulo": "Teatro El Musical – Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "teatre-el-musical-programacio"
-  },
-  {
-   "titulo": "CC Escorxador - Programación de otoño",
-   "cat": "ENCUENTROS",
-   "ini": "2026-10-01",
-   "fin": "2026-12-20",
-   "slug": "cc-escorxador-programacion-2025-26"
-  },
-  {
-   "titulo": "CC Aben Al-Abbar: programación semanal",
+   "titulo": "CULTURA ALS BARRIS 2026: actividades reprogramadas",
    "cat": "CINE",
-   "ini": "2026-10-05",
-   "fin": "2026-10-11",
-   "slug": "cc-aben-al-abbar-programacion"
+   "ini": "2026-09-25",
+   "fin": "2026-11-22",
+   "slug": "cultura-als-barris-2026"
   },
   {
-   "titulo": "Ruta Santo Cáliz: visitas guiadas gratuitas",
-   "cat": "VISITAS GUIADAS",
-   "ini": "2026-05-09",
-   "fin": "2026-10-25",
-   "slug": "ruta-santo-caliz-visitas-guiadas"
+   "titulo": "Museu de la Mar - Casa dels Bous: visitas guiadas gratuitas",
+   "cat": "MUSEOS MUNICIPALES",
+   "ini": "2026-10-03",
+   "fin": "2026-11-28",
+   "slug": "museu-de-la-mar-casa-dels-bous-visitas-guiadas-gratuitas"
   },
   {
    "titulo": "Exposición 'La València de Blasco Ibáñez'",
@@ -275,11 +212,81 @@
    "slug": "semana-del-ahorro-de-energia-2026"
   },
   {
-   "titulo": "Museu de la Mar - Casa dels Bous: visitas guiadas gratuitas",
-   "cat": "MUSEOS MUNICIPALES",
-   "ini": "2026-10-03",
-   "fin": "2026-10-31",
-   "slug": "museu-de-la-mar-casa-dels-bous-visitas-guiadas-gratuitas"
+   "titulo": "Fundación Cañada Blanch – Programación cultural",
+   "cat": "CONFERENCIAS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "fundacion-canada-blanch-programacion-cultural"
+  },
+  {
+   "titulo": "Sala Russafa - Programación cultural",
+   "cat": "DANZA",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "sala-russafa-programacio-cultural"
+  },
+  {
+   "titulo": "El Centro Museístico 'La Beneficencia' - Actividades",
+   "cat": "AGENDA INFANTIL",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "el-centre-museistic-la-beneficencia"
+  },
+  {
+   "titulo": "Escalante - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "teatre-escalante-programacio"
+  },
+  {
+   "titulo": "Teatro Principal - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "teatre-principal-programacio"
+  },
+  {
+   "titulo": "Colegio Mayor Rector Peset - Programación cultural",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "collegi-major-rector-peset-programacio"
+  },
+  {
+   "titulo": "Museo Fallero de València",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "museu-faller-de-valencia"
+  },
+  {
+   "titulo": "Teatro El Musical – Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "teatre-el-musical-programacio"
+  },
+  {
+   "titulo": "CC Escorxador - Programación de otoño",
+   "cat": "ENCUENTROS",
+   "ini": "2026-10-01",
+   "fin": "2026-12-20",
+   "slug": "cc-escorxador-programacion-2025-26"
+  },
+  {
+   "titulo": "CC Aben Al-Abbar: programación semanal",
+   "cat": "CINE",
+   "ini": "2026-10-05",
+   "fin": "2026-10-11",
+   "slug": "cc-aben-al-abbar-programacion"
+  },
+  {
+   "titulo": "Ruta Santo Cáliz: visitas guiadas gratuitas",
+   "cat": "VISITAS GUIADAS",
+   "ini": "2026-05-09",
+   "fin": "2026-10-25",
+   "slug": "ruta-santo-caliz-visitas-guiadas"
   },
   {
    "titulo": "Carme Teatre - Programación",
@@ -366,20 +373,6 @@
    "slug": "mercafestes-en-los-mercados-municipales"
   },
   {
-   "titulo": "Rutes Literàries València - Rutas guiadas gratuitas",
-   "cat": "VISITAS GUIADAS",
-   "ini": "2026-10-10",
-   "fin": "2026-10-31",
-   "slug": "rutes-literaries-valencia-rutas-guiadas-gratuitas"
-  },
-  {
-   "titulo": "CULTURA ALS BARRIS 2026",
-   "cat": "CINE",
-   "ini": "2026-09-25",
-   "fin": "2026-11-22",
-   "slug": "cultura-als-barris-2026"
-  },
-  {
    "titulo": "Bibliotecas Municipales: programación de octubre",
    "cat": "AGENDA INFANTIL",
    "ini": "2026-10-01",
@@ -392,13 +385,6 @@
    "ini": "2026-10-01",
    "fin": "2026-12-19",
    "slug": "cc-reina-121-programacion"
-  },
-  {
-   "titulo": "9 de octubre: Mercado medieval de València 2026",
-   "cat": "FIESTAS",
-   "ini": "2026-10-02",
-   "fin": "2026-10-13",
-   "slug": "9-d-octubre-mercat-medieval-2026"
   },
   {
    "titulo": "Sala de exposiciones 'Edificio del Reloj' - Programación",
@@ -478,18 +464,25 @@
    "slug": "alqueria-dels-moros-visitas-gratuitas"
   },
   {
-   "titulo": "CENTROS CULTURALES MUNICIPALES",
-   "cat": "AGENDA INFANTIL",
-   "ini": "2026-09-01",
-   "fin": "2026-12-31",
-   "slug": "centros-culturales-municipales"
-  },
-  {
    "titulo": "Visitas guiadas gratuitas 'El legado de Jaume I'",
    "cat": "VISITAS GUIADAS",
    "ini": "2026-10-09",
    "fin": "2026-10-18",
    "slug": "visitas-guiadas-gratuitas-el-legado-de-jaume-i"
+  },
+  {
+   "titulo": "9 de octubre: Mercado medieval de València 2026",
+   "cat": "FIESTAS",
+   "ini": "2026-10-02",
+   "fin": "2026-10-13",
+   "slug": "9-d-octubre-mercat-medieval-2026"
+  },
+  {
+   "titulo": "CENTROS CULTURALES MUNICIPALES",
+   "cat": "AGENDA INFANTIL",
+   "ini": "2026-09-01",
+   "fin": "2026-12-31",
+   "slug": "centros-culturales-municipales"
   }
  ]
 }
