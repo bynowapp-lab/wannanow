@@ -1,5 +1,5 @@
 {
- "leido": "2026-10-13",
+ "leido": "2026-10-15",
  "eventos": [
   {
    "titulo": "Museo de Prehistoria de València - Actividades",
@@ -30,13 +30,6 @@
    "slug": "ruta-dones-de-ciencia"
   },
   {
-   "titulo": "XXIX Festival de Balls al Carrer",
-   "cat": "DANZA",
-   "ini": "2026-10-18",
-   "fin": "2027-04-25",
-   "slug": "xxix-festival-de-balls-al-carrer"
-  },
-  {
    "titulo": "Museu de la Mar - Casa dels Bous: visitas guiadas gratuitas",
    "cat": "MUSEOS MUNICIPALES",
    "ini": "2026-10-03",
@@ -44,137 +37,11 @@
    "slug": "museu-de-la-mar-casa-dels-bous-visitas-guiadas-gratuitas"
   },
   {
-   "titulo": "Exposición y conferencias ‘100 años de esgrima 1925-2025’",
-   "cat": "CONFERENCIAS",
-   "ini": "2026-10-07",
-   "fin": "2026-10-14",
-   "slug": "exposicion-100-anos-de-esgrima-1925-2025"
-  },
-  {
-   "titulo": "V Mediterránea Fashion Week València",
-   "cat": "OCIO ALTERNATIVO",
-   "ini": "2026-10-12",
-   "fin": "2026-10-14",
-   "slug": "v-mediterranea-fashion-week-valencia"
-  },
-  {
-   "titulo": "Sala de exposiciones 'Edificio del Reloj' - Programación",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "sala-exposicions-edifici-del-rellotge"
-  },
-  {
-   "titulo": "RUTA CULTURAL 'ANILLO CICLISTA'",
-   "cat": "RUTAS CULTURALES",
-   "ini": "2026-01-03",
-   "fin": "2026-12-31",
-   "slug": "ruta-cultural-anell-ciclista"
-  },
-  {
-   "titulo": "Feria de València - Agenda de eventos",
-   "cat": "FERIAS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "fira-de-valencia-agenda"
-  },
-  {
-   "titulo": "Bombas Gens Centre d'Arts Digitals - Actividades",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "bombas-gens-centre-d-arts-digitals-cas"
-  },
-  {
-   "titulo": "Museo Iluziona",
-   "cat": "OCIO ALTERNATIVO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "museo-iluziona-cas"
-  },
-  {
-   "titulo": "Casa de la Ciència del CSIC - Programación",
-   "cat": "CONFERENCIAS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "casa-de-la-ciencia-del-csic-programacion"
-  },
-  {
-   "titulo": "Instituto Interuniversitario López Piñero - Programación",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "institut-interuniversitari-lopez-pinero-programacio"
-  },
-  {
-   "titulo": "Jimmy Glass Jazz - Programación",
-   "cat": "MÚSICA",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "jimmy-glass-jazz-programacio"
-  },
-  {
-   "titulo": "Hemisfèric - Programación",
-   "cat": "CINE",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "hemisferic-ciutat-arts-i-ciencies-programacio"
-  },
-  {
-   "titulo": "Exposición 'MacroArte' de Tony Tirado - El Paleontològic",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-07-09",
-   "fin": "2026-11-15",
-   "slug": "exposicion-macroarte-de-tony-tirado-el-paleontologic"
-  },
-  {
-   "titulo": "Alqueria dels moros - Visitas gratuitas",
-   "cat": "VISITAS GUIADAS",
-   "ini": "2026-09-01",
-   "fin": "2026-12-31",
-   "slug": "alqueria-dels-moros-visitas-gratuitas"
-  },
-  {
-   "titulo": "Visitas guiadas gratuitas 'El legado de Jaume I'",
-   "cat": "VISITAS GUIADAS",
-   "ini": "2026-10-09",
-   "fin": "2026-10-18",
-   "slug": "visitas-guiadas-gratuitas-el-legado-de-jaume-i"
-  },
-  {
-   "titulo": "9 de octubre: Mercado medieval de València 2026",
-   "cat": "FIESTAS",
-   "ini": "2026-10-02",
-   "fin": "2026-10-13",
-   "slug": "9-d-octubre-mercat-medieval-2026"
-  },
-  {
-   "titulo": "Palau de la Música - Programación de octubre",
-   "cat": "MÚSICA",
-   "ini": "2026-10-01",
-   "fin": "2026-10-31",
-   "slug": "palau-de-la-musica-programacion-2026"
-  },
-  {
-   "titulo": "Fundación Cañada Blanch – Programación cultural",
-   "cat": "CONFERENCIAS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "fundacion-canada-blanch-programacion-cultural"
-  },
-  {
-   "titulo": "Sala Russafa - Programación cultural",
+   "titulo": "XXIX Festival de Balls al Carrer",
    "cat": "DANZA",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "sala-russafa-programacio-cultural"
-  },
-  {
-   "titulo": "El Centro Museístico 'La Beneficencia' - Actividades",
-   "cat": "AGENDA INFANTIL",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "el-centre-museistic-la-beneficencia"
+   "ini": "2026-10-18",
+   "fin": "2027-04-25",
+   "slug": "xxix-festival-de-balls-al-carrer"
   },
   {
    "titulo": "Escalante - Programación",
@@ -184,53 +51,11 @@
    "slug": "teatre-escalante-programacio"
   },
   {
-   "titulo": "Teatro Principal - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "teatre-principal-programacio"
-  },
-  {
-   "titulo": "Colegio Mayor Rector Peset - Programación cultural",
+   "titulo": "Exposición 'La imagen del rey Jaume I' - Museo de Historia",
    "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "collegi-major-rector-peset-programacio"
-  },
-  {
-   "titulo": "Museo Fallero de València",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "museu-faller-de-valencia"
-  },
-  {
-   "titulo": "Teatro El Musical – Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "teatre-el-musical-programacio"
-  },
-  {
-   "titulo": "CC Escorxador - Programación de otoño",
-   "cat": "ENCUENTROS",
-   "ini": "2026-10-01",
-   "fin": "2026-12-20",
-   "slug": "cc-escorxador-programacion-2025-26"
-  },
-  {
-   "titulo": "Exposición de cerámica inclusiva ACOVA Salud Mental",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-10-07",
-   "fin": "2026-10-30",
-   "slug": "presentacion-de-libro-inclusivo-y-exposicion-de-ceramica"
-  },
-  {
-   "titulo": "CENTROS CULTURALES MUNICIPALES",
-   "cat": "AGENDA INFANTIL",
-   "ini": "2026-09-01",
-   "fin": "2026-12-31",
-   "slug": "centros-culturales-municipales"
+   "ini": "2026-10-14",
+   "fin": "2027-02-07",
+   "slug": "exposicion-la-imagen-del-rey-jaume-i-museo-de-historia"
   },
   {
    "titulo": "Museo de las Ciencias - Programación",
@@ -303,13 +128,6 @@
    "slug": "cc-alqueria-albors"
   },
   {
-   "titulo": "Ruta Santo Cáliz: visitas guiadas gratuitas",
-   "cat": "VISITAS GUIADAS",
-   "ini": "2026-05-09",
-   "fin": "2026-10-25",
-   "slug": "ruta-santo-caliz-visitas-guiadas"
-  },
-  {
    "titulo": "CC Aben Al-Abbar: programación semanal",
    "cat": "CINE",
    "ini": "2026-10-12",
@@ -317,11 +135,74 @@
    "slug": "cc-aben-al-abbar-programacion"
   },
   {
-   "titulo": "Bibliotecas Municipales: programación de octubre",
+   "titulo": "Fundación Cañada Blanch – Programación cultural",
+   "cat": "CONFERENCIAS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "fundacion-canada-blanch-programacion-cultural"
+  },
+  {
+   "titulo": "Sala Russafa - Programación cultural",
+   "cat": "DANZA",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "sala-russafa-programacio-cultural"
+  },
+  {
+   "titulo": "El Centro Museístico 'La Beneficencia' - Actividades",
    "cat": "AGENDA INFANTIL",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "el-centre-museistic-la-beneficencia"
+  },
+  {
+   "titulo": "Teatro Principal - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "teatre-principal-programacio"
+  },
+  {
+   "titulo": "Colegio Mayor Rector Peset - Programación cultural",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "collegi-major-rector-peset-programacio"
+  },
+  {
+   "titulo": "Museo Fallero de València",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "museu-faller-de-valencia"
+  },
+  {
+   "titulo": "Teatro El Musical – Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "teatre-el-musical-programacio"
+  },
+  {
+   "titulo": "CC Escorxador - Programación de otoño",
+   "cat": "ENCUENTROS",
    "ini": "2026-10-01",
-   "fin": "2026-10-31",
-   "slug": "biblioteques-municipals-programacio-mensual"
+   "fin": "2026-12-20",
+   "slug": "cc-escorxador-programacion-2025-26"
+  },
+  {
+   "titulo": "Exposición de cerámica inclusiva ACOVA Salud Mental",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-10-07",
+   "fin": "2026-10-30",
+   "slug": "presentacion-de-libro-inclusivo-y-exposicion-de-ceramica"
+  },
+  {
+   "titulo": "CENTROS CULTURALES MUNICIPALES",
+   "cat": "AGENDA INFANTIL",
+   "ini": "2026-09-01",
+   "fin": "2026-12-31",
+   "slug": "centros-culturales-municipales"
   },
   {
    "titulo": "Exposición 'La València de Blasco Ibáñez'",
@@ -387,13 +268,6 @@
    "slug": "programacio-cultural-octubre-centre-de-cultura-contemporania"
   },
   {
-   "titulo": "Almudín - Exposición por el III Año Jubilar del Santo Cáliz",
-   "cat": "EXPOSICIONES",
-   "ini": "2025-10-30",
-   "fin": "2026-10-29",
-   "slug": "almudin-exposicion-iii-ano-jubilar-santo-caliz"
-  },
-  {
    "titulo": "VALÈNCIA DESIGN FEST 2026",
    "cat": "FESTIVALES",
    "ini": "2026-09-10",
@@ -401,18 +275,18 @@
    "slug": "valencia-design-fest-2026"
   },
   {
+   "titulo": "Almudín - Exposición por el III Año Jubilar del Santo Cáliz",
+   "cat": "EXPOSICIONES",
+   "ini": "2025-10-30",
+   "fin": "2026-10-29",
+   "slug": "almudin-exposicion-iii-ano-jubilar-santo-caliz"
+  },
+  {
    "titulo": "CC Nave 3 Ribes - Programación de octubre",
    "cat": "CINE",
    "ini": "2026-10-01",
    "fin": "2026-10-31",
    "slug": "cc-nave-3-ribes-cas"
-  },
-  {
-   "titulo": "CULTURA ALS BARRIS 2026",
-   "cat": "CINE",
-   "ini": "2026-09-25",
-   "fin": "2026-11-22",
-   "slug": "cultura-als-barris-2026"
   },
   {
    "titulo": "SEMANA DEL AHORRO DE ENERGÍA 2026",
@@ -427,6 +301,27 @@
    "ini": "2026-10-10",
    "fin": "2026-11-21",
    "slug": "rutes-literaries-valencia-rutas-guiadas-gratuitas"
+  },
+  {
+   "titulo": "Palau de la Música - Programación de octubre",
+   "cat": "MÚSICA",
+   "ini": "2026-10-01",
+   "fin": "2026-10-31",
+   "slug": "palau-de-la-musica-programacion-2026"
+  },
+  {
+   "titulo": "'VAMOS AL MAR SIN LÍMITES' - ASOC. NÁUTICA INCLUSIVA",
+   "cat": "CURSOS",
+   "ini": "2026-10-05",
+   "fin": "2026-12-10",
+   "slug": "vamos-al-mar-sin-limites-asoc.-nautica-inclusiva"
+  },
+  {
+   "titulo": "Bibliotecas Municipales: programación de octubre",
+   "cat": "AGENDA INFANTIL",
+   "ini": "2026-10-01",
+   "fin": "2026-10-31",
+   "slug": "biblioteques-municipals-programacio-mensual"
   },
   {
    "titulo": "Carme Teatre - Programación",
@@ -518,6 +413,104 @@
    "ini": "2026-10-01",
    "fin": "2026-12-19",
    "slug": "cc-reina-121-programacion"
+  },
+  {
+   "titulo": "Visitas guiadas gratuitas 'El legado de Jaume I'",
+   "cat": "VISITAS GUIADAS",
+   "ini": "2026-10-09",
+   "fin": "2026-10-18",
+   "slug": "visitas-guiadas-gratuitas-el-legado-de-jaume-i"
+  },
+  {
+   "titulo": "CULTURA ALS BARRIS 2026",
+   "cat": "CINE",
+   "ini": "2026-09-25",
+   "fin": "2026-11-22",
+   "slug": "cultura-als-barris-2026"
+  },
+  {
+   "titulo": "Sala de exposiciones 'Edificio del Reloj' - Programación",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "sala-exposicions-edifici-del-rellotge"
+  },
+  {
+   "titulo": "RUTA CULTURAL 'ANILLO CICLISTA'",
+   "cat": "RUTAS CULTURALES",
+   "ini": "2026-01-03",
+   "fin": "2026-12-31",
+   "slug": "ruta-cultural-anell-ciclista"
+  },
+  {
+   "titulo": "Feria de València - Agenda de eventos",
+   "cat": "FERIAS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "fira-de-valencia-agenda"
+  },
+  {
+   "titulo": "Bombas Gens Centre d'Arts Digitals - Actividades",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "bombas-gens-centre-d-arts-digitals-cas"
+  },
+  {
+   "titulo": "Museo Iluziona",
+   "cat": "OCIO ALTERNATIVO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "museo-iluziona-cas"
+  },
+  {
+   "titulo": "Casa de la Ciència del CSIC - Programación",
+   "cat": "CONFERENCIAS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "casa-de-la-ciencia-del-csic-programacion"
+  },
+  {
+   "titulo": "Instituto Interuniversitario López Piñero - Programación",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "institut-interuniversitari-lopez-pinero-programacio"
+  },
+  {
+   "titulo": "Jimmy Glass Jazz - Programación",
+   "cat": "MÚSICA",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "jimmy-glass-jazz-programacio"
+  },
+  {
+   "titulo": "Hemisfèric - Programación",
+   "cat": "CINE",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "hemisferic-ciutat-arts-i-ciencies-programacio"
+  },
+  {
+   "titulo": "Exposición 'MacroArte' de Tony Tirado - El Paleontològic",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-07-09",
+   "fin": "2026-11-15",
+   "slug": "exposicion-macroarte-de-tony-tirado-el-paleontologic"
+  },
+  {
+   "titulo": "Alqueria dels moros - Visitas gratuitas",
+   "cat": "VISITAS GUIADAS",
+   "ini": "2026-09-01",
+   "fin": "2026-12-31",
+   "slug": "alqueria-dels-moros-visitas-gratuitas"
+  },
+  {
+   "titulo": "Ruta Santo Cáliz: visitas guiadas gratuitas",
+   "cat": "VISITAS GUIADAS",
+   "ini": "2026-05-09",
+   "fin": "2026-10-25",
+   "slug": "ruta-santo-caliz-visitas-guiadas"
   }
  ]
 }
