@@ -1767,4 +1767,12 @@
 .btn-play:hover { transform: translateY(-2px); }
 .btn-play img { height: 60px; width: auto; display: block; }
 .gp-legal { display: inline-block; margin-top: 4px; font-size: .75em; opacity: .75; }
+/* Insignia oficial de App Store (oct. 2026): en el menú, App Store y Google Play juntas a 40 px (mínimo de Apple) */
+.nav-stores { display: inline-flex; align-items: center; gap: 8px; }
+.nav-stores .nav-pill--play img { height: 40px; }
+@media (max-width: 520px) { nav { padding-left: 12px; padding-right: 12px; } .nav-brand-name { display: none; } }
+@media (max-width: 370px) { .nav-brand { display: none; } }
+.btn-appstore { display: inline-flex; align-items: center; line-height: 0; transition: transform .2s ease; }
+.btn-appstore:hover { transform: translateY(-2px); }
+.btn-appstore img { height: 60px; width: auto; display: block; }
 @media (max-width: 420px) { .nav-pill--play img { height: 36px; } }
