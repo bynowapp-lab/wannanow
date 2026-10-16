@@ -1,5 +1,5 @@
 {
- "leido": "2026-10-15",
+ "leido": "2026-10-16",
  "eventos": [
   {
    "titulo": "Museo de Prehistoria de València - Actividades",
@@ -37,13 +37,6 @@
    "slug": "museu-de-la-mar-casa-dels-bous-visitas-guiadas-gratuitas"
   },
   {
-   "titulo": "XXIX Festival de Balls al Carrer",
-   "cat": "DANZA",
-   "ini": "2026-10-18",
-   "fin": "2027-04-25",
-   "slug": "xxix-festival-de-balls-al-carrer"
-  },
-  {
    "titulo": "Escalante - Programación",
    "cat": "TEATRO",
    "ini": "2026-01-02",
@@ -51,11 +44,18 @@
    "slug": "teatre-escalante-programacio"
   },
   {
-   "titulo": "Exposición 'La imagen del rey Jaume I' - Museo de Historia",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-10-14",
-   "fin": "2027-02-07",
-   "slug": "exposicion-la-imagen-del-rey-jaume-i-museo-de-historia"
+   "titulo": "CENTROS CULTURALES MUNICIPALES",
+   "cat": "AGENDA INFANTIL",
+   "ini": "2026-09-01",
+   "fin": "2026-12-31",
+   "slug": "centros-culturales-municipales"
+  },
+  {
+   "titulo": "Visitas guiadas gratuitas 'El legado de Jaume I'",
+   "cat": "VISITAS GUIADAS",
+   "ini": "2026-10-09",
+   "fin": "2026-10-18",
+   "slug": "visitas-guiadas-gratuitas-el-legado-de-jaume-i"
   },
   {
    "titulo": "Museo de las Ciencias - Programación",
@@ -135,6 +135,111 @@
    "slug": "cc-aben-al-abbar-programacion"
   },
   {
+   "titulo": "Carme Teatre - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "programacio-fins-a-final-d-any-carme-teatre"
+  },
+  {
+   "titulo": "Teatro Olympia - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "teatre-olympia-programaci%C3%B3"
+  },
+  {
+   "titulo": "Teatro Talia - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "teatre-talia-programacio"
+  },
+  {
+   "titulo": "Teatro Rialto - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-01",
+   "fin": "2026-12-31",
+   "slug": "teatre-rialto-programacio"
+  },
+  {
+   "titulo": "Atarazanas del Grao",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "drassanes-del-grau"
+  },
+  {
+   "titulo": "Centro Cultural Bancaja - Actividades",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "centre-cultural-bancaixa"
+  },
+  {
+   "titulo": "Jardín Botánico - Programación",
+   "cat": "CURSOS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "pogramacio-cultural-jardi-botanic"
+  },
+  {
+   "titulo": "Black Note Club - Programación",
+   "cat": "MÚSICA",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "black-note-club-programacio"
+  },
+  {
+   "titulo": "Ateneo Mercantil - Programación cultural",
+   "cat": "CINE",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "pogramacio-cultural-ateneo"
+  },
+  {
+   "titulo": "RUTAS DE LOS ÁRBOLES MONUMENTALES DE VALÈNCIA",
+   "cat": "",
+   "ini": "2026-01-03",
+   "fin": "2026-12-31",
+   "slug": "ruta-dels-arbres-monumentals-de-valencia"
+  },
+  {
+   "titulo": "Palacio de Congresos de València - Actividades",
+   "cat": "CONGRESOS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "palau-de-congressos-de-valencia-activitats"
+  },
+  {
+   "titulo": "MERCAFESTES EN LOS MERCADOS MUNICIPALES",
+   "cat": "AGENDA INFANTIL",
+   "ini": "2026-09-26",
+   "fin": "2027-12-18",
+   "slug": "mercafestes-en-los-mercados-municipales"
+  },
+  {
+   "titulo": "CC Reina 121 - Programación de septiembre a diciembre",
+   "cat": "ENCUENTROS",
+   "ini": "2026-10-01",
+   "fin": "2026-12-19",
+   "slug": "cc-reina-121-programacion"
+  },
+  {
+   "titulo": "Exposición 'La imagen del rey Jaume I' - Museo de Historia",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-10-14",
+   "fin": "2027-02-07",
+   "slug": "exposicion-la-imagen-del-rey-jaume-i-museo-de-historia"
+  },
+  {
+   "titulo": "XXIX Festival de Balls al Carrer",
+   "cat": "DANZA",
+   "ini": "2026-10-18",
+   "fin": "2027-04-25",
+   "slug": "xxix-festival-de-balls-al-carrer"
+  },
+  {
    "titulo": "Fundación Cañada Blanch – Programación cultural",
    "cat": "CONFERENCIAS",
    "ini": "2026-01-02",
@@ -196,13 +301,6 @@
    "ini": "2026-10-07",
    "fin": "2026-10-30",
    "slug": "presentacion-de-libro-inclusivo-y-exposicion-de-ceramica"
-  },
-  {
-   "titulo": "CENTROS CULTURALES MUNICIPALES",
-   "cat": "AGENDA INFANTIL",
-   "ini": "2026-09-01",
-   "fin": "2026-12-31",
-   "slug": "centros-culturales-municipales"
   },
   {
    "titulo": "Exposición 'La València de Blasco Ibáñez'",
@@ -310,13 +408,6 @@
    "slug": "palau-de-la-musica-programacion-2026"
   },
   {
-   "titulo": "'VAMOS AL MAR SIN LÍMITES' - ASOC. NÁUTICA INCLUSIVA",
-   "cat": "CURSOS",
-   "ini": "2026-10-05",
-   "fin": "2026-12-10",
-   "slug": "vamos-al-mar-sin-limites-asoc.-nautica-inclusiva"
-  },
-  {
    "titulo": "Bibliotecas Municipales: programación de octubre",
    "cat": "AGENDA INFANTIL",
    "ini": "2026-10-01",
@@ -324,109 +415,18 @@
    "slug": "biblioteques-municipals-programacio-mensual"
   },
   {
-   "titulo": "Carme Teatre - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "programacio-fins-a-final-d-any-carme-teatre"
+   "titulo": "VIII OPEN HOUSE VALENCIA - Festival de Arquitectura",
+   "cat": "FESTIVALES",
+   "ini": "2026-10-23",
+   "fin": "2026-10-25",
+   "slug": "viii-open-house-valencia"
   },
   {
-   "titulo": "Teatro Olympia - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "teatre-olympia-programaci%C3%B3"
-  },
-  {
-   "titulo": "Teatro Talia - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "teatre-talia-programacio"
-  },
-  {
-   "titulo": "Teatro Rialto - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-01",
-   "fin": "2026-12-31",
-   "slug": "teatre-rialto-programacio"
-  },
-  {
-   "titulo": "Atarazanas del Grao",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "drassanes-del-grau"
-  },
-  {
-   "titulo": "Centro Cultural Bancaja - Actividades",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "centre-cultural-bancaixa"
-  },
-  {
-   "titulo": "Jardín Botánico - Programación",
-   "cat": "CURSOS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "pogramacio-cultural-jardi-botanic"
-  },
-  {
-   "titulo": "Black Note Club - Programación",
-   "cat": "MÚSICA",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "black-note-club-programacio"
-  },
-  {
-   "titulo": "Ateneo Mercantil - Programación cultural",
-   "cat": "CINE",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "pogramacio-cultural-ateneo"
-  },
-  {
-   "titulo": "RUTAS DE LOS ÁRBOLES MONUMENTALES DE VALÈNCIA",
-   "cat": "",
-   "ini": "2026-01-03",
-   "fin": "2026-12-31",
-   "slug": "ruta-dels-arbres-monumentals-de-valencia"
-  },
-  {
-   "titulo": "Palacio de Congresos de València - Actividades",
-   "cat": "CONGRESOS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "palau-de-congressos-de-valencia-activitats"
-  },
-  {
-   "titulo": "MERCAFESTES EN LOS MERCADOS MUNICIPALES",
-   "cat": "AGENDA INFANTIL",
-   "ini": "2026-09-26",
-   "fin": "2027-12-18",
-   "slug": "mercafestes-en-los-mercados-municipales"
-  },
-  {
-   "titulo": "CC Reina 121 - Programación de septiembre a diciembre",
-   "cat": "ENCUENTROS",
-   "ini": "2026-10-01",
-   "fin": "2026-12-19",
-   "slug": "cc-reina-121-programacion"
-  },
-  {
-   "titulo": "Visitas guiadas gratuitas 'El legado de Jaume I'",
-   "cat": "VISITAS GUIADAS",
-   "ini": "2026-10-09",
+   "titulo": "FESTIVAL VOLUMENS 2026",
+   "cat": "FESTIVALES",
+   "ini": "2026-10-13",
    "fin": "2026-10-18",
-   "slug": "visitas-guiadas-gratuitas-el-legado-de-jaume-i"
-  },
-  {
-   "titulo": "CULTURA ALS BARRIS 2026",
-   "cat": "CINE",
-   "ini": "2026-09-25",
-   "fin": "2026-11-22",
-   "slug": "cultura-als-barris-2026"
+   "slug": "festival-volumens-2026-1"
   },
   {
    "titulo": "Sala de exposiciones 'Edificio del Reloj' - Programación",
@@ -511,6 +511,20 @@
    "ini": "2026-05-09",
    "fin": "2026-10-25",
    "slug": "ruta-santo-caliz-visitas-guiadas"
+  },
+  {
+   "titulo": "'VAMOS AL MAR SIN LÍMITES' - ASOC. NÁUTICA INCLUSIVA",
+   "cat": "CURSOS",
+   "ini": "2026-10-05",
+   "fin": "2026-12-10",
+   "slug": "vamos-al-mar-sin-limites-asoc.-nautica-inclusiva"
+  },
+  {
+   "titulo": "CULTURA ALS BARRIS 2026",
+   "cat": "CINE",
+   "ini": "2026-09-25",
+   "fin": "2026-11-22",
+   "slug": "cultura-als-barris-2026"
   }
  ]
 }
