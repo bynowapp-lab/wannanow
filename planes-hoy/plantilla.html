@@ -72,7 +72,7 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Planes en Valencia hoy",
+          "name": "Planes para hoy en Valencia",
           "item": "https://wannanow.app/planes-valencia-hoy/"
         }
       ]
@@ -110,6 +110,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Cada mañana. La selección de actividades y el bloque del día de la semana cambian automáticamente. Para lo que pasa minuto a minuto, usa la app WannaNow."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué hacer este fin de semana en Valencia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mira qué hacer este fin de semana en Valencia: una selección de la agenda para el viernes, el sábado y el domingo, actualizada cada mañana. En WannaNow tienes además el calendario con todos los planes del fin de semana."
           }
         }
       ]
@@ -235,9 +243,9 @@
     <header class="l-hero">
         <div class="container l-hero-grid">
             <div>
-                <p class="l-crumbs"><a href="/">Inicio</a> › <span aria-current="page">Planes en Valencia hoy</span></p>
+                <p class="l-crumbs"><a href="/">Inicio</a> › <span aria-current="page">Planes para hoy en Valencia</span></p>
                 <p class="label">{{LABEL}}</p>
-                <h1>Planes en Valencia <em>hoy</em></h1>
+                <h1>Planes para hacer <em>hoy</em> en Valencia</h1>
                 <p class="l-crumbs" style="margin:-8px 0 14px">Actualizado: {{FECHA_ACT}}</p>
                 <p class="l-lead">Qué hacer hoy en Valencia: una selección de lo que hay en la ciudad estos días, lo que suele abrir un <strong>{{DIA}}</strong> y cómo encontrar <strong>lo que está pasando ahora mismo</strong> cerca de ti. Esta página se actualiza cada mañana; en la app WannaNow lo ves <strong>en tiempo real</strong>.</p>
                 <div class="l-cta-row">
@@ -280,6 +288,18 @@
             <p class="l-src">Selección basada en datos de la <a href="https://www.valencia.es/cas/agenda-de-la-ciudad" target="_blank" rel="noopener">Agenda de la ciudad del Ayuntamiento de València</a> (consultada el {{FECHA_CORTA_MIN}}). Textos propios de WannaNow. WannaNow no está vinculada al Ayuntamiento.</p>
         </div>
     </section>
+    <section class="l-sec">
+        <div class="container">
+            <p class="label">Según tu plan</p>
+            <h2>Hoy, <em>en pareja, con amigos o gratis</em></h2>
+            <div class="l-cards">
+                <article class="l-card reveal"><span class="l-emoji" aria-hidden="true">💞</span><h3>Hoy en pareja</h3><p>Una exposición por la tarde, el atardecer en el Turia o en la playa y teatro o un concierto por la noche. Más ideas en <a href="/planes-pareja-valencia/">planes en pareja en Valencia</a>.</p></article>
+                <article class="l-card reveal"><span class="l-emoji" aria-hidden="true">🍻</span><h3>Hoy con amigos</h3><p>Tardeo en una terraza, música en directo en Ruzafa o el Carmen, o un mercadillo si cae en fin de semana. Filtra por <em>Tardeo</em> o <em>Música</em> en la app, o mira los <a href="/planes-valencia/">planes en Valencia</a> para cada ocasión.</p></article>
+                <article class="l-card reveal"><span class="l-emoji" aria-hidden="true">🆓</span><h3>Hoy gratis</h3><p>Museos de entrada libre, el Jardín del Turia, la playa y la música en la calle. En la app, toca <strong>FREE</strong>. Lista completa en <a href="/planes-gratis-valencia/">planes gratis en Valencia</a>.</p></article>
+                <article class="l-card reveal"><span class="l-emoji" aria-hidden="true">📅</span><h3>Este fin de semana</h3><p>Si estás pensando en el sábado o el domingo, mira qué hacer <a href="/que-hacer-fin-de-semana-valencia/">este fin de semana en Valencia</a>: también se actualiza cada mañana.</p></article>
+            </div>
+        </div>
+    </section>
     <section class="l-sec l-sec--alt">
         <div class="container">
             <div class="l-split">
@@ -305,7 +325,7 @@
                 <article class="l-card reveal"><span class="l-emoji" aria-hidden="true">🌇</span><h3>Esta tarde</h3><p>Exposiciones, talleres, planes con niños y el tardeo en terrazas. Mira <em>Familia</em>, <em>Tardeo</em> y <em>Espectáculos</em>, o toca <strong>FREE</strong> para ver solo lo gratis.</p></article>
                 <article class="l-card reveal"><span class="l-emoji" aria-hidden="true">🌙</span><h3>Esta noche</h3><p>Conciertos, teatro, cine y ambiente en Ruzafa, el Carmen o la zona de la playa. Activa <strong>NOW</strong> para ver lo que está en marcha ahora mismo.</p></article>
             </div>
-            <div class="l-prose reveal" style="margin-top:22px"><p>¿Buscas más ideas? Mira <a href="/que-hacer-valencia/">qué hacer en Valencia</a>, los <a href="/planes-valencia/">planes en Valencia</a> para cada ocasión o el calendario de <a href="/eventos-valencia/">eventos en Valencia</a>.</p></div>
+            <div class="l-prose reveal" style="margin-top:22px"><p>¿Buscas más ideas? Mira qué hacer <a href="/que-hacer-fin-de-semana-valencia/">este fin de semana en Valencia</a>, ideas por barrios en <a href="/que-hacer-valencia/">qué hacer en Valencia</a> o el calendario de <a href="/eventos-valencia/">eventos en Valencia</a>.</p></div>
         </div>
     </section>
 
@@ -332,6 +352,10 @@
                     <summary><h3>¿Cada cuánto se actualiza esta página?</h3></summary>
                     <p>Cada mañana. La selección de actividades y el bloque del día de la semana cambian automáticamente. Para lo que pasa minuto a minuto, usa la app WannaNow.</p>
                 </details>
+                <details class="faq-item reveal">
+                    <summary><h3>¿Qué hacer este fin de semana en Valencia?</h3></summary>
+                    <p>Mira qué hacer <a href="/que-hacer-fin-de-semana-valencia/">este fin de semana en Valencia</a>: una selección de la agenda para el viernes, el sábado y el domingo, actualizada cada mañana. En WannaNow tienes además el calendario con todos los planes del fin de semana.</p>
+                </details>
             </div>
         </div>
     </section>
@@ -343,6 +367,9 @@
             <h2>Más formas de <em>descubrir la ciudad</em></h2>
             <div class="l-explore">
                 <a href="/" class="reveal"><strong>WannaNow</strong><span>La app para descubrir qué pasa en Valencia ahora mismo.</span></a>
+                <a href="/que-hacer-fin-de-semana-valencia/" class="reveal"><strong>Qué hacer este fin de semana</strong><span>Planes para el viernes, el sábado y el domingo, actualizados cada día.</span></a>
+                <a href="/planes-pareja-valencia/" class="reveal"><strong>Planes en pareja en Valencia</strong><span>Atardeceres, teatro, paseos y planes gratis para dos.</span></a>
+                <a href="/planes-gratis-valencia/" class="reveal"><strong>Planes gratis en Valencia</strong><span>Museos con entrada libre, playas, mercadillos y eventos gratuitos.</span></a>
                 <a href="/que-hacer-valencia/" class="reveal"><strong>Qué hacer en Valencia</strong><span>Ideas para hoy, esta noche y el fin de semana, por barrios.</span></a>
                 <a href="/eventos-valencia/" class="reveal"><strong>Eventos en Valencia</strong><span>Conciertos, espectáculos, ferias y las grandes fiestas del año.</span></a>
                 <a href="/planes-valencia/" class="reveal"><strong>Planes en Valencia</strong><span>Con amigos, en pareja, con niños o gratis.</span></a>

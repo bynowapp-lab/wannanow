@@ -254,8 +254,8 @@ def main():
     bloque = '                    <ul>\n' + '\n'.join(f'                        <li>{x}</li>' for x in BLOQUES[hoy.weekday()]) + '\n                    </ul>'
     tpl = open(os.path.join(AQUI, 'plantilla.html'), encoding='utf-8').read()
     rep = {
-        '{{TITLE}}': f'Planes en Valencia hoy, {larga} | WannaNow',
-        '{{DESC}}': f'Qué hacer hoy, {larga}, en Valencia: planes de la agenda de la ciudad, museos y mercados abiertos y lo que pasa ahora en la app WannaNow.',
+        '{{TITLE}}': f'Planes para hacer hoy en Valencia ({dia} {hoy.day} {MESES_C[hoy.month - 1]}) | WannaNow',
+        '{{DESC}}': f'Qué hacer hoy, {larga}, en Valencia: planes de la agenda de la ciudad, museos gratis, ideas en pareja o para esta noche y lo que pasa ahora en WannaNow.',
         '{{LABEL}}': f'Hoy · {larga}',
         '{{DIA}}': dia,
         '{{FECHA_LARGA}}': larga,
@@ -282,6 +282,128 @@ def main():
         generar_en(elegidos, hoy, leido, textos, destacados)
     except Exception as ex:
         print('Aviso: no se pudo generar la versión en inglés:', ex)
+    try:
+        generar_finde(evs, hoy, leido, textos)
+    except Exception as ex:
+        print('Aviso: no se pudo generar la página del fin de semana:', ex)
+
+
+# ─────────── FIN DE SEMANA (/que-hacer-fin-de-semana-valencia/) ───────────
+def fin_de_semana(hoy):
+    """Viernes y domingo del fin de semana actual (vie-dom) o del próximo (lun-jue)."""
+    wd = hoy.weekday()
+    vie = hoy + timedelta(days=4 - wd) if wd <= 4 else hoy - timedelta(days=wd - 4)
+    return vie, vie + timedelta(days=2)
+
+
+def elegir_finde(evs, desde, dom, textos, maximo=8):
+    excl = set(textos.get('_excluir', []))
+    cand = []
+    for e in evs:
+        ini, fin = date.fromisoformat(e['ini']), date.fromisoformat(e['fin'])
+        dur = (fin - ini).days
+        if ini > dom or fin < desde or dur > 150 or e['slug'] in excl:
+            continue
+        if re.match(r'^CC ', e['titulo']):
+            continue
+        cur = 0 if e['slug'] in textos else 1
+        cand.append((cur, PRIORIDAD.get(e['cat'], 4), dur, e))
+    cand.sort(key=lambda x: (x[0], x[1], x[2]))
+    elegidos, cats = [], {}
+    for *_, e in cand:
+        if cats.get(e['cat'], 0) >= 2 and len(cand) > maximo:
+            continue
+        elegidos.append(e)
+        cats[e['cat']] = cats.get(e['cat'], 0) + 1
+        if len(elegidos) == maximo:
+            break
+    return elegidos
+
+
+def tarjeta_finde(e, vie, dom, textos):
+    ini, fin = date.fromisoformat(e['ini']), date.fromisoformat(e['fin'])
+    tag = ''
+    if vie <= ini <= dom and ini == fin:
+        tag = f'<span class="tag">Solo el {DIAS[ini.weekday()]}</span>'
+    elif vie <= ini <= dom:
+        tag = f'<span class="tag">Empieza el {DIAS[ini.weekday()]}</span>'
+    elif fin <= dom:
+        tag = '<span class="tag">Último fin de semana</span>'
+    rango = f'Del {fecha_c(ini)} al {fecha_c(fin)}' if ini != fin else f'{fecha_c(ini)}'
+    texto = textos.get(e['slug']) or FRASE_CAT.get(e['cat'], 'Actividad incluida en la agenda de la ciudad.')
+    cat = H.escape(e['cat'].capitalize()) if e['cat'] else 'Agenda'
+    titulo = textos.get('_titulos', {}).get(e['slug']) or e['titulo']
+    if titulo.isupper():
+        titulo = titulo.capitalize()
+    return (f'                <article class="reveal"><span class="cat">{cat}</span>'
+            f'<h3>{H.escape(titulo)}</h3><p class="fechas">{rango}{tag}</p>'
+            f'<p>{texto}</p><a href="{BASE_EVENTO}{e["slug"]}" target="_blank" rel="noopener">Horarios y detalles en valencia.es →</a></article>')
+
+
+def destacados_finde(desde, dom):
+    try:
+        ds = json.load(open(os.path.join(AQUI, 'destacados.json'), encoding='utf-8'))
+    except Exception:
+        return []
+    out = []
+    for d in ds if isinstance(ds, list) else ds.get('destacados', []):
+        try:
+            ini, fin = date.fromisoformat(d['ini']), date.fromisoformat(d['fin'])
+            if ini <= dom and fin >= desde:
+                out.append(d)
+        except Exception:
+            continue
+    return out[:2]
+
+
+def rango_finde(vie, dom, corto=False):
+    if corto:
+        if vie.month == dom.month:
+            return f'{vie.day}–{dom.day} {MESES_C[dom.month - 1]}'
+        return f'{vie.day} {MESES_C[vie.month - 1]} – {dom.day} {MESES_C[dom.month - 1]}'
+    if vie.month == dom.month:
+        return f'del viernes {vie.day} al domingo {dom.day} de {MESES[dom.month - 1]}'
+    return f'del viernes {vie.day} de {MESES[vie.month - 1]} al domingo {dom.day} de {MESES[dom.month - 1]}'
+
+
+def generar_finde(evs, hoy, leido, textos):
+    tpl_path = os.path.join(AQUI, 'plantilla_finde.html')
+    if not os.path.exists(tpl_path):
+        return
+    vie, dom = fin_de_semana(hoy)
+    desde = max(hoy, vie)
+    destacados = destacados_finde(desde, dom)
+    elegidos = elegir_finde(evs, desde, dom, textos)
+    if destacados:
+        elegidos = quitar_duplicados(elegidos, destacados)[:max(0, 8 - len(destacados))]
+    corto, largo = rango_finde(vie, dom, True), rango_finde(vie, dom)
+    ul = lambda xs: '                    <ul>\n' + '\n'.join(f'                        <li>{x}</li>' for x in xs) + '\n                    </ul>'
+    larga = f'{DIAS[hoy.weekday()]} {hoy.day} de {MESES[hoy.month - 1]}'
+    rep = {
+        '{{TITLE}}': f'Qué hacer este fin de semana en Valencia ({corto}) | WannaNow',
+        '{{DESC}}': f'Planes para este fin de semana en Valencia, {largo}: selección de la agenda de la ciudad, mercadillos, museos gratis y lo que pasa ahora en la app WannaNow.',
+        '{{LABEL}}': f'Fin de semana · {corto}',
+        '{{RANGO}}': largo,
+        '{{FECHA_ACT}}': f'{larga} de {hoy.year}',
+        '{{FECHA_CORTA_MIN}}': f'{leido.day} de {MESES[leido.month - 1]} de {leido.year}',
+        '{{ISO}}': hoy.isoformat(),
+        '{{EVENTOS}}': '\n'.join([tarjeta_destacado(d, desde) for d in destacados] + [tarjeta_finde(e, vie, dom, textos) for e in elegidos]) + schema_destacados(destacados) or '                <article><p>Esta semana la agenda municipal todavía no tiene actividades destacadas para el fin de semana. Mira lo que está pasando en la app.</p></article>',
+        '{{BLOQUE_SAB}}': ul(BLOQUES[5]),
+        '{{BLOQUE_DOM}}': ul(BLOQUES[6]),
+    }
+    tpl = open(tpl_path, encoding='utf-8').read()
+    for k, v in rep.items():
+        tpl = tpl.replace(k, v)
+    out = os.path.join(RAIZ, 'que-hacer-fin-de-semana-valencia')
+    os.makedirs(out, exist_ok=True)
+    open(os.path.join(out, 'index.html'), 'w', encoding='utf-8').write(tpl)
+    sm = os.path.join(RAIZ, 'sitemap.xml')
+    if os.path.exists(sm):
+        t = open(sm, encoding='utf-8').read()
+        t2 = re.sub(r'(<loc>https://wannanow.app/que-hacer-fin-de-semana-valencia/</loc>\s*<lastmod>)[0-9-]+', r'\g<1>' + hoy.isoformat(), t)
+        if t2 != t:
+            open(sm, 'w', encoding='utf-8').write(t2)
+    print('Fin de semana ok |', corto, '|', [e['titulo'] for e in elegidos])
 
 
 # ─────────────────────────── ENGLISH (/en/things-to-do-valencia-today/) ───────────────────────────
