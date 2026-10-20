@@ -23,7 +23,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add planes-valencia-hoy/index.html en/things-to-do-valencia-today/index.html planes-hoy/ultimo.json sitemap.xml
+          git add planes-valencia-hoy/index.html en/things-to-do-valencia-today/index.html que-hacer-fin-de-semana-valencia/index.html planes-hoy/ultimo.json sitemap.xml
           if git diff --staged --quiet; then
             echo "Sin cambios"
           else
