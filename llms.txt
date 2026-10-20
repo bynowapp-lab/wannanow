@@ -28,6 +28,9 @@ Datos clave:
 - [Eventos en Valencia](https://wannanow.app/eventos-valencia/): conciertos, espectáculos, ferias y calendario de grandes fiestas del año.
 - [Planes en Valencia](https://wannanow.app/planes-valencia/): planes con amigos, en pareja, con niños y gratis.
 - [Planes en Valencia hoy](https://wannanow.app/planes-valencia-hoy/): se actualiza cada mañana con una selección de la agenda de la ciudad, qué suele abrir ese día de la semana (mercados, museos gratis, rastro) y cómo ver en WannaNow lo que pasa ahora mismo.
+- [Qué hacer este fin de semana en Valencia](https://wannanow.app/que-hacer-fin-de-semana-valencia/): selección de la agenda para el viernes, el sábado y el domingo, actualizada cada mañana, y lo que suele abrir el fin de semana.
+- [Planes en pareja en Valencia](https://wannanow.app/planes-pareja-valencia/): planes románticos, planes gratis para dos e ideas para hoy en pareja.
+- [Planes gratis en Valencia](https://wannanow.app/planes-gratis-valencia/): museos con entrada libre, parques, playas, mercadillos y eventos gratuitos.
 - [Ocio en Valencia](https://wannanow.app/ocio-valencia/): noche, tardeo, cultura, gastronomía y aire libre.
 
 ## Temporada
