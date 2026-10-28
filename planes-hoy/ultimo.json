@@ -1,5 +1,5 @@
 {
- "leido": "2026-10-27",
+ "leido": "2026-10-28",
  "eventos": [
   {
    "titulo": "Museo de Prehistoria de València - Actividades",
@@ -44,13 +44,6 @@
    "slug": "41-mostra-de-valencia-cinema-del-mediterrani"
   },
   {
-   "titulo": "Exposición de cerámica inclusiva ACOVA Salud Mental",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-10-07",
-   "fin": "2026-10-30",
-   "slug": "presentacion-de-libro-inclusivo-y-exposicion-de-ceramica"
-  },
-  {
    "titulo": "'VAMOS AL MAR SIN LÍMITES' - ASOC. NÁUTICA INCLUSIVA",
    "cat": "CURSOS",
    "ini": "2026-10-05",
@@ -77,6 +70,342 @@
    "ini": "2026-10-27",
    "fin": "2027-01-17",
    "slug": "exposicion-el-poverello-de-asis-jose-benlliure"
+  },
+  {
+   "titulo": "Carme Teatre - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "programacio-fins-a-final-d-any-carme-teatre"
+  },
+  {
+   "titulo": "Teatro Olympia - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "teatre-olympia-programaci%C3%B3"
+  },
+  {
+   "titulo": "Teatro Talia - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "teatre-talia-programacio"
+  },
+  {
+   "titulo": "Teatro Rialto - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-01",
+   "fin": "2026-12-31",
+   "slug": "teatre-rialto-programacio"
+  },
+  {
+   "titulo": "Atarazanas del Grao",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "drassanes-del-grau"
+  },
+  {
+   "titulo": "Centro Cultural Bancaja - Actividades",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "centre-cultural-bancaixa"
+  },
+  {
+   "titulo": "Jardín Botánico - Programación",
+   "cat": "CURSOS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "pogramacio-cultural-jardi-botanic"
+  },
+  {
+   "titulo": "Black Note Club - Programación",
+   "cat": "MÚSICA",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "black-note-club-programacio"
+  },
+  {
+   "titulo": "Ateneo Mercantil - Programación cultural",
+   "cat": "CINE",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "pogramacio-cultural-ateneo"
+  },
+  {
+   "titulo": "Palacio de Congresos de València - Actividades",
+   "cat": "CONGRESOS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "palau-de-congressos-de-valencia-activitats"
+  },
+  {
+   "titulo": "RUTAS DE LOS ÁRBOLES MONUMENTALES DE VALÈNCIA",
+   "cat": "",
+   "ini": "2026-01-03",
+   "fin": "2026-12-31",
+   "slug": "ruta-dels-arbres-monumentals-de-valencia"
+  },
+  {
+   "titulo": "CC Reina 121 - Programación de septiembre a diciembre",
+   "cat": "ENCUENTROS",
+   "ini": "2026-10-01",
+   "fin": "2026-12-19",
+   "slug": "cc-reina-121-programacion"
+  },
+  {
+   "titulo": "Rutes Literàries València - Rutas guiadas gratuitas",
+   "cat": "VISITAS GUIADAS",
+   "ini": "2026-10-10",
+   "fin": "2026-11-21",
+   "slug": "rutes-literaries-valencia-rutas-guiadas-gratuitas"
+  },
+  {
+   "titulo": "CULTURA ALS BARRIS 2026",
+   "cat": "CINE",
+   "ini": "2026-09-25",
+   "fin": "2026-11-22",
+   "slug": "cultura-als-barris-2026"
+  },
+  {
+   "titulo": "Museo de las Ciencias - Programación",
+   "cat": "AGENDA INFANTIL",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "programacio-cultural-museu-de-les-ciencies"
+  },
+  {
+   "titulo": "Loco Club – Programación",
+   "cat": "MÚSICA",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "loco-club-programaci%C3%B3"
+  },
+  {
+   "titulo": "La Mutant - Espai d'Arts Vives. Actividades",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "la-mutant-espai-d-arts-vives"
+  },
+  {
+   "titulo": "Centre del Carme - Programación cultural",
+   "cat": "CINE",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "programacio-cultural-centre-del-carme"
+  },
+  {
+   "titulo": "Catedral de València",
+   "cat": "VISITAS GUIADAS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "catedral-de-valencia"
+  },
+  {
+   "titulo": "IVAC Filmoteca - Programación",
+   "cat": "CINE",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "ivac-filmoteca-programacio"
+  },
+  {
+   "titulo": "CaixaForum València - Programación cultural",
+   "cat": "CONFERENCIAS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "programacio-cultural-caixaforum-valencia"
+  },
+  {
+   "titulo": "Exposición 'ALTRES' - Sala Municipal de Exposiciones",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-06-26",
+   "fin": "2026-11-29",
+   "slug": "exposicion-altres"
+  },
+  {
+   "titulo": "Oficina de l'Energia: actividades gratuitas",
+   "cat": "TALLERES",
+   "ini": "2026-09-08",
+   "fin": "2026-12-31",
+   "slug": "oficina-de-l-energia-actividades-gratuitas"
+  },
+  {
+   "titulo": "CC Alqueria d'Albors - Programación de octubre",
+   "cat": "CINE",
+   "ini": "2026-10-01",
+   "fin": "2026-10-31",
+   "slug": "cc-alqueria-albors"
+  },
+  {
+   "titulo": "Exposición de cerámica inclusiva ACOVA Salud Mental",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-10-07",
+   "fin": "2026-10-30",
+   "slug": "presentacion-de-libro-inclusivo-y-exposicion-de-ceramica"
+  },
+  {
+   "titulo": "Fundación Cañada Blanch – Programación cultural",
+   "cat": "CONFERENCIAS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "fundacion-canada-blanch-programacion-cultural"
+  },
+  {
+   "titulo": "Sala Russafa - Programación cultural",
+   "cat": "DANZA",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "sala-russafa-programacio-cultural"
+  },
+  {
+   "titulo": "El Centro Museístico 'La Beneficencia' - Actividades",
+   "cat": "AGENDA INFANTIL",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "el-centre-museistic-la-beneficencia"
+  },
+  {
+   "titulo": "Teatro Principal - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "teatre-principal-programacio"
+  },
+  {
+   "titulo": "Colegio Mayor Rector Peset - Programación cultural",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "collegi-major-rector-peset-programacio"
+  },
+  {
+   "titulo": "Museo Fallero de València",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "museu-faller-de-valencia"
+  },
+  {
+   "titulo": "Teatro El Musical – Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "teatre-el-musical-programacio"
+  },
+  {
+   "titulo": "Exposición 'La València de Blasco Ibáñez'",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-02-12",
+   "fin": "2026-12-12",
+   "slug": "exposicion-la-valencia-de-blasco-ibanez"
+  },
+  {
+   "titulo": "Teatro Flumen - Programación",
+   "cat": "CINE",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "programacio-fins-a-final-d-any-teatre-flumen"
+  },
+  {
+   "titulo": "L’ETNO, Museu Valencià d'Etnologia- Programación",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "museo-valencia-d-etnologia-actividades"
+  },
+  {
+   "titulo": "Teatro Círculo - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "programacion-cultural-teatro-circulo"
+  },
+  {
+   "titulo": "Museo de la Semana Santa Marinera",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "museu-de-la-setmana-santa-marinera"
+  },
+  {
+   "titulo": "Café Mercedes Jazz - Programación",
+   "cat": "MÚSICA",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "cafe-mercedes-jazz-programacio"
+  },
+  {
+   "titulo": "Teatro La Estrella - Programación",
+   "cat": "AGENDA INFANTIL",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "programacio-teatro-la-estrella"
+  },
+  {
+   "titulo": "MUVIM - Programación cultural",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "programacio-muvim"
+  },
+  {
+   "titulo": "Octubre CCC - Programación cultural",
+   "cat": "CINE",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "programacio-cultural-octubre-centre-de-cultura-contemporania"
+  },
+  {
+   "titulo": "Almudín - Exposición por el III Año Jubilar del Santo Cáliz",
+   "cat": "EXPOSICIONES",
+   "ini": "2025-10-30",
+   "fin": "2026-10-29",
+   "slug": "almudin-exposicion-iii-ano-jubilar-santo-caliz"
+  },
+  {
+   "titulo": "VALÈNCIA DESIGN FEST 2026",
+   "cat": "FESTIVALES",
+   "ini": "2026-09-10",
+   "fin": "2026-10-31",
+   "slug": "valencia-design-fest-2026"
+  },
+  {
+   "titulo": "CC Nave 3 Ribes - Programación de octubre",
+   "cat": "CINE",
+   "ini": "2026-10-01",
+   "fin": "2026-10-31",
+   "slug": "cc-nave-3-ribes-cas"
+  },
+  {
+   "titulo": "CC Escorxador - Programación de otoño",
+   "cat": "ENCUENTROS",
+   "ini": "2026-10-01",
+   "fin": "2026-12-20",
+   "slug": "cc-escorxador-programacion-2025-26"
+  },
+  {
+   "titulo": "CC Aben Al-Abbar: programación semanal",
+   "cat": "CINE",
+   "ini": "2026-10-26",
+   "fin": "2026-11-01",
+   "slug": "cc-aben-al-abbar-programacion"
+  },
+  {
+   "titulo": "Palau de la Música - Programación de octubre",
+   "cat": "MÚSICA",
+   "ini": "2026-10-01",
+   "fin": "2026-10-31",
+   "slug": "palau-de-la-musica-programacion-2026"
+  },
+  {
+   "titulo": "MERCAFESTES EN LOS MERCADOS MUNICIPALES",
+   "cat": "AGENDA INFANTIL",
+   "ini": "2026-09-26",
+   "fin": "2027-12-18",
+   "slug": "mercafestes-en-los-mercados-municipales"
   },
   {
    "titulo": "Sala de exposiciones 'Edificio del Reloj' - Programación",
@@ -170,13 +499,6 @@
    "slug": "exposicion-la-imagen-del-rey-jaume-i-museo-de-historia"
   },
   {
-   "titulo": "Bibliotecas Municipales: programación de octubre",
-   "cat": "AGENDA INFANTIL",
-   "ini": "2026-10-01",
-   "fin": "2026-10-31",
-   "slug": "biblioteques-municipals-programacio-mensual"
-  },
-  {
    "titulo": "Museu de la Mar - Casa dels Bous: visitas guiadas gratuitas",
    "cat": "MUSEOS MUNICIPALES",
    "ini": "2026-10-03",
@@ -184,333 +506,11 @@
    "slug": "museu-de-la-mar-casa-dels-bous-visitas-guiadas-gratuitas"
   },
   {
-   "titulo": "Carme Teatre - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "programacio-fins-a-final-d-any-carme-teatre"
-  },
-  {
-   "titulo": "Teatro Olympia - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "teatre-olympia-programaci%C3%B3"
-  },
-  {
-   "titulo": "Teatro Talia - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "teatre-talia-programacio"
-  },
-  {
-   "titulo": "Teatro Rialto - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-01",
-   "fin": "2026-12-31",
-   "slug": "teatre-rialto-programacio"
-  },
-  {
-   "titulo": "Atarazanas del Grao",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "drassanes-del-grau"
-  },
-  {
-   "titulo": "Centro Cultural Bancaja - Actividades",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "centre-cultural-bancaixa"
-  },
-  {
-   "titulo": "Jardín Botánico - Programación",
-   "cat": "CURSOS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "pogramacio-cultural-jardi-botanic"
-  },
-  {
-   "titulo": "Black Note Club - Programación",
-   "cat": "MÚSICA",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "black-note-club-programacio"
-  },
-  {
-   "titulo": "Ateneo Mercantil - Programación cultural",
-   "cat": "CINE",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "pogramacio-cultural-ateneo"
-  },
-  {
-   "titulo": "RUTAS DE LOS ÁRBOLES MONUMENTALES DE VALÈNCIA",
-   "cat": "",
-   "ini": "2026-01-03",
-   "fin": "2026-12-31",
-   "slug": "ruta-dels-arbres-monumentals-de-valencia"
-  },
-  {
-   "titulo": "Palacio de Congresos de València - Actividades",
-   "cat": "CONGRESOS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "palau-de-congressos-de-valencia-activitats"
-  },
-  {
-   "titulo": "MERCAFESTES EN LOS MERCADOS MUNICIPALES",
+   "titulo": "Bibliotecas Municipales: programación de octubre",
    "cat": "AGENDA INFANTIL",
-   "ini": "2026-09-26",
-   "fin": "2027-12-18",
-   "slug": "mercafestes-en-los-mercados-municipales"
-  },
-  {
-   "titulo": "CC Reina 121 - Programación de septiembre a diciembre",
-   "cat": "ENCUENTROS",
-   "ini": "2026-10-01",
-   "fin": "2026-12-19",
-   "slug": "cc-reina-121-programacion"
-  },
-  {
-   "titulo": "Rutes Literàries València - Rutas guiadas gratuitas",
-   "cat": "VISITAS GUIADAS",
-   "ini": "2026-10-10",
-   "fin": "2026-11-21",
-   "slug": "rutes-literaries-valencia-rutas-guiadas-gratuitas"
-  },
-  {
-   "titulo": "Fundación Cañada Blanch – Programación cultural",
-   "cat": "CONFERENCIAS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "fundacion-canada-blanch-programacion-cultural"
-  },
-  {
-   "titulo": "Sala Russafa - Programación cultural",
-   "cat": "DANZA",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "sala-russafa-programacio-cultural"
-  },
-  {
-   "titulo": "El Centro Museístico 'La Beneficencia' - Actividades",
-   "cat": "AGENDA INFANTIL",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "el-centre-museistic-la-beneficencia"
-  },
-  {
-   "titulo": "Teatro Principal - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "teatre-principal-programacio"
-  },
-  {
-   "titulo": "Colegio Mayor Rector Peset - Programación cultural",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "collegi-major-rector-peset-programacio"
-  },
-  {
-   "titulo": "Museo Fallero de València",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "museu-faller-de-valencia"
-  },
-  {
-   "titulo": "Teatro El Musical – Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "teatre-el-musical-programacio"
-  },
-  {
-   "titulo": "Museo de las Ciencias - Programación",
-   "cat": "AGENDA INFANTIL",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "programacio-cultural-museu-de-les-ciencies"
-  },
-  {
-   "titulo": "Loco Club – Programación",
-   "cat": "MÚSICA",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "loco-club-programaci%C3%B3"
-  },
-  {
-   "titulo": "La Mutant - Espai d'Arts Vives. Actividades",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "la-mutant-espai-d-arts-vives"
-  },
-  {
-   "titulo": "Centre del Carme - Programación cultural",
-   "cat": "CINE",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "programacio-cultural-centre-del-carme"
-  },
-  {
-   "titulo": "Catedral de València",
-   "cat": "VISITAS GUIADAS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "catedral-de-valencia"
-  },
-  {
-   "titulo": "IVAC Filmoteca - Programación",
-   "cat": "CINE",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "ivac-filmoteca-programacio"
-  },
-  {
-   "titulo": "CaixaForum València - Programación cultural",
-   "cat": "CONFERENCIAS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "programacio-cultural-caixaforum-valencia"
-  },
-  {
-   "titulo": "Exposición 'ALTRES' - Sala Municipal de Exposiciones",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-06-26",
-   "fin": "2026-11-29",
-   "slug": "exposicion-altres"
-  },
-  {
-   "titulo": "Oficina de l'Energia: actividades gratuitas",
-   "cat": "TALLERES",
-   "ini": "2026-09-08",
-   "fin": "2026-12-31",
-   "slug": "oficina-de-l-energia-actividades-gratuitas"
-  },
-  {
-   "titulo": "CC Alqueria d'Albors - Programación de octubre",
-   "cat": "CINE",
    "ini": "2026-10-01",
    "fin": "2026-10-31",
-   "slug": "cc-alqueria-albors"
-  },
-  {
-   "titulo": "Exposición 'La València de Blasco Ibáñez'",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-02-12",
-   "fin": "2026-12-12",
-   "slug": "exposicion-la-valencia-de-blasco-ibanez"
-  },
-  {
-   "titulo": "Teatro Flumen - Programación",
-   "cat": "CINE",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "programacio-fins-a-final-d-any-teatre-flumen"
-  },
-  {
-   "titulo": "L’ETNO, Museu Valencià d'Etnologia- Programación",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "museo-valencia-d-etnologia-actividades"
-  },
-  {
-   "titulo": "Teatro Círculo - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "programacion-cultural-teatro-circulo"
-  },
-  {
-   "titulo": "Museo de la Semana Santa Marinera",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "museu-de-la-setmana-santa-marinera"
-  },
-  {
-   "titulo": "Café Mercedes Jazz - Programación",
-   "cat": "MÚSICA",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "cafe-mercedes-jazz-programacio"
-  },
-  {
-   "titulo": "Teatro La Estrella - Programación",
-   "cat": "AGENDA INFANTIL",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "programacio-teatro-la-estrella"
-  },
-  {
-   "titulo": "MUVIM - Programación cultural",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "programacio-muvim"
-  },
-  {
-   "titulo": "Octubre CCC - Programación cultural",
-   "cat": "CINE",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "programacio-cultural-octubre-centre-de-cultura-contemporania"
-  },
-  {
-   "titulo": "Almudín - Exposición por el III Año Jubilar del Santo Cáliz",
-   "cat": "EXPOSICIONES",
-   "ini": "2025-10-30",
-   "fin": "2026-10-29",
-   "slug": "almudin-exposicion-iii-ano-jubilar-santo-caliz"
-  },
-  {
-   "titulo": "VALÈNCIA DESIGN FEST 2026",
-   "cat": "FESTIVALES",
-   "ini": "2026-09-10",
-   "fin": "2026-10-31",
-   "slug": "valencia-design-fest-2026"
-  },
-  {
-   "titulo": "CC Nave 3 Ribes - Programación de octubre",
-   "cat": "CINE",
-   "ini": "2026-10-01",
-   "fin": "2026-10-31",
-   "slug": "cc-nave-3-ribes-cas"
-  },
-  {
-   "titulo": "CULTURA ALS BARRIS 2026",
-   "cat": "CINE",
-   "ini": "2026-09-25",
-   "fin": "2026-11-22",
-   "slug": "cultura-als-barris-2026"
-  },
-  {
-   "titulo": "CC Escorxador - Programación de otoño",
-   "cat": "ENCUENTROS",
-   "ini": "2026-10-01",
-   "fin": "2026-12-20",
-   "slug": "cc-escorxador-programacion-2025-26"
-  },
-  {
-   "titulo": "CC Aben Al-Abbar: programación semanal",
-   "cat": "CINE",
-   "ini": "2026-10-26",
-   "fin": "2026-11-01",
-   "slug": "cc-aben-al-abbar-programacion"
-  },
-  {
-   "titulo": "Palau de la Música - Programación de octubre",
-   "cat": "MÚSICA",
-   "ini": "2026-10-01",
-   "fin": "2026-10-31",
-   "slug": "palau-de-la-musica-programacion-2026"
+   "slug": "biblioteques-municipals-programacio-mensual"
   }
  ]
 }
