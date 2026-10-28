@@ -254,8 +254,8 @@ def main():
     bloque = '                    <ul>\n' + '\n'.join(f'                        <li>{x}</li>' for x in BLOQUES[hoy.weekday()]) + '\n                    </ul>'
     tpl = open(os.path.join(AQUI, 'plantilla.html'), encoding='utf-8').read()
     rep = {
-        '{{TITLE}}': f'Planes para hacer hoy en Valencia ({dia} {hoy.day} {MESES_C[hoy.month - 1]}) | WannaNow',
-        '{{DESC}}': f'Qué hacer hoy, {larga}, en Valencia: planes de la agenda de la ciudad, museos gratis, ideas en pareja o para esta noche y lo que pasa ahora en WannaNow.',
+        '{{TITLE}}': 'Planes para hacer hoy en Valencia: agenda del día | WannaNow',
+        '{{DESC}}': 'Qué hacer hoy en Valencia: planes de la agenda de la ciudad, museos gratis, ideas en pareja o para esta noche y lo que pasa ahora en WannaNow. Se actualiza cada mañana.',
         '{{LABEL}}': f'Hoy · {larga}',
         '{{DIA}}': dia,
         '{{FECHA_LARGA}}': larga,
@@ -380,8 +380,8 @@ def generar_finde(evs, hoy, leido, textos):
     ul = lambda xs: '                    <ul>\n' + '\n'.join(f'                        <li>{x}</li>' for x in xs) + '\n                    </ul>'
     larga = f'{DIAS[hoy.weekday()]} {hoy.day} de {MESES[hoy.month - 1]}'
     rep = {
-        '{{TITLE}}': f'Qué hacer este fin de semana en Valencia ({corto}) | WannaNow',
-        '{{DESC}}': f'Planes para este fin de semana en Valencia, {largo}: selección de la agenda de la ciudad, mercadillos, museos gratis y lo que pasa ahora en la app WannaNow.',
+        '{{TITLE}}': 'Qué hacer este fin de semana en Valencia | WannaNow',
+        '{{DESC}}': 'Planes para este fin de semana en Valencia: agenda del viernes al domingo, mercadillos, museos gratis y lo que pasa ahora en la app WannaNow. Se actualiza cada mañana.',
         '{{LABEL}}': f'Fin de semana · {corto}',
         '{{RANGO}}': largo,
         '{{FECHA_ACT}}': f'{larga} de {hoy.year}',
@@ -491,8 +491,8 @@ def generar_en(elegidos, hoy, leido, textos, destacados=()):
     bloque = '                    <ul>\n' + '\n'.join(f'                        <li>{x}</li>' for x in BLOQUES_EN[hoy.weekday()]) + '\n                    </ul>'
     tpl = open(tpl_path, encoding='utf-8').read()
     rep = {
-        '{{TITLE}}': f'Things to do in Valencia today, {larga} | WannaNow',
-        '{{DESC}}': f'What to do in Valencia today, {larga}: picks from the city agenda, free museums and markets open today, and what\'s on right now in the WannaNow app.',
+        '{{TITLE}}': 'Things to do in Valencia today: updated daily | WannaNow',
+        '{{DESC}}': 'What to do in Valencia today: picks from the city agenda, free museums and markets open today, and what\'s on right now in the WannaNow app. Updated every morning.',
         '{{LABEL}}': f'Today · {larga}',
         '{{DIA}}': day,
         '{{FECHA_LARGA}}': larga,
