@@ -1,0 +1,32 @@
+name: Fotos Valencia&Go
+
+# Descarga las fotos de los 4 tours de Valencia&Go (partner) y las guarda en
+# /img/partners/ para servirlas desde wannanow.app. Se lanza a mano (Run workflow).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fotos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Descargar fotos
+        run: |
+          mkdir -p img/partners
+          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
+          B=https://www.valenciaandgo.com/wp-content/uploads
+          curl -fsSL -A "$UA" -o img/partners/valenciaandgo-vino.webp     "$B/2026/06/Brindis_amigos_en_cata_de_vinos_Requena.webp"
+          curl -fsSL -A "$UA" -o img/partners/valenciaandgo-albufera.webp "$B/tours-excursiones/01-parque-natural-albufera/parque-natural-albufera_3.webp"
+          curl -fsSL -A "$UA" -o img/partners/valenciaandgo-arte.webp     "$B/tours-excursiones/03-arte-arquitectura/tour-arte-arquitectura_5.webp"
+          curl -fsSL -A "$UA" -o img/partners/valenciaandgo-belenes.webp  "$B/tours-excursiones/20-tour-belenes/tour-belenes_4.webp"
+          ls -la img/partners
+      - name: Guardar en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add img/partners
+          git diff --cached --quiet || git commit -m "Fotos de los tours de Valencia&Go (partner)"
+          git push
