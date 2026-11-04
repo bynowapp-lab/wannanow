@@ -1,0 +1,24 @@
+name: Sello ENISA en el pie
+
+# Añade el logo y el texto de ENISA (empresa emergente) al pie de todas las páginas.
+# Usa .github/scripts/enisa_pie.py (no toca las páginas que ya lo tienen). Se lanza a mano (Run workflow).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  enisa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Añadir el sello al pie
+        run: python3 .github/scripts/enisa_pie.py
+      - name: Guardar en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Sello de ENISA (empresa emergente) en el pie de todas las páginas"
+          git push
