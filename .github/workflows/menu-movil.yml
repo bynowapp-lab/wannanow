@@ -1,0 +1,24 @@
+name: Menú móvil con secciones
+
+# Pone todas las secciones en el menú hamburguesa (móvil) y añade «Hoy» al menú superior de las páginas en español.
+# Usa .github/scripts/menu_movil.py (no toca las páginas que ya lo tienen). Se lanza a mano (Run workflow).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  menu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Actualizar menús
+        run: python3 .github/scripts/menu_movil.py
+      - name: Guardar en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Menú móvil con todas las secciones y «Hoy» en el menú superior"
+          git push
