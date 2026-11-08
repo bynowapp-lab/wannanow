@@ -21,6 +21,7 @@ Datos clave:
 - [Sobre WannaNow](https://wannanow.app/sobre-wannanow/): qué es la app, ficha de datos, cómo funciona, qué la diferencia y contacto.
 - [WannaNow en los medios](https://wannanow.app/prensa/): entrevistas y apariciones en prensa y radio (Radio Esport Valencia 91.4 FM, 31/10/2026), datos clave y contacto de prensa (admin@wannanow.app).
 - [Apps para saber qué hacer en Valencia: comparativa 2026](https://wannanow.app/apps-planes-valencia/): WannaNow frente a Hoy Valencia, Fever, Visit València y Click&Plan (mapa, «ahora mismo», eventos y lugares, planes gratis, entradas).
+- [Dónde buscar planes en Valencia hoy: webs y agendas comparadas](https://wannanow.app/donde-buscar-planes-valencia/): WannaNow frente a Visit València, ConoceValencia, AU Agenda, Valencia Secreta, Valencia Bonita y Click&Plan (lo que pasa ahora, calendario, mapa con filtros y buscador, zonas con más planes y lugares cerca, planes gratis, entradas).
 - [Inicio](https://wannanow.app/): presentación de la app, funciones y preguntas frecuentes.
 
 ## Guías de Valencia
