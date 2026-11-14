@@ -80,7 +80,13 @@
         function getConsent() {
             try {
                 const raw = localStorage.getItem(CONSENT_KEY);
-                return raw ? JSON.parse(raw) : null;
+                const consent = raw ? JSON.parse(raw) : null;
+                // El consentimiento caduca a los 24 meses: se vuelve a pedir.
+                if (consent && (!consent.date || Date.now() - Date.parse(consent.date) > 730 * 864e5)) {
+                    localStorage.removeItem(CONSENT_KEY);
+                    return null;
+                }
+                return consent;
             } catch (err) {
                 return null;
             }
@@ -175,7 +181,7 @@
 
         // "Aceptar todas": consentimiento a todas las categorías opcionales.
         cookieAcceptBtn?.addEventListener('click', () => {
-            saveConsent({ analytics: true, personalization: true, marketing: true });
+            saveConsent({ analytics: true, personalization: false, marketing: true });
             hideBanner();
         });
 
@@ -215,5 +221,19 @@
             if (e.key === 'Escape') closePrefs();
         });
 
+        // Enlace «Configurar cookies» del pie (data-cookie-settings) y /?configurar-cookies
+        window.wannanowOpenCookieSettings = openPrefs;
+        document.addEventListener('click', (e) => {
+            const link = e.target.closest && e.target.closest('[data-cookie-settings]');
+            if (link && cookiePrefsOverlay) {
+                e.preventDefault();
+                openPrefs();
+            }
+        });
+
         showBannerIfNeeded();
+
+        if (/[?&]configurar-cookies(=|&|$)/.test(location.search) || location.hash === '#configurar-cookies') {
+            openPrefs();
+        }
     })();
