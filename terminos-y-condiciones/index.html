@@ -21,7 +21,7 @@ gtag('consent', 'default', {
 });
 </script>
 <!-- End Google Consent Mode v2 -->
-    
+
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -29,7 +29,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PPR93MF7');</script>
 <!-- End Google Tag Manager -->
-    
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Términos y Condiciones - WannaNow</title>
@@ -59,26 +59,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         color: #5b21b6;
         border-left: 4px solid #7c3aed;
         padding-left: 12px;
+        scroll-margin-top: 20px;
     }
-    h3 {
-        margin-top: 25px;
-        color: #333;
+    .tabla {
+        overflow-x: auto;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0 25px;
+        font-size: 0.92rem;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+        vertical-align: top;
+    }
+    th {
+        background: #7c3aed;
+        color: white;
+    }
+    tr:nth-child(even) {
+        background: #f7f5fc;
     }
     ul {
         padding-left: 20px;
     }
     li {
-        margin-bottom: 8px;
+        margin-bottom: 6px;
     }
     a {
         color: #7c3aed;
-    }
-    .highlight {
-        background: #f7f5fc;
-        border-left: 4px solid #7c3aed;
-        padding: 15px 20px;
-        border-radius: 4px;
-        margin: 20px 0;
     }
     .back-link {
         display: inline-block;
@@ -87,8 +99,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         color: #7c3aed;
         font-weight: 600;
     }
+    .legal-foot {
+        margin-top: 50px;
+        padding-top: 18px;
+        border-top: 1px solid #ddd;
+        font-size: 0.88rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 18px;
+    }
 </style>
-    <meta name="description" content="Términos y condiciones de uso de la app WannaNow, titularidad de ByNow Valencia S.L.: usuarios, artistas, organizadores y publicación de eventos.">
+    <meta name="description" content="Términos y condiciones de uso de WannaNow: requisitos, contenido que publicas, agendas de locales, moderación, responsabilidad y ley aplicable.">
     <link rel="canonical" href="https://wannanow.app/terminos-y-condiciones/">
 </head>
 <body>
@@ -96,124 +117,70 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPR93MF7"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    
+
 <a href="/" class="back-link">← Volver a WannaNow</a>
 
-<h1>Términos y Condiciones de Uso</h1>
-<p class="updated">Última actualización: 25 de septiembre de 2026</p>
+<h1>Términos y Condiciones de uso</h1>
+<p class="updated">Última actualización: 14 de noviembre de 2026</p>
 
-<h2>Titular de WannaNow</h2>
-<p>La aplicación WannaNow y el sitio web wannanow.app son titularidad de:</p>
-<table>
-    <tr><th>Campo</th><th>Dato</th></tr>
-    <tr><td>Razón social</td><td>ByNow Valencia S.L.</td></tr>
-    <tr><td>NIF/CIF</td><td>B88705660</td></tr>
-    <tr><td>Domicilio</td><td>46.689 - Benicull del Xúquer, 8 (Valencia)</td></tr>
-    <tr><td>Contacto</td><td>hola@wannanow.app</td></tr>
-</table>
-<p>En estos Términos, «WannaNow», «nosotros» o «la plataforma» se refieren a ByNow Valencia S.L. como titular de la app.</p>
+<h2 id="titular">1. Titular</h2>
+<p>WannaNow es un servicio de BYNOW VALENCIA, S.L. (NIF B88705660), con los datos que figuran en el <a href="/politica-de-privacidad/#aviso-legal">apartado 1 de la Política de Privacidad</a>.</p>
 
-<h2>1. Objeto y ámbito de aplicación</h2>
-<p>Los presentes Términos y Condiciones (en adelante, "TC") regulan el acceso y uso de la aplicación WannaNow y sus servicios asociados. La descarga, instalación o uso de la app implica la aceptación plena de estos TC.</p>
-<p>WannaNow es un marketplace bilateral de eventos locales en tiempo real que facilita la conexión entre personas que buscan actividades y los organizadores y artistas que las ofrecen. WannaNow actúa como intermediario tecnológico y no es el organizador de ninguno de los eventos publicados en la plataforma.</p>
+<h2 id="objeto">2. Objeto y aceptación</h2>
+<p>Estos términos regulan el uso de WannaNow en wannanow.app, app.wannanow.app y las aplicaciones para iOS y Android. Al registrarte los aceptas. Si no estás de acuerdo, no uses el servicio.</p>
 
-<h2>2. Tipos de usuarios y condiciones específicas</h2>
+<h2 id="servicio">3. El servicio</h2>
+<p>WannaNow muestra en un mapa los planes y eventos que ocurren cerca de ti. Cada evento aparece durante su horario, y los locales fijos aparecen como abiertos según el horario que tenemos registrado. El servicio es gratuito para los usuarios.</p>
+<p>WannaNow actúa como intermediario: no organiza los eventos que muestra, salvo que se indique lo contrario. La información de cada evento la facilitan sus organizadores o los usuarios que la publican, o procede de las fuentes públicas del propio organizador. Fechas, horarios y precios pueden cambiar: confírmalos con el organizador antes de ir.</p>
 
-<h3>2.1 Usuarios Particulares</h3>
+<h2 id="cuenta">4. Requisitos y cuenta</h2>
+<p>Para registrarte debes tener 18 años o más y facilitar datos veraces. La cuenta es personal: guarda tu contraseña en secreto y avísanos en <a href="mailto:hola@wannanow.app">hola@wannanow.app</a> si detectas un uso no autorizado. Las cuentas profesionales son para artistas, locales y organizadores que publican en el ejercicio de su actividad, y deben identificar al profesional real.</p>
+
+<h2 id="contenido">5. Contenido que publicas</h2>
+<p>Al publicar un evento o una foto te comprometes a que:</p>
 <ul>
-    <li>El registro es necesario para descubrir y publicar eventos, guardar favoritos e interactuar con la plataforma</li>
-    <li>Pueden publicar eventos públicos y gratuitos que se celebren en espacios de libre acceso</li>
-    <li>Al publicar un evento con fotos o vídeos, asumen la responsabilidad total sobre el contenido subido</li>
-    <li>WannaNow puede eliminar eventos o contenidos que no cumplan estas condiciones sin previo aviso</li>
-    <li>Los eventos publicados por usuarios particulares están sujetos a revisión por el equipo de WannaNow</li>
+    <li>el evento es real, con fecha, hora y lugar correctos;</li>
+    <li>tienes derecho a publicar las imágenes y textos, y no vulneras derechos de autor ni la imagen de nadie;</li>
+    <li>no aparecen menores identificables;</li>
+    <li>el contenido no es ilícito, engañoso, violento, sexual, discriminatorio ni publicidad no relacionada con un evento.</li>
 </ul>
+<p>Eres responsable de lo que publicas. Nos concedes una licencia gratuita y no exclusiva para mostrarlo en WannaNow mientras esté publicado y para difundirlo en los canales de WannaNow citando al autor. La licencia termina cuando lo borras, salvo en las publicaciones ya realizadas.</p>
 
-<h3>2.2 Artistas</h3>
-<ul>
-    <li>Deben registrarse como "Artista" y proporcionar información veraz sobre su actividad artística</li>
-    <li>Pueden crear un perfil artístico público con información, fotos y agenda de actuaciones</li>
-    <li>Los artistas pueden publicar eventos propios</li>
-    <li>Los artistas son responsables de la veracidad de la información publicada sobre sus actuaciones</li>
-    <li>WannaNow no actúa como agente ni representante del artista y no interviene en relaciones contractuales entre artistas y organizadores</li>
-</ul>
+<h2 id="agendas">6. Agendas de locales y organizadores</h2>
+<p>WannaNow publica la agenda de locales y organizadores a partir de su web o de su perfil profesional en redes, con su cartel y un enlace a la publicación original. Esos contenidos pertenecen a sus titulares. Si eres el titular y quieres que los retiremos o gestionarlos tú, escríbenos a <a href="mailto:hola@wannanow.app">hola@wannanow.app</a> y lo haremos ese mismo día.</p>
 
-<h3>2.3 Organizadores</h3>
-<ul>
-    <li>Deben registrarse proporcionando datos verídicos de empresa o actividad profesional</li>
-    <li>Aceptan ser los únicos responsables de los eventos que publican: información, seguridad, permisos y autorizaciones necesarias</li>
-    <li>Garantizan disponer de todos los permisos y licencias municipales necesarios para la celebración del evento</li>
-    <li>Deben actualizar o cancelar los eventos publicados si estos sufren modificaciones o no llegan a celebrarse</li>
-    <li>El incumplimiento reiterado de las condiciones de publicación puede resultar en la suspensión o eliminación de la cuenta</li>
-</ul>
+<h2 id="moderacion">7. Avisos de contenido ilícito y moderación</h2>
+<p>Puedes avisarnos de cualquier contenido que consideres ilícito o contrario a estos términos desde la propia app o en <a href="mailto:hola@wannanow.app">hola@wannanow.app</a>. Indica dónde está, por qué crees que es ilícito, tu nombre y email (salvo en casos de abuso sexual infantil) y que lo comunicas de buena fe. Revisaremos el aviso con diligencia y te informaremos de lo que decidamos.</p>
+<p>Si retiramos o limitamos un contenido tuyo, te explicaremos el motivo y podrás reclamar contra esa decisión en <a href="mailto:hola@wannanow.app">hola@wannanow.app</a>. Esta dirección es también nuestro punto único de contacto para autoridades y usuarios conforme al Reglamento de Servicios Digitales (en castellano, valenciano o inglés).</p>
 
-<h2>3. Exoneración de responsabilidad — CLÁUSULA FUNDAMENTAL</h2>
-<div class="highlight">
-<p>WannaNow actúa exclusivamente como plataforma intermediaria de información. En consecuencia:</p>
-<ul>
-    <li>WannaNow NO es el organizador de ningún evento publicado en la plataforma</li>
-    <li>WannaNow NO verifica en tiempo real la exactitud, veracidad o actualización de los eventos publicados</li>
-    <li>WannaNow NO es responsable de cancelaciones, modificaciones, retrasos o cualquier incidencia en el desarrollo de los eventos</li>
-    <li>WannaNow NO es responsable de daños o perjuicios derivados de la asistencia a un evento publicado en la plataforma</li>
-    <li>WannaNow NO garantiza que los organizadores cuenten con los permisos y autorizaciones necesarias para sus eventos</li>
-    <li>WannaNow NO es responsable de contenidos (fotos, vídeos, descripciones) publicados por usuarios, artistas u organizadores</li>
-</ul>
-<p>El usuario acepta que WannaNow es un servicio de información y descubrimiento de eventos, y que la relación contractual (en su caso) se establece directamente entre el usuario y el organizador del evento.</p>
-</div>
+<h2 id="usos-no-permitidos">8. Usos no permitidos</h2>
+<p>No está permitido extraer de forma masiva los contenidos de WannaNow, copiarlos para otro servicio, hacer ingeniería inversa de la app, crear cuentas falsas, suplantar a otras personas o intentar saltarse las medidas de seguridad.</p>
 
-<h2>4. Contenido prohibido</h2>
-<p>Está prohibido publicar en WannaNow cualquier contenido que:</p>
-<ul>
-    <li>Sea falso, engañoso o induzca a error sobre la naturaleza, lugar, fecha u hora del evento</li>
-    <li>Vulnere derechos de propiedad intelectual o industrial de terceros</li>
-    <li>Contenga imágenes de personas sin su consentimiento, especialmente menores de edad</li>
-    <li>Sea ofensivo, discriminatorio, violento o que incite al odio por razones de raza, género, religión, orientación sexual u otras</li>
-    <li>Promueva actividades ilegales o que vulneren normativa local</li>
-    <li>Constituya publicidad engañosa o competencia desleal</li>
-    <li>Contenga malware, spam o enlaces a contenidos maliciosos</li>
-</ul>
+<h2 id="suspension">9. Suspensión y baja</h2>
+<p>Podemos suspender o cerrar una cuenta que incumpla estos términos. Salvo en casos urgentes, te avisaremos antes y te diremos el motivo. Puedes darte de baja cuando quieras desde los ajustes de la app o escribiendo a <a href="mailto:hola@wannanow.app">hola@wannanow.app</a>.</p>
 
-<h2>5. Sistema de reportes y moderación</h2>
-<p>WannaNow dispone de un sistema de reporte de contenidos para que los usuarios puedan alertar sobre eventos o contenidos que incumplan estas condiciones. El proceso es:</p>
-<ul>
-    <li>El usuario reporta el contenido desde la app mediante el botón "Reportar"</li>
-    <li>WannaNow revisa el reporte en un plazo máximo de 48 horas en días laborables</li>
-    <li>Si el contenido incumple los TC, se elimina y se notifica al organizador/usuario</li>
-    <li>En casos graves (contenido ilegal), WannaNow puede actuar de forma inmediata sin previo aviso al publicador</li>
-    <li>El organizador o artista afectado por una eliminación puede apelar por email a <a href="mailto:soporte@wannanow.app">soporte@wannanow.app</a></li>
-</ul>
+<h2 id="pago">10. Servicios de pago</h2>
+<p>Hoy WannaNow es gratuito. Si en el futuro ofrecemos servicios de pago para profesionales, se regirán por sus propias condiciones, que se aceptarán antes de contratarlos.</p>
 
-<h2>6. Propiedad intelectual</h2>
-<ul>
-    <li>La marca, logo, diseño, código fuente y contenidos propios de WannaNow son propiedad exclusiva de WannaNow y están protegidos por la legislación de propiedad intelectual</li>
-    <li>Queda prohibida la reproducción, distribución o comunicación pública de cualquier elemento de WannaNow sin autorización expresa</li>
-    <li>Los usuarios conservan los derechos sobre el contenido que publican, pero otorgan a WannaNow la licencia de uso descrita en la Política de Privacidad (sección 3.3)</li>
-</ul>
+<h2 id="propiedad">11. Propiedad intelectual e industrial</h2>
+<p>La marca WannaNow, la app, la web, su diseño y su código pertenecen a BYNOW VALENCIA, S.L. o a sus licenciantes. Te concedemos una licencia personal, no exclusiva e intransferible para usarlos conforme a estos términos.</p>
 
-<h2>7. Suspensión y cancelación de cuentas</h2>
-<p>WannaNow puede suspender o cancelar cuentas en los siguientes supuestos:</p>
-<ul>
-    <li>Incumplimiento de estos TC</li>
-    <li>Publicación reiterada de contenido falso, inapropiado o que vulnere derechos de terceros</li>
-    <li>Impago de servicios de pago (Plan Pro)</li>
-    <li>Inactividad prolongada (más de 12 meses sin uso) — previo aviso de 30 días</li>
-    <li>Solicitud del propio usuario</li>
-</ul>
+<h2 id="responsabilidad">12. Responsabilidad</h2>
+<p>Respondemos del servicio conforme a la ley. No somos responsables de los eventos organizados por terceros, de sus cambios o cancelaciones, ni de los contenidos publicados por terceros, salvo que, teniendo conocimiento efectivo de su ilicitud, no actuemos con diligencia para retirarlos (art. 16 LSSI). Haremos lo posible para que el servicio esté disponible, pero puede haber interrupciones por mantenimiento o causas ajenas. Nada de lo previsto en estos términos limita los derechos que te reconoce la normativa de consumidores y usuarios.</p>
 
-<h2>8. Limitación de responsabilidad</h2>
-<p>En la máxima medida permitida por la ley aplicable, WannaNow no será responsable de daños indirectos, incidentales, especiales, consecuentes o punitivos, incluyendo pérdida de beneficios, datos o reputación, derivados del uso o imposibilidad de uso de la plataforma. La responsabilidad máxima de WannaNow frente a un usuario no podrá exceder en ningún caso el importe pagado por dicho usuario a WannaNow en los 12 meses anteriores al hecho causante.</p>
+<h2 id="cambios">13. Cambios en estos términos</h2>
+<p>Si cambiamos estos términos de forma relevante, te avisaremos en la app o por email con al menos 15 días de antelación. Si no estás de acuerdo, puedes darte de baja antes de que el cambio se aplique.</p>
 
-<h2>9. Ley aplicable y resolución de conflictos</h2>
-<ul>
-    <li>Los presentes TC se rigen por la legislación española</li>
-    <li>Para la resolución de conflictos, las partes se someten a los Juzgados y Tribunales de Valencia, con renuncia a cualquier otro fuero</li>
-    <li>Para consumidores (usuarios particulares), será de aplicación la normativa de protección de consumidores y usuarios, sin perjuicio de los derechos reconocidos por la legislación española y europea</li>
-    <li>WannaNow se compromete a intentar la resolución extrajudicial de conflictos antes de acudir a la vía judicial</li>
-</ul>
+<h2 id="ley">14. Ley aplicable y jurisdicción</h2>
+<p>Estos términos se rigen por la ley española. Si eres consumidor, serán competentes los juzgados de tu domicilio. En los demás casos, los de Valencia.</p>
 
-<footer style="margin-top:40px;padding-top:12px;border-top:1px solid #ddd">
-<!-- ENISA -->
-<div class="enisa-sello" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 16px;margin:18px auto 14px;max-width:760px;text-align:left"><img src="/img/enisa-empresa-emergente.webp" alt="Gobierno de España · Ministerio de Industria y Turismo · ENISA" width="339" height="72" loading="lazy" decoding="async" style="height:36px;width:auto;display:block;flex:0 0 auto"><p style="margin:0;flex:1 1 260px;font-size:.72rem;line-height:1.45;opacity:.8">BYNOW VALENCIA, S.L., la sociedad que desarrolla WannaNow, ha sido reconocida por la Empresa Nacional de Innovación (ENISA) como empresa emergente conforme a la Ley 28/2022, de fomento del ecosistema de las empresas emergentes.</p></div>
-<!-- /ENISA -->
-</footer>
+<nav class="legal-foot" aria-label="Textos legales">
+    <a href="/politica-de-privacidad/#aviso-legal">Aviso legal</a>
+    <a href="/politica-de-privacidad/">Política de Privacidad</a>
+    <a href="/terminos-y-condiciones/">Términos y Condiciones</a>
+    <a href="/politica-de-cookies/">Política de Cookies</a>
+    <a href="/?configurar-cookies">Configurar cookies</a>
+</nav>
+
 </body>
 </html>
