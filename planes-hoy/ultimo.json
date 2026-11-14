@@ -1,5 +1,5 @@
 {
- "leido": "2026-11-13",
+ "leido": "2026-11-14",
  "eventos": [
   {
    "titulo": "Museo de Prehistoria de València - Actividades",
@@ -16,6 +16,13 @@
    "slug": "bioparc-valencia"
   },
   {
+   "titulo": "Escalante - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "teatre-escalante-programacio"
+  },
+  {
    "titulo": "Exposición permanente en La Alquería de Félix",
    "cat": "EXPOSICIONES",
    "ini": "2026-01-02",
@@ -30,13 +37,6 @@
    "slug": "ruta-dones-de-ciencia"
   },
   {
-   "titulo": "Escalante - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "teatre-escalante-programacio"
-  },
-  {
    "titulo": "'VAMOS AL MAR SIN LÍMITES' - ASOC. NÁUTICA INCLUSIVA",
    "cat": "CURSOS",
    "ini": "2026-10-05",
@@ -49,6 +49,20 @@
    "ini": "2026-11-02",
    "fin": "2026-11-30",
    "slug": "cc-alqueria-albors"
+  },
+  {
+   "titulo": "CENTROS CULTURALES MUNICIPALES",
+   "cat": "AGENDA INFANTIL",
+   "ini": "2026-11-02",
+   "fin": "2026-12-31",
+   "slug": "centros-culturales-municipales"
+  },
+  {
+   "titulo": "Eventos inclusivos 'Miradas con Voz'",
+   "cat": "JORNADAS",
+   "ini": "2026-11-18",
+   "fin": "2026-11-19",
+   "slug": "eventos-inclusivos-miradas-con-voz"
   },
   {
    "titulo": "Ciclo 'Els concerts de la Pèrgola'",
@@ -135,13 +149,6 @@
    "slug": "exposicion-concha-piquer-arte-y-modernidad"
   },
   {
-   "titulo": "Exposición 'MacroArte' de Tony Tirado - El Paleontològic",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-07-09",
-   "fin": "2026-11-15",
-   "slug": "exposicion-macroarte-de-tony-tirado-el-paleontologic"
-  },
-  {
    "titulo": "CC Nave 3 Ribes - Programación de noviembre",
    "cat": "CINE",
    "ini": "2026-11-02",
@@ -210,6 +217,13 @@
    "ini": "2026-11-12",
    "fin": "2026-12-17",
    "slug": "ii-ciclo-musica-als-museus"
+  },
+  {
+   "titulo": "Exposición 'MacroArte' de Tony Tirado - El Paleontològic",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-07-09",
+   "fin": "2026-11-15",
+   "slug": "exposicion-macroarte-de-tony-tirado-el-paleontologic"
   },
   {
    "titulo": "Exposición 'La València de Blasco Ibáñez'",
@@ -366,20 +380,6 @@
    "slug": "mercafestes-en-los-mercados-municipales"
   },
   {
-   "titulo": "CENTROS CULTURALES MUNICIPALES",
-   "cat": "AGENDA INFANTIL",
-   "ini": "2026-11-02",
-   "fin": "2026-12-31",
-   "slug": "centros-culturales-municipales"
-  },
-  {
-   "titulo": "Eventos inclusivos 'Miradas con Voz'",
-   "cat": "JORNADAS",
-   "ini": "2026-11-18",
-   "fin": "2026-11-19",
-   "slug": "eventos-inclusivos-miradas-con-voz"
-  },
-  {
    "titulo": "'VALÈNCIA CUINA OBERTA' OTOÑO 2026",
    "cat": "FESTIVALES",
    "ini": "2026-11-05",
@@ -499,13 +499,6 @@
    "slug": "exposicion-el-poverello-de-asis-jose-benlliure"
   },
   {
-   "titulo": "Centro de interpretación adaptado 'Més que unes Torres'",
-   "cat": "OCIO ALTERNATIVO",
-   "ini": "2026-10-23",
-   "fin": "2027-01-10",
-   "slug": "centro-de-interpretacion-adaptado-mes-que-unes-torres"
-  },
-  {
    "titulo": "CULTURA ALS BARRIS 2026",
    "cat": "CINE",
    "ini": "2026-11-13",
@@ -518,6 +511,13 @@
    "ini": "2026-11-12",
    "fin": "2027-02-07",
    "slug": "exposicion-jaume-i-regnar-el-futur-muvim"
+  },
+  {
+   "titulo": "Centro de interpretación adaptado 'Més que unes Torres'",
+   "cat": "OCIO ALTERNATIVO",
+   "ini": "2026-10-23",
+   "fin": "2027-01-10",
+   "slug": "centro-de-interpretacion-adaptado-mes-que-unes-torres"
   }
  ]
 }
