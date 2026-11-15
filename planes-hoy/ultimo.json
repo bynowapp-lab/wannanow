@@ -1,5 +1,5 @@
 {
- "leido": "2026-11-14",
+ "leido": "2026-11-15",
  "eventos": [
   {
    "titulo": "Museo de Prehistoria de València - Actividades",
@@ -16,13 +16,6 @@
    "slug": "bioparc-valencia"
   },
   {
-   "titulo": "Escalante - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "teatre-escalante-programacio"
-  },
-  {
    "titulo": "Exposición permanente en La Alquería de Félix",
    "cat": "EXPOSICIONES",
    "ini": "2026-01-02",
@@ -35,6 +28,13 @@
    "ini": "2026-01-03",
    "fin": "2026-12-31",
    "slug": "ruta-dones-de-ciencia"
+  },
+  {
+   "titulo": "Escalante - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "teatre-escalante-programacio"
   },
   {
    "titulo": "'VAMOS AL MAR SIN LÍMITES' - ASOC. NÁUTICA INCLUSIVA",
@@ -70,6 +70,111 @@
    "ini": "2026-11-14",
    "fin": "2026-12-19",
    "slug": "cicle-de-concerts-la-pergola-de-la-marina"
+  },
+  {
+   "titulo": "Carme Teatre - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "programacio-fins-a-final-d-any-carme-teatre"
+  },
+  {
+   "titulo": "Teatro Olympia - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "teatre-olympia-programaci%C3%B3"
+  },
+  {
+   "titulo": "Teatro Talia - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "teatre-talia-programacio"
+  },
+  {
+   "titulo": "Teatro Rialto - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-01",
+   "fin": "2026-12-31",
+   "slug": "teatre-rialto-programacio"
+  },
+  {
+   "titulo": "Atarazanas del Grao",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "drassanes-del-grau"
+  },
+  {
+   "titulo": "Centro Cultural Bancaja - Actividades",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "centre-cultural-bancaixa"
+  },
+  {
+   "titulo": "Jardín Botánico - Programación",
+   "cat": "CURSOS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "pogramacio-cultural-jardi-botanic"
+  },
+  {
+   "titulo": "Black Note Club - Programación",
+   "cat": "MÚSICA",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "black-note-club-programacio"
+  },
+  {
+   "titulo": "Ateneo Mercantil - Programación cultural",
+   "cat": "CINE",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "pogramacio-cultural-ateneo"
+  },
+  {
+   "titulo": "Palacio de Congresos de València - Actividades",
+   "cat": "CONGRESOS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "palau-de-congressos-de-valencia-activitats"
+  },
+  {
+   "titulo": "CC Escorxador - Programación de otoño",
+   "cat": "ENCUENTROS",
+   "ini": "2026-10-01",
+   "fin": "2026-12-20",
+   "slug": "cc-escorxador-programacion-2025-26"
+  },
+  {
+   "titulo": "CC Aben Al-Abbar: programación semanal",
+   "cat": "CINE",
+   "ini": "2026-11-09",
+   "fin": "2026-11-15",
+   "slug": "cc-aben-al-abbar-programacion"
+  },
+  {
+   "titulo": "MERCAFESTES EN LOS MERCADOS MUNICIPALES",
+   "cat": "AGENDA INFANTIL",
+   "ini": "2026-11-21",
+   "fin": "2027-12-18",
+   "slug": "mercafestes-en-los-mercados-municipales"
+  },
+  {
+   "titulo": "'VALÈNCIA CUINA OBERTA' OTOÑO 2026",
+   "cat": "FESTIVALES",
+   "ini": "2026-11-05",
+   "fin": "2026-11-15",
+   "slug": "valencia-cuina-oberta-otono-2026"
+  },
+  {
+   "titulo": "XXIX Festival de Balls al Carrer",
+   "cat": "DANZA",
+   "ini": "2026-10-18",
+   "fin": "2027-04-25",
+   "slug": "xxix-festival-de-balls-al-carrer"
   },
   {
    "titulo": "Museo de las Ciencias - Programación",
@@ -287,111 +392,6 @@
    "ini": "2026-01-02",
    "fin": "2026-12-31",
    "slug": "programacio-cultural-octubre-centre-de-cultura-contemporania"
-  },
-  {
-   "titulo": "Carme Teatre - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "programacio-fins-a-final-d-any-carme-teatre"
-  },
-  {
-   "titulo": "Teatro Olympia - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "teatre-olympia-programaci%C3%B3"
-  },
-  {
-   "titulo": "Teatro Talia - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "teatre-talia-programacio"
-  },
-  {
-   "titulo": "Teatro Rialto - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-01",
-   "fin": "2026-12-31",
-   "slug": "teatre-rialto-programacio"
-  },
-  {
-   "titulo": "Atarazanas del Grao",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "drassanes-del-grau"
-  },
-  {
-   "titulo": "Centro Cultural Bancaja - Actividades",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "centre-cultural-bancaixa"
-  },
-  {
-   "titulo": "Jardín Botánico - Programación",
-   "cat": "CURSOS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "pogramacio-cultural-jardi-botanic"
-  },
-  {
-   "titulo": "Black Note Club - Programación",
-   "cat": "MÚSICA",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "black-note-club-programacio"
-  },
-  {
-   "titulo": "Ateneo Mercantil - Programación cultural",
-   "cat": "CINE",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "pogramacio-cultural-ateneo"
-  },
-  {
-   "titulo": "Palacio de Congresos de València - Actividades",
-   "cat": "CONGRESOS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "palau-de-congressos-de-valencia-activitats"
-  },
-  {
-   "titulo": "CC Escorxador - Programación de otoño",
-   "cat": "ENCUENTROS",
-   "ini": "2026-10-01",
-   "fin": "2026-12-20",
-   "slug": "cc-escorxador-programacion-2025-26"
-  },
-  {
-   "titulo": "CC Aben Al-Abbar: programación semanal",
-   "cat": "CINE",
-   "ini": "2026-11-09",
-   "fin": "2026-11-15",
-   "slug": "cc-aben-al-abbar-programacion"
-  },
-  {
-   "titulo": "MERCAFESTES EN LOS MERCADOS MUNICIPALES",
-   "cat": "AGENDA INFANTIL",
-   "ini": "2026-11-21",
-   "fin": "2027-12-18",
-   "slug": "mercafestes-en-los-mercados-municipales"
-  },
-  {
-   "titulo": "'VALÈNCIA CUINA OBERTA' OTOÑO 2026",
-   "cat": "FESTIVALES",
-   "ini": "2026-11-05",
-   "fin": "2026-11-15",
-   "slug": "valencia-cuina-oberta-otono-2026"
-  },
-  {
-   "titulo": "XXIX Festival de Balls al Carrer",
-   "cat": "DANZA",
-   "ini": "2026-10-18",
-   "fin": "2027-04-25",
-   "slug": "xxix-festival-de-balls-al-carrer"
   },
   {
    "titulo": "Sala de exposiciones 'Edificio del Reloj' - Programación",
