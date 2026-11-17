@@ -2,16 +2,16 @@
 Idempotente: si la página ya tiene el marcador <!-- ENISA -->, no la toca."""
 import glob, re, sys
 
-IMG = '/img/enisa-empresa-emergente.webp'
+IMG = '/img/enisa-certificada-empresa-emergente.webp'
 TXT = {
     'es': ('BYNOW VALENCIA, S.L., la sociedad que desarrolla WannaNow, ha sido reconocida por la Empresa Nacional de '
            'Innovación (ENISA) como empresa emergente conforme a la Ley 28/2022, de fomento del ecosistema de las '
            'empresas emergentes.',
-           'Gobierno de España · Ministerio de Industria y Turismo · ENISA'),
+           'Certificada como empresa emergente por ENISA · Ministerio de Industria y Turismo'),
     'en': ('BYNOW VALENCIA, S.L., the company that develops WannaNow, has been recognised by ENISA (Empresa Nacional de '
            'Innovación, Spain\'s National Innovation Company) as a start-up (empresa emergente) under Law 28/2022 on the '
            'promotion of the start-up ecosystem.',
-           'Government of Spain · Ministry of Industry and Tourism · ENISA'),
+           'Certified as a start-up company (empresa emergente) by ENISA · Ministry of Industry and Tourism'),
 }
 
 
@@ -20,8 +20,8 @@ def bloque(lang, indent='        '):
     return (f'{indent}<!-- ENISA -->\n'
             f'{indent}<div class="enisa-sello" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;'
             f'gap:10px 16px;margin:18px auto 14px;max-width:760px;text-align:left">'
-            f'<img src="{IMG}" alt="{alt}" width="339" height="72" loading="lazy" decoding="async" '
-            f'style="height:36px;width:auto;display:block;flex:0 0 auto">'
+            f'<img src="{IMG}" alt="{alt}" width="400" height="292" loading="lazy" decoding="async" '
+            f'style="height:88px;width:auto;display:block;flex:0 0 auto">'
             f'<p style="margin:0;flex:1 1 260px;font-size:.72rem;line-height:1.45;opacity:.8">{txt}</p></div>\n'
             f'{indent}<!-- /ENISA -->\n')
 
