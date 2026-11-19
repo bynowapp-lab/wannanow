@@ -1,5 +1,5 @@
 {
- "leido": "2026-11-18",
+ "leido": "2026-11-19",
  "eventos": [
   {
    "titulo": "Museo de Prehistoria de València - Actividades",
@@ -65,13 +65,6 @@
    "slug": "biblioteques-municipals-programacio-mensual"
   },
   {
-   "titulo": "Oficina de l'Energia: actividades gratuitas",
-   "cat": "TALLERES",
-   "ini": "2026-11-19",
-   "fin": "2026-12-31",
-   "slug": "oficina-de-l-energia-actividades-gratuitas"
-  },
-  {
    "titulo": "Palau de la Música - Programación de noviembre",
    "cat": "MÚSICA",
    "ini": "2026-11-15",
@@ -121,27 +114,6 @@
    "slug": "programacio-cultural-caixaforum-valencia"
   },
   {
-   "titulo": "RUTAS DE LOS ÁRBOLES MONUMENTALES DE VALÈNCIA",
-   "cat": "RUTAS CULTURALES",
-   "ini": "2026-01-03",
-   "fin": "2026-12-31",
-   "slug": "ruta-dels-arbres-monumentals-de-valencia"
-  },
-  {
-   "titulo": "La Mutant - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "la-mutant-espai-d-arts-vives"
-  },
-  {
-   "titulo": "Teatre Principal - Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "teatre-principal-programacio"
-  },
-  {
    "titulo": "Exposición 'Concha Piquer. Arte y Modernidad. 120 años de su nacimiento'",
    "cat": "EXPOSICIONES",
    "ini": "2026-11-04",
@@ -161,6 +133,27 @@
    "ini": "2026-10-23",
    "fin": "2027-01-10",
    "slug": "centro-de-interpretacion-adaptado-mes-que-unes-torres"
+  },
+  {
+   "titulo": "RUTAS DE LOS ÁRBOLES MONUMENTALES DE VALÈNCIA",
+   "cat": "RUTAS CULTURALES",
+   "ini": "2026-01-03",
+   "fin": "2026-12-31",
+   "slug": "ruta-dels-arbres-monumentals-de-valencia"
+  },
+  {
+   "titulo": "La Mutant - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "la-mutant-espai-d-arts-vives"
+  },
+  {
+   "titulo": "Teatre Principal - Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "teatre-principal-programacio"
   },
   {
    "titulo": "Alqueria dels moros - Visitas gratuitas",
@@ -226,13 +219,6 @@
    "slug": "ii-ciclo-musica-als-museus"
   },
   {
-   "titulo": "MERCAFESTES EN LOS MERCADOS MUNICIPALES",
-   "cat": "AGENDA INFANTIL",
-   "ini": "2026-11-21",
-   "fin": "2027-12-18",
-   "slug": "mercafestes-en-los-mercados-municipales"
-  },
-  {
    "titulo": "CC Reina 121 - Programación de septiembre a diciembre",
    "cat": "ENCUENTROS",
    "ini": "2026-11-01",
@@ -240,11 +226,137 @@
    "slug": "cc-reina-121-programacion"
   },
   {
+   "titulo": "MERCAFESTES EN LOS MERCADOS MUNICIPALES",
+   "cat": "AGENDA INFANTIL",
+   "ini": "2026-11-21",
+   "fin": "2027-12-18",
+   "slug": "mercafestes-en-los-mercados-municipales"
+  },
+  {
    "titulo": "'VAMOS AL MAR SIN LÍMITES' - ASOC. NÁUTICA INCLUSIVA",
    "cat": "CURSOS",
    "ini": "2026-10-05",
    "fin": "2026-12-10",
    "slug": "vamos-al-mar-sin-limites-asoc.-nautica-inclusiva"
+  },
+  {
+   "titulo": "CIRCOS DE NAVIDAD EN VALÈNCIA",
+   "cat": "CIRCO",
+   "ini": "2026-11-21",
+   "fin": "2027-01-24",
+   "slug": "circos-de-navidad-en-valencia-2026-2027"
+  },
+  {
+   "titulo": "XXXII Premio de pintura 'Ciutat d'Algemesí'",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-11-18",
+   "fin": "2027-01-31",
+   "slug": "xxxii-premio-de-pintura-ciutat-d-algemesi"
+  },
+  {
+   "titulo": "Sala de exposiciones 'Edificio del Reloj' - Programación",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "sala-exposicions-edifici-del-rellotge"
+  },
+  {
+   "titulo": "RUTA CULTURAL 'ANILLO CICLISTA'",
+   "cat": "RUTAS CULTURALES",
+   "ini": "2026-01-03",
+   "fin": "2026-12-31",
+   "slug": "ruta-cultural-anell-ciclista"
+  },
+  {
+   "titulo": "Feria de València - Agenda de eventos",
+   "cat": "FERIAS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "fira-de-valencia-agenda"
+  },
+  {
+   "titulo": "Bombas Gens Centre d'Arts Digitals - Actividades",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "bombas-gens-centre-d-arts-digitals-cas"
+  },
+  {
+   "titulo": "Museo Iluziona",
+   "cat": "OCIO ALTERNATIVO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "museo-iluziona-cas"
+  },
+  {
+   "titulo": "Casa de la Ciència del CSIC - Programación",
+   "cat": "CONFERENCIAS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "casa-de-la-ciencia-del-csic-programacion"
+  },
+  {
+   "titulo": "Instituto Interuniversitario López Piñero - Programación",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "institut-interuniversitari-lopez-pinero-programacio"
+  },
+  {
+   "titulo": "Jimmy Glass Jazz - Programación",
+   "cat": "MÚSICA",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "jimmy-glass-jazz-programacio"
+  },
+  {
+   "titulo": "Hemisfèric - Programación",
+   "cat": "CINE",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "hemisferic-ciutat-arts-i-ciencies-programacio"
+  },
+  {
+   "titulo": "Exposición 'La imagen del rey Jaume I' - Museo de Historia",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-10-14",
+   "fin": "2027-02-07",
+   "slug": "exposicion-la-imagen-del-rey-jaume-i-museo-de-historia"
+  },
+  {
+   "titulo": "Exposición 'El poverello de Asís bajo la mirada de José Benlliure'",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-10-27",
+   "fin": "2027-01-17",
+   "slug": "exposicion-el-poverello-de-asis-jose-benlliure"
+  },
+  {
+   "titulo": "Eventos inclusivos 'Miradas con Voz'",
+   "cat": "JORNADAS",
+   "ini": "2026-11-18",
+   "fin": "2026-11-19",
+   "slug": "eventos-inclusivos-miradas-con-voz"
+  },
+  {
+   "titulo": "Exposición 'ALTRES' y tertulia - Sala Municipal de Exposiciones",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-06-26",
+   "fin": "2026-11-29",
+   "slug": "exposicion-altres"
+  },
+  {
+   "titulo": "Exposición 'Jaume I, regnar el futur' - MuVIM",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-11-12",
+   "fin": "2027-02-07",
+   "slug": "exposicion-jaume-i-regnar-el-futur-muvim"
+  },
+  {
+   "titulo": "Oficina de l'Energia: actividades gratuitas",
+   "cat": "TALLERES",
+   "ini": "2026-11-19",
+   "fin": "2026-12-31",
+   "slug": "oficina-de-l-energia-actividades-gratuitas"
   },
   {
    "titulo": "Teatro Flumen - Programación",
@@ -420,104 +532,6 @@
    "ini": "2026-11-25",
    "fin": "2026-11-26",
    "slug": "periscopio-valencia-2026"
-  },
-  {
-   "titulo": "Sala de exposiciones 'Edificio del Reloj' - Programación",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "sala-exposicions-edifici-del-rellotge"
-  },
-  {
-   "titulo": "RUTA CULTURAL 'ANILLO CICLISTA'",
-   "cat": "RUTAS CULTURALES",
-   "ini": "2026-01-03",
-   "fin": "2026-12-31",
-   "slug": "ruta-cultural-anell-ciclista"
-  },
-  {
-   "titulo": "Feria de València - Agenda de eventos",
-   "cat": "FERIAS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "fira-de-valencia-agenda"
-  },
-  {
-   "titulo": "Bombas Gens Centre d'Arts Digitals - Actividades",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "bombas-gens-centre-d-arts-digitals-cas"
-  },
-  {
-   "titulo": "Museo Iluziona",
-   "cat": "OCIO ALTERNATIVO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "museo-iluziona-cas"
-  },
-  {
-   "titulo": "Casa de la Ciència del CSIC - Programación",
-   "cat": "CONFERENCIAS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "casa-de-la-ciencia-del-csic-programacion"
-  },
-  {
-   "titulo": "Instituto Interuniversitario López Piñero - Programación",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "institut-interuniversitari-lopez-pinero-programacio"
-  },
-  {
-   "titulo": "Jimmy Glass Jazz - Programación",
-   "cat": "MÚSICA",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "jimmy-glass-jazz-programacio"
-  },
-  {
-   "titulo": "Hemisfèric - Programación",
-   "cat": "CINE",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "hemisferic-ciutat-arts-i-ciencies-programacio"
-  },
-  {
-   "titulo": "Exposición 'La imagen del rey Jaume I' - Museo de Historia",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-10-14",
-   "fin": "2027-02-07",
-   "slug": "exposicion-la-imagen-del-rey-jaume-i-museo-de-historia"
-  },
-  {
-   "titulo": "Exposición 'El poverello de Asís bajo la mirada de José Benlliure'",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-10-27",
-   "fin": "2027-01-17",
-   "slug": "exposicion-el-poverello-de-asis-jose-benlliure"
-  },
-  {
-   "titulo": "Eventos inclusivos 'Miradas con Voz'",
-   "cat": "JORNADAS",
-   "ini": "2026-11-18",
-   "fin": "2026-11-19",
-   "slug": "eventos-inclusivos-miradas-con-voz"
-  },
-  {
-   "titulo": "Exposición 'ALTRES' y tertulia - Sala Municipal de Exposiciones",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-06-26",
-   "fin": "2026-11-29",
-   "slug": "exposicion-altres"
-  },
-  {
-   "titulo": "Exposición 'Jaume I, regnar el futur' - MuVIM",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-11-12",
-   "fin": "2027-02-07",
-   "slug": "exposicion-jaume-i-regnar-el-futur-muvim"
   }
  ]
 }
