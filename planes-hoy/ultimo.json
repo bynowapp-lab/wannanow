@@ -1,5 +1,5 @@
 {
- "leido": "2026-11-23",
+ "leido": "2026-11-24",
  "eventos": [
   {
    "titulo": "Museo de Prehistoria de València - Actividades",
@@ -63,6 +63,83 @@
    "ini": "2026-11-12",
    "fin": "2027-02-07",
    "slug": "exposicion-jaume-i-regnar-el-futur-muvim"
+  },
+  {
+   "titulo": "Sala de exposiciones 'Edificio del Reloj' - Programación",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "sala-exposicions-edifici-del-rellotge"
+  },
+  {
+   "titulo": "RUTA CULTURAL 'ANILLO CICLISTA'",
+   "cat": "RUTAS CULTURALES",
+   "ini": "2026-01-03",
+   "fin": "2026-12-31",
+   "slug": "ruta-cultural-anell-ciclista"
+  },
+  {
+   "titulo": "Feria de València - Agenda de eventos",
+   "cat": "FERIAS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "fira-de-valencia-agenda"
+  },
+  {
+   "titulo": "Bombas Gens Centre d'Arts Digitals - Actividades",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "bombas-gens-centre-d-arts-digitals-cas"
+  },
+  {
+   "titulo": "Museo Iluziona",
+   "cat": "OCIO ALTERNATIVO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "museo-iluziona-cas"
+  },
+  {
+   "titulo": "Casa de la Ciència del CSIC - Programación",
+   "cat": "CONFERENCIAS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "casa-de-la-ciencia-del-csic-programacion"
+  },
+  {
+   "titulo": "Instituto Interuniversitario López Piñero - Programación",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "institut-interuniversitari-lopez-pinero-programacio"
+  },
+  {
+   "titulo": "Jimmy Glass Jazz - Programación",
+   "cat": "MÚSICA",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "jimmy-glass-jazz-programacio"
+  },
+  {
+   "titulo": "Hemisfèric - Programación",
+   "cat": "CINE",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "hemisferic-ciutat-arts-i-ciencies-programacio"
+  },
+  {
+   "titulo": "Exposición 'La imagen del rey Jaume I' - Museo de Historia",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-10-14",
+   "fin": "2027-02-07",
+   "slug": "exposicion-la-imagen-del-rey-jaume-i-museo-de-historia"
+  },
+  {
+   "titulo": "Exposición 'El poverello de Asís bajo la mirada de José Benlliure'",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-10-27",
+   "fin": "2027-01-17",
+   "slug": "exposicion-el-poverello-de-asis-jose-benlliure"
   },
   {
    "titulo": "Museo de las Ciencias - Programación",
@@ -177,74 +254,11 @@
    "slug": "exposicion-altres"
   },
   {
-   "titulo": "Fundación Cañada Blanch – Programación cultural",
-   "cat": "CONFERENCIAS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "fundacion-canada-blanch-programacion-cultural"
-  },
-  {
-   "titulo": "Sala Russafa - Programación cultural",
-   "cat": "DANZA",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "sala-russafa-programacio-cultural"
-  },
-  {
-   "titulo": "El Centro Museístico 'La Beneficencia' - Actividades",
-   "cat": "AGENDA INFANTIL",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "el-centre-museistic-la-beneficencia"
-  },
-  {
-   "titulo": "Colegio Mayor Rector Peset - Programación cultural",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "collegi-major-rector-peset-programacio"
-  },
-  {
-   "titulo": "Museo Fallero de València",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "museu-faller-de-valencia"
-  },
-  {
-   "titulo": "Teatro El Musical – Programación",
-   "cat": "TEATRO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "teatre-el-musical-programacio"
-  },
-  {
-   "titulo": "CC Reina 121 - Programación de septiembre a diciembre",
-   "cat": "ENCUENTROS",
-   "ini": "2026-11-01",
-   "fin": "2026-12-19",
-   "slug": "cc-reina-121-programacion"
-  },
-  {
-   "titulo": "'VAMOS AL MAR SIN LÍMITES' - ASOC. NÁUTICA INCLUSIVA",
-   "cat": "CURSOS",
-   "ini": "2026-10-05",
-   "fin": "2026-12-10",
-   "slug": "vamos-al-mar-sin-limites-asoc.-nautica-inclusiva"
-  },
-  {
-   "titulo": "CIRCOS DE NAVIDAD EN VALÈNCIA",
-   "cat": "CIRCO",
-   "ini": "2026-11-21",
-   "fin": "2027-01-24",
-   "slug": "circos-de-navidad-en-valencia-2026-2027"
-  },
-  {
-   "titulo": "II ciclo 'Música als Museus'",
-   "cat": "MÚSICA",
-   "ini": "2026-11-12",
-   "fin": "2026-12-17",
-   "slug": "ii-ciclo-musica-als-museus"
+   "titulo": "MERCADOS NAVIDEÑOS DE VALÈNCIA",
+   "cat": "FERIAS",
+   "ini": "2026-11-27",
+   "fin": "2027-01-06",
+   "slug": "mercados-navidenos-de-valencia-26-27"
   },
   {
    "titulo": "Teatro Flumen - Programación",
@@ -322,6 +336,76 @@
    "ini": "2026-11-02",
    "fin": "2026-11-30",
    "slug": "biblioteques-municipals-programacio-mensual"
+  },
+  {
+   "titulo": "Fundación Cañada Blanch – Programación cultural",
+   "cat": "CONFERENCIAS",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "fundacion-canada-blanch-programacion-cultural"
+  },
+  {
+   "titulo": "Sala Russafa - Programación cultural",
+   "cat": "DANZA",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "sala-russafa-programacio-cultural"
+  },
+  {
+   "titulo": "El Centro Museístico 'La Beneficencia' - Actividades",
+   "cat": "AGENDA INFANTIL",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "el-centre-museistic-la-beneficencia"
+  },
+  {
+   "titulo": "Colegio Mayor Rector Peset - Programación cultural",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "collegi-major-rector-peset-programacio"
+  },
+  {
+   "titulo": "Museo Fallero de València",
+   "cat": "EXPOSICIONES",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "museu-faller-de-valencia"
+  },
+  {
+   "titulo": "Teatro El Musical – Programación",
+   "cat": "TEATRO",
+   "ini": "2026-01-02",
+   "fin": "2026-12-31",
+   "slug": "teatre-el-musical-programacio"
+  },
+  {
+   "titulo": "CC Reina 121 - Programación de septiembre a diciembre",
+   "cat": "ENCUENTROS",
+   "ini": "2026-11-01",
+   "fin": "2026-12-19",
+   "slug": "cc-reina-121-programacion"
+  },
+  {
+   "titulo": "'VAMOS AL MAR SIN LÍMITES' - ASOC. NÁUTICA INCLUSIVA",
+   "cat": "CURSOS",
+   "ini": "2026-10-05",
+   "fin": "2026-12-10",
+   "slug": "vamos-al-mar-sin-limites-asoc.-nautica-inclusiva"
+  },
+  {
+   "titulo": "CIRCOS DE NAVIDAD EN VALÈNCIA",
+   "cat": "CIRCO",
+   "ini": "2026-11-21",
+   "fin": "2027-01-24",
+   "slug": "circos-de-navidad-en-valencia-2026-2027"
+  },
+  {
+   "titulo": "II ciclo 'Música als Museus'",
+   "cat": "MÚSICA",
+   "ini": "2026-11-12",
+   "fin": "2026-12-17",
+   "slug": "ii-ciclo-musica-als-museus"
   },
   {
    "titulo": "Carme Teatre - Programación",
@@ -434,83 +518,6 @@
    "ini": "2026-11-23",
    "fin": "2026-11-29",
    "slug": "cc-aben-al-abbar-programacion"
-  },
-  {
-   "titulo": "Sala de exposiciones 'Edificio del Reloj' - Programación",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "sala-exposicions-edifici-del-rellotge"
-  },
-  {
-   "titulo": "RUTA CULTURAL 'ANILLO CICLISTA'",
-   "cat": "RUTAS CULTURALES",
-   "ini": "2026-01-03",
-   "fin": "2026-12-31",
-   "slug": "ruta-cultural-anell-ciclista"
-  },
-  {
-   "titulo": "Feria de València - Agenda de eventos",
-   "cat": "FERIAS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "fira-de-valencia-agenda"
-  },
-  {
-   "titulo": "Bombas Gens Centre d'Arts Digitals - Actividades",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "bombas-gens-centre-d-arts-digitals-cas"
-  },
-  {
-   "titulo": "Museo Iluziona",
-   "cat": "OCIO ALTERNATIVO",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "museo-iluziona-cas"
-  },
-  {
-   "titulo": "Casa de la Ciència del CSIC - Programación",
-   "cat": "CONFERENCIAS",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "casa-de-la-ciencia-del-csic-programacion"
-  },
-  {
-   "titulo": "Instituto Interuniversitario López Piñero - Programación",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "institut-interuniversitari-lopez-pinero-programacio"
-  },
-  {
-   "titulo": "Jimmy Glass Jazz - Programación",
-   "cat": "MÚSICA",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "jimmy-glass-jazz-programacio"
-  },
-  {
-   "titulo": "Hemisfèric - Programación",
-   "cat": "CINE",
-   "ini": "2026-01-02",
-   "fin": "2026-12-31",
-   "slug": "hemisferic-ciutat-arts-i-ciencies-programacio"
-  },
-  {
-   "titulo": "Exposición 'La imagen del rey Jaume I' - Museo de Historia",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-10-14",
-   "fin": "2027-02-07",
-   "slug": "exposicion-la-imagen-del-rey-jaume-i-museo-de-historia"
-  },
-  {
-   "titulo": "Exposición 'El poverello de Asís bajo la mirada de José Benlliure'",
-   "cat": "EXPOSICIONES",
-   "ini": "2026-10-27",
-   "fin": "2027-01-17",
-   "slug": "exposicion-el-poverello-de-asis-jose-benlliure"
   }
  ]
 }
